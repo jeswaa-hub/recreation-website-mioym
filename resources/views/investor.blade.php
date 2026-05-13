@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investors - MIOYM Equities</title>
-    <meta name="description" content="Learn more about investment opportunities with MIOYM Equities.">
+    <title>Institutional Real Estate Investors | 15% Annual Returns | MIOYM</title>
+    <meta name="description" content="Join MIOYM Equities as an institutional real estate investor. Explore our unique investment fund offering preferred 15% annual returns and zero management fees.">
+    <meta name="keywords" content="Institutional Real Estate, 15% Annual Returns, Real Estate Investment Fund, Self-Directed IRA, MIOYM Equities, High Yield Real Estate">
     <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -108,7 +109,7 @@
             <div class="max-w-6xl mx-auto relative z-10">
                 <div class="text-center max-w-4xl mx-auto mb-12 lg:mb-14">
                     <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-2" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                        What Truly Sets MIOYM Apart?
+                        What Truly Sets MIOYM Apart in Institutional Real Estate?
                     </h2>
                     <p class="text-base sm:text-lg text-gray-200 mb-5" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                         Unraveling the Uniqueness of Our Organization.
@@ -121,7 +122,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
                     <article class="relative px-3 pt-3 pb-0 flex flex-col">
                         <div class="aspect-[11/13] flex items-center justify-center overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);">
-                            <img src="{{ asset('img/investor3.png') }}" alt="Vertically Integrated Approach" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/investor3.png') }}" alt="Vertically Integrated Approach in Institutional Real Estate" class="w-full h-full object-cover">
                         </div>
                         <div class="relative -mt-[45%] ml-10 z-10 flex-1 flex flex-col">
                             <div class="absolute -top-8 right-4 w-20 h-20 rounded-full bg-[#e7e1dc] border-[5px] border-[#221d20] flex items-center justify-center shadow-lg z-20">
@@ -140,7 +141,7 @@
 
                     <article class="relative px-3 pt-3 pb-0 flex flex-col">
                         <div class="aspect-[11/13] flex items-center justify-center overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);">
-                            <img src="{{ asset('img/investor2.png') }}" alt="Tailored Solutions" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/investor2.png') }}" alt="Tailored Investment Solutions for 15% Annual Returns" class="w-full h-full object-cover">
                         </div>
                         <div class="relative -mt-[45%] ml-10 z-10 flex-1 flex flex-col">
                             <div class="absolute -top-8 right-4 w-20 h-20 rounded-full bg-[#e7e1dc] border-[5px] border-[#221d20] flex items-center justify-center shadow-lg z-20">
@@ -159,7 +160,7 @@
 
                     <article class="relative px-3 pt-3 pb-0 flex flex-col">
                         <div class="aspect-[11/13] flex items-center justify-center overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);">
-                            <img src="{{ asset('img/investor1.png') }}" alt="Rebuilding Communities" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/investor1.png') }}" alt="Rebuilding Communities through Real Estate Investment" class="w-full h-full object-cover">
                         </div>
                         <div class="relative -mt-[45%] ml-10 z-10 flex-1 flex flex-col">
                             <div class="absolute -top-8 right-4 w-20 h-20 rounded-full bg-[#e7e1dc] border-[5px] border-[#221d20] flex items-center justify-center shadow-lg z-20">
@@ -262,7 +263,7 @@
                         <div class="rounded-[16px] overflow-hidden mb-6">
                             <!-- Placeholder for the couple using laptop image -->
                             <div class="placeholder-surface w-full aspect-[4/3] flex items-center justify-center">
-                                <img src="{{ asset('img/investor5.png') }}" alt="Couple using laptop for IRA investment" class="w-full h-full object-cover">
+                                <img src="{{ asset('img/investor5.png') }}" alt="Investors managing Self-Directed IRA for Institutional Real Estate" class="w-full h-full object-cover">
                             </div>
                         </div>
                         
@@ -289,7 +290,7 @@
          <!-- Why Investors Choose MIOYM Stats Banner -->
          <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
              <!-- Background Image for the wavy texture -->
-             <div class="absolute inset-0 z-0" style="background-image: url('{{ asset('img/bgAboutUs.png') }}'); background-size: cover; background-position: center; filter: grayscale(100%) brightness(0.5);"></div>
+             <div class="absolute inset-0 z-0" style="background-image: url('{{ asset('img/investorbg.png') }}'); background-size: cover; background-position: center;"></div>
              <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#2b2b2b]/90 z-0"></div>
              
              <div class="max-w-7xl mx-auto relative z-10">
@@ -428,7 +429,7 @@
                         <div class="flex gap-4">
                             <template x-for="(img, idx) in visibleImages" :key="idx">
                                 <div class="flex-1 h-[100px] lg:h-[140px] rounded-xl overflow-hidden transition-all duration-500 flex items-center justify-center bg-white/5" :class="idx === 1 ? 'lg:scale-105' : ''">
-                                    <img :src="img" alt="Partner" class="w-full h-full object-contain object-center">
+                                    <img :src="img" alt="MIOYM Equities Institutional Real Estate Partner" class="w-full h-full object-contain object-center">
                                 </div>
                             </template>
                         </div>

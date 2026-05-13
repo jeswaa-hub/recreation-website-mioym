@@ -1,16 +1,16 @@
 @php
     $firmDropdownItems = [
-        'About Us' => '/about-us',
-        'Team' => '/team',
-        'Investors' => '/investor',
+        'About Us' => '/the-firm/about-us',
+        'Team' => '/the-firm/team',
+        'Investors' => '/the-firm/investor',
     ];
     
     $solutionsDropdown = [
-        'Single Family Residential' => '#',
+        'Single Family Residential' => '/solutions/single-family-residential',
         'Deal Finder' => '#',
-        'Process' => '#',
-        'Commercial Properties' => '#',
-        'MIOYM Reality Partners' => '#',
+        'Process' => '/solutions/process',
+        'Commercial Properties' => '/solutions/commercial-property',
+        'MIOYM Reality Partners' => '/solutions/mioym-realty-partners',
     ];
     
     $assetManagementDropdown = [

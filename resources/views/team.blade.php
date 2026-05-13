@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Team - MIOYM Equities</title>
-    <meta name="description" content="Meet the team at MIOYM Equities.">
+    <title>Our Executive Team | MIOYM Equities Institutional Real Estate</title>
+    <meta name="description" content="Meet the expert executive team at MIOYM Equities. We are an institutional real estate investment firm driving 15% annual returns and rebuilding communities.">
+    <meta name="keywords" content="Executive Team, Institutional Real Estate, Real Estate Experts, MIOYM Equities, Investment Professionals">
     <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +38,7 @@
             <div class="absolute inset-0" style="background-image: url('{{ asset('img/bgAboutUs.png') }}'); background-size: cover; background-position: center;"></div>
             <div class="max-w-7xl mx-auto text-center relative z-10">
                 <h1 class="uppercase text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-wider" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                    THE TEAM
+                    OUR EXECUTIVE TEAM
                 </h1>
             </div>
         </section>
@@ -56,7 +57,7 @@
                 <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                     <!-- Left: Team Image -->
                     <div class="w-full lg:w-1/2 relative">
-                        <img src="{{ asset('img/imgteam1.png') }}" alt="MIOYM Team collaborating" class="w-full h-auto object-contain drop-shadow-2xl relative z-10">
+                        <img src="{{ asset('img/imgteam1.png') }}" alt="MIOYM Equities Institutional Real Estate Investment Experts Collaborating" class="w-full h-auto object-contain drop-shadow-2xl relative z-10">
                     </div>
                     
                     <!-- Right: Text Content -->
