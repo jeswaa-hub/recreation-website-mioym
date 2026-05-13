@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - MIOYM Equities</title>
-    <meta name="description" content="Learn more about MIOYM Equities - A vertically integrated real estate firm dedicated to creating value and delivering consistent returns to investors.">
+    <title>About Us | Institutional Real Estate Investment Firm | MIOYM Equities</title>
+    <meta name="description" content="Discover MIOYM Equities, a leading institutional real estate firm. We rebuild communities while targeting 15% annual returns for our investors.">
+    <meta name="keywords" content="Institutional Real Estate, 15% Annual Returns, Real Estate Investment Firm, Distressed Assets, Property Investment, MIOYM Equities">
     <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,7 +76,7 @@
                 
                 <!-- Right: Floating Image -->
                 <div class="hidden lg:block absolute right-[-30%] top-[-150%]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-                    <img src="{{ asset('img/houseC.png') }}" alt="MIOYM House" class="w-[70%] h-[50%]" style="z-index: 10;">
+                    <img src="{{ asset('img/houseC.png') }}" alt="MIOYM Equities Institutional Real Estate Property Portfolio" class="w-[70%] h-[50%]" style="z-index: 10;">
                 </div>
             </div>
         </section>
@@ -87,7 +88,7 @@
                 <div class="flex flex-col lg:flex-row items-center gap-12">
                     <!-- Left: Marc Cox Image -->
                     <div class="w-full lg:w-1/2 rounded-3xl overflow-hidden shadow-xl" data-aos="fade-up" data-aos-duration="800">
-                        <img src="{{ asset('img/MarcCox.png') }}" alt="Marc Cox - CEO of MIOYM Group" class="w-full h-auto object-cover">
+                        <img src="{{ asset('img/MarcCox.png') }}" alt="Marc Cox - CEO of MIOYM Equities Institutional Real Estate Investment Firm" class="w-full h-auto object-cover">
                     </div>
                     
                     <!-- Right: Glassmorphism Container -->
