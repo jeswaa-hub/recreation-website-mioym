@@ -14,9 +14,9 @@
     ];
     
     $assetManagementDropdown = [
-        'Affordable Home Program' => '#',
-        'Strategic Property Preservation' => '#',
-        'National Foreclosure Prevention' => '#',
+        'Affordable Home Program' => '/asset-management/affordable-home-program',
+        'Strategic Property Preservation' => '/asset-management/strategic-property-preservation',
+        'National Foreclosure Prevention' => '/asset-management/national-foreclosure-prevention',
         'Cash For Homes' => '#',
     ];
     
@@ -26,8 +26,8 @@
     ];
     
     $newsDropdown = [
-        'Blogs' => '#',
-        'Testimonials' => '#',
+        'Blogs' => '/news/blogs',
+        'Testimonials' => '/news/testimonials',
     ];
 @endphp
 

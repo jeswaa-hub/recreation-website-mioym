@@ -128,7 +128,7 @@
                             <div class="absolute -top-8 right-4 w-20 h-20 rounded-full bg-[#e7e1dc] border-[5px] border-[#221d20] flex items-center justify-center shadow-lg z-20">
                                 <i class="fas fa-hand-holding-usd text-3xl text-black"></i>
                             </div>
-                            <div class="bg-[rgba(52,24,25,0.96)] rounded-[24px] px-6 pt-10 pb-8 flex-1 flex flex-col relative z-10">
+                            <div class="bg-[#2B1A1A] rounded-[24px] px-6 pt-10 pb-8 flex-1 flex flex-col relative z-10">
                                 <h3 class="text-2xl lg:text-[1.7rem] leading-tight font-semibold text-white mb-5 pr-14 min-h-[4.5rem] lg:min-h-[5.5rem]" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                                     Vertically Integrated Approach:
                                 </h3>
@@ -147,7 +147,7 @@
                             <div class="absolute -top-8 right-4 w-20 h-20 rounded-full bg-[#e7e1dc] border-[5px] border-[#221d20] flex items-center justify-center shadow-lg z-20">
                                 <i class="fas fa-puzzle-piece text-3xl text-black"></i>
                             </div>
-                            <div class="bg-[rgba(52,24,25,0.96)] rounded-[24px] px-6 pt-10 pb-8 flex-1 flex flex-col relative z-10">
+                            <div class="bg-[#2B1A1A] rounded-[24px] px-6 pt-10 pb-8 flex-1 flex flex-col relative z-10">
                                 <h3 class="text-2xl lg:text-[1.7rem] leading-tight font-semibold text-white mb-5 pr-14 min-h-[4.5rem] lg:min-h-[5.5rem]" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                                     Tailored Solutions:
                                 </h3>
@@ -166,7 +166,7 @@
                             <div class="absolute -top-8 right-4 w-20 h-20 rounded-full bg-[#e7e1dc] border-[5px] border-[#221d20] flex items-center justify-center shadow-lg z-20">
                                 <i class="far fa-building text-3xl text-black"></i>
                             </div>
-                            <div class="bg-[rgba(52,24,25,0.96)] rounded-[24px] px-6 pt-10 pb-8 flex-1 flex flex-col relative z-10">
+                            <div class="bg-[#2B1A1A] rounded-[24px] px-6 pt-10 pb-8 flex-1 flex flex-col relative z-10">
                                 <h3 class="text-2xl lg:text-[1.7rem] leading-tight font-semibold text-white mb-5 pr-14 min-h-[4.5rem] lg:min-h-[5.5rem]" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                                     Beyond Investments - Rebuilding Communities:
                                 </h3>
@@ -185,7 +185,7 @@
                             <div class="absolute -top-8 right-4 w-20 h-20 rounded-full bg-[#e7e1dc] border-[5px] border-[#221d20] flex items-center justify-center shadow-lg z-20">
                                 <i class="fas fa-home text-3xl text-black"></i>
                             </div>
-                            <div class="bg-[rgba(52,24,25,0.96)] rounded-[24px] px-6 pt-10 pb-8 flex-1 flex flex-col relative z-10">
+                            <div class="bg-[#2B1A1A] rounded-[24px] px-6 pt-10 pb-8 flex-1 flex flex-col relative z-10">
                                 <h3 class="text-2xl lg:text-[1.7rem] leading-tight font-semibold text-white mb-5 pr-14 min-h-[4.5rem] lg:min-h-[5.5rem]" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                                     Empowering First-time Homebuyers:
                                 </h3>

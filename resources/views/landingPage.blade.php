@@ -323,7 +323,7 @@
     <x-navigationHeader />
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center pt-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section class="min-h-screen flex items-center pt-20 px-0 relative overflow-hidden">
         <!-- Background Circle -->
         <div class="absolute top-[-10%] right-[-10%] sm:top-[-20%] sm:right-[0%]w-[500px] sm:w-[600px] lg:w-[700px] h-[500px] sm:h-[600px] lg:h-[700px] rounded-full opacity-80 blur-[100px] glow-pulse parallax-bg" data-speed="0.3" style="background-color: #8B7777;"></div>
         
@@ -528,7 +528,7 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-white font-semibold text-lg mb-2" style="font-family: 'Plus Jakarta Sans', sans-serif;">Residential</h3>
                         <p class="text-gray-400 text-sm mt-5">MIOYM PROPERTIES acquires, and dispositions undervalued distressed mortgages and REO properties in 38 states.</p>
-                        <a href="#" class="inline-flex items-center justify-between px-4 py-2 mt-4 sm:mt-auto text-sm text-white transition-colors cursor-pointer w-full" style="background-color: #3A2C2C;">
+                        <a href="{{ route('singleFamilyResidential') }}" class="inline-flex items-center justify-between px-4 py-2 mt-4 sm:mt-auto text-sm text-white transition-colors cursor-pointer w-full" style="background-color: #3A2C2C;">
                             Explore More
                             <i class="fas fa-arrow-right text-xs ml-2"></i>
                         </a>
@@ -543,7 +543,7 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-white font-semibold text-lg mb-2" style="font-family: 'Plus Jakarta Sans', sans-serif;">Individual Investors</h3>
                         <p class="text-gray-400 text-sm mt-5">Time Tested Fix & Flip Program allowing individuals to invest and earn 17.5% per annum secured by R/E.</p>
-                        <a href="#" class="inline-flex items-center justify-between px-4 py-2 mt-4 sm:mt-auto text-sm text-white transition-colors cursor-pointer w-full" style="background-color: #3A2C2C;">
+                        <a href="{{ route('process') }}" class="inline-flex items-center justify-between px-4 py-2 mt-4 sm:mt-auto text-sm text-white transition-colors cursor-pointer w-full" style="background-color: #3A2C2C;">
                             Explore More
                             <i class="fas fa-arrow-right text-xs ml-2"></i>
                         </a>
@@ -558,7 +558,7 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-white font-semibold text-lg mb-2" style="font-family: 'Plus Jakarta Sans', sans-serif;">The MIOYM to Own Program</h3>
                         <p class="text-gray-400 text-sm mt-5">The MIOYM Rent To Own Program is designed to help individuals who aspire to own a home but need more means to do so immediately.</p>
-                        <a href="#" class="inline-flex items-center justify-between px-4 py-2 mt-4 sm:mt-auto text-sm text-white transition-colors cursor-pointer w-full" style="background-color: #3A2C2C;">
+                        <a href="{{ route('affordableHomeProgram') }}" class="inline-flex items-center justify-between px-4 py-2 mt-4 sm:mt-auto text-sm text-white transition-colors cursor-pointer w-full" style="background-color: #3A2C2C;">
                             Explore More
                             <i class="fas fa-arrow-right text-xs ml-2"></i>
                         </a>
@@ -573,7 +573,7 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-white font-semibold text-lg mb-2" style="font-family: 'Plus Jakarta Sans', sans-serif;">Institutional Investors/ Commercial Ventures</h3>
                         <p class="text-gray-400 text-sm mt-5">MIOYM offers investors the chance to engage in diverse commercial ventures.</p>
-                        <a href="#" class="inline-flex items-center justify-between px-4 py-2 mt-4 sm:mt-auto text-sm text-white transition-colors cursor-pointer w-full" style="background-color: #3A2C2C;">
+                        <a href="{{ route('commercialProperties') }}" class="inline-flex items-center justify-between px-4 py-2 mt-4 sm:mt-auto text-sm text-white transition-colors cursor-pointer w-full" style="background-color: #3A2C2C;">
                             Explore More
                             <i class="fas fa-arrow-right text-xs ml-2"></i>
                         </a>
@@ -637,8 +637,8 @@
     </section>
 
     <!-- Our Partners Section -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden" style="background: #000000;">
-        <div class="max-w-7xl mx-auto relative z-10">
+    <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden flex justify-center" style="background: #000000;">
+        <div class="w-full max-w-7xl relative z-10 mx-auto">
             <!-- Section Header -->
             <div class="text-center mb-12 fade-in">
                 <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
