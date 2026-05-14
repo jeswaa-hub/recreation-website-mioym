@@ -59,7 +59,7 @@
                         <button type="button" 
                                 class="text-sm font-medium {{ request()->is('about-us', 'team', 'investor') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
                                 style="font-family: 'Inter', sans-serif;"
-                                onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
+                                onclick="event.stopPropagation(); const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
                             The Firm
                             <i class="fas fa-chevron-down text-xs"></i>
                         </button>
@@ -79,7 +79,7 @@
                         <button type="button" 
                                 class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
                                 style="font-family: 'Inter', sans-serif;"
-                                onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
+                                onclick="event.stopPropagation(); const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
                             Solutions
                             <i class="fas fa-chevron-down text-xs"></i>
                         </button>
@@ -99,7 +99,7 @@
                         <button type="button" 
                                 class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
                                 style="font-family: 'Inter', sans-serif;"
-                                onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
+                                onclick="event.stopPropagation(); const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
                             Asset Management
                             <i class="fas fa-chevron-down text-xs"></i>
                         </button>
@@ -119,7 +119,7 @@
                         <button type="button" 
                                 class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
                                 style="font-family: 'Inter', sans-serif;"
-                                onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
+                                onclick="event.stopPropagation(); const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
                             Lending
                             <i class="fas fa-chevron-down text-xs"></i>
                         </button>
@@ -139,7 +139,7 @@
                         <button type="button" 
                                 class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
                                 style="font-family: 'Inter', sans-serif;"
-                                onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
+                                onclick="event.stopPropagation(); const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
                             News
                             <i class="fas fa-chevron-down text-xs"></i>
                         </button>
@@ -189,7 +189,7 @@
                 <button type="button" 
                         class="flex items-center justify-between w-full text-base font-medium text-gray-300 hover:text-white"
                         style="font-family: 'Inter', sans-serif;"
-                        onclick="document.getElementById('mobile-firm-dropdown').classList.toggle('hidden')">
+                        onclick="event.stopPropagation(); document.getElementById('mobile-firm-dropdown').classList.toggle('hidden')">
                     The Firm
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -211,7 +211,7 @@
                 <button type="button" 
                         class="flex items-center justify-between w-full text-base font-medium text-gray-300 hover:text-white"
                         style="font-family: 'Inter', sans-serif;"
-                        onclick="document.getElementById('mobile-solutions-dropdown').classList.toggle('hidden')">
+                        onclick="event.stopPropagation(); document.getElementById('mobile-solutions-dropdown').classList.toggle('hidden')">
                     Solutions
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -233,7 +233,7 @@
                 <button type="button" 
                         class="flex items-center justify-between w-full text-base font-medium text-gray-300 hover:text-white"
                         style="font-family: 'Inter', sans-serif;"
-                        onclick="document.getElementById('mobile-asset-dropdown').classList.toggle('hidden')">
+                        onclick="event.stopPropagation(); document.getElementById('mobile-asset-dropdown').classList.toggle('hidden')">
                     Asset Management
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -255,7 +255,7 @@
                 <button type="button" 
                         class="flex items-center justify-between w-full text-base font-medium text-gray-300 hover:text-white"
                         style="font-family: 'Inter', sans-serif;"
-                        onclick="document.getElementById('mobile-lending-dropdown').classList.toggle('hidden')">
+                        onclick="event.stopPropagation(); document.getElementById('mobile-lending-dropdown').classList.toggle('hidden')">
                     Lending
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -277,7 +277,7 @@
                 <button type="button" 
                         class="flex items-center justify-between w-full text-base font-medium text-gray-300 hover:text-white"
                         style="font-family: 'Inter', sans-serif;"
-                        onclick="document.getElementById('mobile-news-dropdown').classList.toggle('hidden')">
+                        onclick="event.stopPropagation(); document.getElementById('mobile-news-dropdown').classList.toggle('hidden')">
                     News
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>

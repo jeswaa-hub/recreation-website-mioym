@@ -99,7 +99,7 @@
                                 </p>
                             </div>
                             <div class="flex justify-end">
-                                <a href="#" class="inline-flex items-center gap-3 px-6 py-3 bg-[#2a1a1a] hover:bg-[#3a2a2a] text-white rounded-xl transition-all duration-300 group">
+                                <a href="{{ route('voucherAssistanceProgram') }}" class="inline-flex items-center gap-3 px-6 py-3 bg-[#2a1a1a] hover:bg-[#3a2a2a] text-white rounded-xl transition-all duration-300 group">
                                     <span class="font-bold text-sm tracking-wide">Explore Leasing Service</span>
                                     <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -119,7 +119,7 @@
                                 </p>
                             </div>
                             <div class="flex justify-end">
-                                <a href="#" class="inline-flex items-center gap-3 px-6 py-3 bg-[#2a1a1a] hover:bg-[#3a2a2a] text-white rounded-xl transition-all duration-300 group">
+                                <a href="{{ route('joinMioymRealityPartners') }}" class="inline-flex items-center gap-3 px-6 py-3 bg-[#2a1a1a] hover:bg-[#3a2a2a] text-white rounded-xl transition-all duration-300 group">
                                     <span class="font-bold text-sm tracking-wide">Join our brokerage</span>
                                     <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
