@@ -144,7 +144,7 @@
                     
                     <!-- Left Content -->
                     <div class="w-full lg:w-5/12">
-                        <p class="text-white text-lg md:text-xl lg:text-2xl leading-relaxed" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        <p class="text-white text-lg md:text-xl lg:text-2xl leading-relaxed text-justify lg:text-left" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                             We're here to help you find a safe, stable place to call home. If you are currently experiencing homelessness and have a housing voucher, please complete the form below. One of our dedicated housing agents will reach out to you as soon as possible to guide you through available apartment options and next steps.
                         </p>
                     </div>

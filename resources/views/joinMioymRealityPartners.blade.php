@@ -88,8 +88,8 @@
                 <div class="flex flex-col lg:flex-row  gap-12 lg:gap-20">
                     
                     <!-- Left Content -->
-                    <div class="w-full lg:w-1/2 space-y-6">
-                        <h2 class="lg:text-6xl sm:text-5xl font-bold text-white leading-tight" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                    <div class="w-full lg:w-1/2 space-y-6 text-center lg:text-left lg:mt-12">
+                        <h2 class="lg:text-6xl sm:text-5xl font-bold text-white leading-tight " style="font-family: 'Plus Jakarta Sans', sans-serif;">
                             Become an<br>Agent in MIOYM
                         </h2>
                         <p class="lg:text-xl sm:text-2xl text-gray-200 leading-relaxed font-light" style="font-family: 'Inter', sans-serif;">

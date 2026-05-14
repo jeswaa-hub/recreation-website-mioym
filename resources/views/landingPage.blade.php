@@ -332,7 +332,7 @@
             <img src="{{ asset('img/bgImg.png') }}" alt="MIOYM Distressed Asset Real Estate - Investment Property Background" class="w-full h-auto object-contain" loading="lazy">
         </div>
         
-        <div class="max-w-7xl mx-auto w-full relative z-10">
+        <div class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Left Content -->
                 <div>
