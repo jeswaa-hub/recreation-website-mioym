@@ -57,7 +57,7 @@
                     <!-- The Firm Dropdown -->
                     <div class="relative group" data-dropdown="firm" onmouseenter="this.dataset.open='true'; this.querySelector('.dropdown-menu').classList.remove('hidden')" onmouseleave="this.dataset.open='false'; setTimeout(() => { if(this.dataset.open === 'false') this.querySelector('.dropdown-menu').classList.add('hidden') }, 200)">
                         <button type="button" 
-                                class="text-sm font-medium {{ request()->is('about-us', 'team', 'investor') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
+                                class="text-sm font-medium {{ request()->is('the-firm/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
                                 style="font-family: 'Inter', sans-serif;"
                                 onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
                             The Firm
@@ -77,7 +77,7 @@
                     <!-- Solutions Dropdown -->
                     <div class="relative group" data-dropdown="solutions" onmouseenter="this.dataset.open='true'; this.querySelector('.dropdown-menu').classList.remove('hidden')" onmouseleave="this.dataset.open='false'; setTimeout(() => { if(this.dataset.open === 'false') this.querySelector('.dropdown-menu').classList.add('hidden') }, 200)">
                         <button type="button" 
-                                class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
+                                class="text-sm font-medium {{ request()->is('solutions/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
                                 style="font-family: 'Inter', sans-serif;"
                                 onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
                             Solutions
@@ -97,7 +97,7 @@
                     <!-- Asset Management Dropdown -->
                     <div class="relative group" data-dropdown="asset" onmouseenter="this.dataset.open='true'; this.querySelector('.dropdown-menu').classList.remove('hidden')" onmouseleave="this.dataset.open='false'; setTimeout(() => { if(this.dataset.open === 'false') this.querySelector('.dropdown-menu').classList.add('hidden') }, 200)">
                         <button type="button" 
-                                class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
+                                class="text-sm font-medium {{ request()->is('asset-management/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
                                 style="font-family: 'Inter', sans-serif;"
                                 onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
                             Asset Management
@@ -117,7 +117,7 @@
                     <!-- Lending Dropdown -->
                     <div class="relative group" data-dropdown="lending" onmouseenter="this.dataset.open='true'; this.querySelector('.dropdown-menu').classList.remove('hidden')" onmouseleave="this.dataset.open='false'; setTimeout(() => { if(this.dataset.open === 'false') this.querySelector('.dropdown-menu').classList.add('hidden') }, 200)">
                         <button type="button" 
-                                class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
+                                class="text-sm font-medium {{ request()->is('lending/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
                                 style="font-family: 'Inter', sans-serif;"
                                 onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
                             Lending
@@ -137,7 +137,7 @@
                     <!-- News Dropdown -->
                     <div class="relative group" data-dropdown="news" onmouseenter="this.dataset.open='true'; this.querySelector('.dropdown-menu').classList.remove('hidden')" onmouseleave="this.dataset.open='false'; setTimeout(() => { if(this.dataset.open === 'false') this.querySelector('.dropdown-menu').classList.add('hidden') }, 200)">
                         <button type="button" 
-                                class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
+                                class="text-sm font-medium {{ request()->is('news/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
                                 style="font-family: 'Inter', sans-serif;"
                                 onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
                             News
