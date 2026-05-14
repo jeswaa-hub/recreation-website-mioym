@@ -873,7 +873,6 @@
             });
         });
     </script>
-    <livewire:chat-widget />
     <x-footer />
 </body>
 </html>

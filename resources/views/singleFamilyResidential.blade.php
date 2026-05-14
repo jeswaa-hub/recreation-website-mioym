@@ -543,7 +543,6 @@
 
     @include('components.footer')
     
-    @livewire('chat-widget')
 
     <!-- AOS JS for scroll animations -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

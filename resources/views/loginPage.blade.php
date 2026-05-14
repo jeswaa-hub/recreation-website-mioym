@@ -237,6 +237,5 @@
     </script>
 
     @livewireScripts
-    <livewire:chat-widget />
 </body>
 </html>

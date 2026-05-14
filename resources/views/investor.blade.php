@@ -441,6 +441,5 @@
 
     @include('components.footer')
 
-    @livewire('chat-widget')
 </body>
 </html>
