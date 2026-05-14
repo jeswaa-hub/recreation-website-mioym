@@ -74,7 +74,7 @@
                     <!-- Step 1 -->
                     <div class="relative bg-[#5a5a5a] rounded-xl p-4 sm:p-6 shadow-2xl flex flex-col items-center border-2 border-transparent hover:border-white transition-colors duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="100">
                         <div class="w-full aspect-video rounded-lg overflow-hidden mb-6 bg-gray-800 flex items-center justify-center">
-                            <span class="text-gray-400 text-sm font-bold uppercase tracking-wider">Image 1</span>
+                            <img src="{{ asset('img/processimg1.png') }}" alt="Process 1" class="w-full h-full object-cover">
                         </div>
                         <p class="text-white text-center text-sm sm:text-base font-light leading-relaxed px-2">
                             Our Proprietary technology identifies distressed properties throughout 42 different states selling for 60% discounts.
@@ -86,7 +86,7 @@
                     <!-- Step 2 -->
                     <div class="relative bg-[#5a5a5a] rounded-xl p-4 sm:p-6 shadow-2xl flex flex-col items-center border-2 border-transparent hover:border-white transition-colors duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="200">
                         <div class="w-full aspect-video rounded-lg overflow-hidden mb-6 bg-gray-800 flex items-center justify-center">
-                            <span class="text-gray-400 text-sm font-bold uppercase tracking-wider">Image 2</span>
+                            <img src="{{ asset('img/processimg2.png') }}" alt="Process 2" class="w-full h-full object-cover">
                         </div>
                         <p class="text-white text-center text-sm sm:text-base font-light leading-relaxed px-2">
                             We determine the potential ARV and avoid overpaying for the house.
@@ -98,7 +98,7 @@
                     <!-- Step 3 -->
                     <div class="relative bg-[#5a5a5a] rounded-xl p-4 sm:p-6 shadow-2xl flex flex-col items-center border-2 border-transparent hover:border-white transition-colors duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="300">
                         <div class="w-full aspect-video rounded-lg overflow-hidden mb-6 bg-gray-800 flex items-center justify-center">
-                            <span class="text-gray-400 text-sm font-bold uppercase tracking-wider">Image 3</span>
+                            <img src="{{ asset('img/processimg3.png') }}" alt="Process 3" class="w-full h-full object-cover">
                         </div>
                         <p class="text-white text-center text-sm sm:text-base font-light leading-relaxed px-2">
                             We add value by renovating the property increasing its market value.
@@ -116,7 +116,7 @@
                         <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[15px] border-r-[15px] border-b-[25px] border-l-transparent border-r-transparent border-b-[#5a5a5a]"></div>
                         
                         <div class="w-full aspect-video rounded-lg overflow-hidden mb-6 bg-gray-800 flex items-center justify-center">
-                            <span class="text-gray-400 text-sm font-bold uppercase tracking-wider">Image 4</span>
+                            <img src="{{ asset('img/processimg4.png') }}" alt="Process 4" class="w-full h-full object-cover">
                         </div>
                         <p class="text-white text-center text-sm sm:text-base font-light leading-relaxed px-2">
                             Upon completion of rehab, we list the property with local realtor.
@@ -129,7 +129,7 @@
                         <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[15px] border-r-[15px] border-b-[25px] border-l-transparent border-r-transparent border-b-[#5a5a5a]"></div>
                         
                         <div class="w-full aspect-video rounded-lg overflow-hidden mb-6 bg-gray-800 flex items-center justify-center">
-                            <span class="text-gray-400 text-sm font-bold uppercase tracking-wider">Image 5</span>
+                            <img src="{{ asset('img/processimg5.png') }}" alt="Process 5" class="w-full h-full object-cover">
                         </div>
                         <p class="text-white text-center text-sm sm:text-base font-light leading-relaxed px-2">
                             We look to sell the property to a first-time home buyer within a year of purchasing the property.
@@ -196,13 +196,13 @@
         <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-[#2a2a2a]">
             <div class="max-w-5xl mx-auto relative z-10" data-aos="zoom-in-up" data-aos-duration="1000">
                 <div class="w-full aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl relative border-4 border-white">
-                    <!-- YouTube iframe Placeholder -->
-                    <iframe 
-                        class="w-full h-full absolute top-0 left-0" 
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" 
+                    <!-- YouTube iframe -->
+                    <iframe class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/D-BrVcxWSb0" 
                         title="MIOYM - What we do?" 
                         frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
                         allowfullscreen>
                     </iframe>
                 </div>
@@ -228,3 +228,4 @@
     </script>
 </body>
 </html>
+

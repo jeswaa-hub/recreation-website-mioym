@@ -343,10 +343,10 @@
                         Bridging the gap to home ownership and providing 17.5% per annum returns for investor
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 hero-buttons">
-                        <a href="#" class="btn-primary inline-flex uppercase items-center justify-center px-8 py-4 bg-[#666666] text-white font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        <a href="https://mioymaffordablehomes.info/properties/" class="btn-primary inline-flex uppercase items-center justify-center px-8 py-4 bg-[#666666] text-white font-semibold rounded-lg hover:text-black hover:bg-gray-100 transition-colors duration-200" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                             Find Home
                         </a>
-                        <a href="#" class="btn-secondary inline-flex uppercase items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors duration-200" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        <a href="{{ route('investor') }}" class="btn-secondary inline-flex uppercase items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors duration-200" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                             Invest With Us
                         </a>
                     </div>
@@ -385,53 +385,59 @@
         </div>
     </section>
 
-    <!-- Search & Filter Section -->
-    <section class="py-5 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        <!-- Radial Gradient Background -->
-        <div class="absolute inset-0" style="background: radial-gradient(circle at center, #c3c3c3 0%, #5d5d5d 52%);"></div>
-            
-        <!-- Glassmorphism Container -->
-        <div class="max-w-4xl mx-auto relative z-10 fade-in">
-            <div class="text-center mb-5">
-                <h2 class="text-3xl sm:text-4xl lg:text-4xl font-bold text-white mb-2" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                    Find Your Perfect Investment Property
+    <!-- Our Partners Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden flex justify-center" style="background: #000000;">
+        <div class="w-full max-w-7xl relative z-10 mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                    Our Partners
                 </h2>
-                <p class="sr-only">Search Properties for Sale and Rent</p>
-                <p class="text-lg text-white max-w-2xl mx-auto">
-                    Buy or sell high-value homes at a price range that fits your lifestyle
+                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+                    Trusted by leading organizations and institutions in the real estate industry
                 </p>
             </div>
-            <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-4 sm:p-8 lg:p-12">
-                <!-- Search Filter Elements - Responsive -->
-                <div class="flex flex-col sm:flex-row items-stretch gap-3 sm:gap-4">
-                    <!-- Buy or Rent Dropdown -->
-                    <div class="flex-1 rounded-xl h-12 sm:h-14" style="background-color: #3A2C2C;">
-                        <select class="w-full h-full px-3 sm:px-4 bg-transparent text-white focus:outline-none focus:ring-0 border-none text-sm sm:text-base">
-                            <option value="buy" class="text-black">Buy</option>
-                            <option value="rent" class="text-black">Rent</option>
-                        </select>
-                    </div>
+            
+            <!-- Automatic Carousel with 3 Images and Fade Effect -->
+            <div class="fade-in" x-data="{
+                currentIndex: 0,
+                images: [
+                    '{{ asset('img/buildings.png') }}',
+                    '{{ asset('img/image_3.png') }}',
+                    '{{ asset('img/mioymbuilding.png') }}',
+                    '{{ asset('img/residential.jpg') }}',
+                    '{{ asset('img/sales_process.jpg') }}',
+                    '{{ asset('img/multifamliy.jpg') }}'
+                ],
+                get visibleImages() {
+                    let images = [];
+                    for (let i = 0; i < 3; i++) {
+                        images.push(this.images[(this.currentIndex + i) % this.images.length]);
+                    }
+                    return images;
+                },
+                init() {
+                    setInterval(() => {
+                        this.currentIndex = (this.currentIndex + 1) % this.images.length;
+                    }, 4000);
+                }
+            }">
+                <!-- Carousel Container with Fade Effect -->
+                <div class="relative rounded-2xl overflow-hidden">
+                    <!-- Left Fade -->
+                    <div class="absolute left-0 top-0 bottom-0 w-20 lg:w-32 z-10 pointer-events-none" style="background: linear-gradient(to right, #666666, transparent);"></div>
                     
-                    <!-- Location Input -->
-                    <div class="flex-1 rounded-xl h-12 sm:h-14 flex items-center" style="background-color: #3A2C2C;">
-                        <input type="text" placeholder="City, State, ZIP" class="w-full h-full px-3 sm:px-4 bg-transparent text-white placeholder-white text-sm sm:text-base focus:outline-none focus:ring-0 border-none">
-                    </div>
+                    <!-- Right Fade -->
+                    <div class="absolute right-0 top-0 bottom-0 w-20 lg:w-32 z-10 pointer-events-none" style="background: linear-gradient(to left, #000000, transparent);"></div>
                     
-                    <!-- Price Dropdown -->
-                    <div class="flex-1 rounded-xl h-12 sm:h-14" style="background-color: #3A2C2C;">
-                        <select class="w-full h-full px-3 sm:px-4 bg-transparent text-white cursor-pointer appearance-none text-sm sm:text-base focus:outline-none focus:ring-0 border-none">
-                            <option value="" class="text-black">Any Price</option>
-                            <option value="100-300" class="text-black">$100k - $300k</option>
-                            <option value="300-500" class="text-black">$300k - $500k</option>
-                            <option value="500-1000" class="text-black">$500k - $1M</option>
-                            <option value="1000+" class="text-black">$1M+</option>
-                        </select>
+                    <!-- Images Container -->
+                    <div class="flex gap-4">
+                        <template x-for="(img, idx) in visibleImages" :key="idx">
+                            <div class="flex-1 h-[100px] lg:h-[140px] rounded-xl overflow-hidden transition-all duration-500 flex items-center justify-center bg-white/5" :class="idx === 1 ? 'lg:scale-105' : ''">
+                                <img :src="img" alt="Partner" class="w-full h-full object-contain object-center">
+                            </div>
+                        </template>
                     </div>
-                    
-                    <!-- Search Button with Icon -->
-                    <a href="#" class="btn-primary flex-none inline-flex items-center justify-center w-full sm:w-12 h-12 sm:h-14 rounded-xl transition-colors duration-200 text-sm sm:text-base cursor-pointer" style="background-color: #3A2C2C; color: white;">
-                        <i class="fas fa-search"></i>
-                    </a>
                 </div>
             </div>
         </div>
@@ -636,63 +642,7 @@
         </div>
     </section>
 
-    <!-- Our Partners Section -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden flex justify-center" style="background: #000000;">
-        <div class="w-full max-w-7xl relative z-10 mx-auto">
-            <!-- Section Header -->
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                    Our Partners
-                </h2>
-                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
-                    Trusted by leading organizations and institutions in the real estate industry
-                </p>
-            </div>
-            
-            <!-- Automatic Carousel with 3 Images and Fade Effect -->
-            <div class="fade-in" x-data="{
-                currentIndex: 0,
-                images: [
-                    '{{ asset('img/buildings.png') }}',
-                    '{{ asset('img/image_3.png') }}',
-                    '{{ asset('img/mioymbuilding.png') }}',
-                    '{{ asset('img/residential.jpg') }}',
-                    '{{ asset('img/sales_process.jpg') }}',
-                    '{{ asset('img/multifamliy.jpg') }}'
-                ],
-                get visibleImages() {
-                    let images = [];
-                    for (let i = 0; i < 3; i++) {
-                        images.push(this.images[(this.currentIndex + i) % this.images.length]);
-                    }
-                    return images;
-                },
-                init() {
-                    setInterval(() => {
-                        this.currentIndex = (this.currentIndex + 1) % this.images.length;
-                    }, 4000);
-                }
-            }">
-                <!-- Carousel Container with Fade Effect -->
-                <div class="relative rounded-2xl overflow-hidden">
-                    <!-- Left Fade -->
-                    <div class="absolute left-0 top-0 bottom-0 w-20 lg:w-32 z-10 pointer-events-none" style="background: linear-gradient(to right, #666666, transparent);"></div>
-                    
-                    <!-- Right Fade -->
-                    <div class="absolute right-0 top-0 bottom-0 w-20 lg:w-32 z-10 pointer-events-none" style="background: linear-gradient(to left, #000000, transparent);"></div>
-                    
-                    <!-- Images Container -->
-                    <div class="flex gap-4">
-                        <template x-for="(img, idx) in visibleImages" :key="idx">
-                            <div class="flex-1 h-[100px] lg:h-[140px] rounded-xl overflow-hidden transition-all duration-500 flex items-center justify-center bg-white/5" :class="idx === 1 ? 'lg:scale-105' : ''">
-                                <img :src="img" alt="Partner" class="w-full h-full object-contain object-center">
-                            </div>
-                        </template>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Testimonials Section -->
     <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden" style="background: linear-gradient(to bottom, #000000 0%, #1a1a1a 100%);">
@@ -706,47 +656,113 @@
             </div>
             
             <!-- Testimonial Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-in">
-                <!-- Card 1 -->
-                <div class="rounded-2xl p-6 border border-gray-700/50 hover:border-gray-600 transition-colors duration-300 cursor-pointer" style="background-color: #282525;">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-quote-left text-white text-xl mr-3"></i>
-                    </div>
-                    <p class="text-white text-sm leading-relaxed mb-6">
-                        "Investing with MIOYM has been a life-changing experience. The returns have exceeded my expectations, and the team is incredibly transparent and supportive throughout the entire process."
-                    </p>
-                    <div class="border-t border-gray-700/50 pt-4">
-                        <h4 class="text-white font-semibold">Michael Thompson</h4>
-                        <span class="text-white text-xs uppercase tracking-wider">Investor</span>
-                    </div>
-                </div>
+            <div x-data="{
+                activeSlide: 0,
+                visibleSlides: 1,
+                interval: null,
+                get maxSlide() { return Math.max(0, this.testimonials.length - this.visibleSlides) },
+                testimonials: [
+                    {
+                        name: 'Carol Lerner',
+                        role: 'INVESTOR',
+                        text: 'I was filled with a sense of both enthusiasm and awe when I embarked on my investment journey with MIOYM. Right from the very beginning, I was warmly introduced to my property located in Pittsburgh. It was an incredible experience as I was taken through the process of rehabilitating a new home, making me feel like a true contributor to its development.\n\nIn just 12 months, I not only received my initial capital back but also enjoyed a satisfying annual return on my investment. What made this investment even more special was knowing that I was actively contributing to the creation of a new community for a deserving homeowner. MIOYM is not just a secure investment option; it\'s an investment with a compassionate heart at its core.'
+                    },
+                    {
+                        name: 'Rachel Goodman',
+                        role: 'INVESTOR',
+                        text: 'Utilizing my IRA funds for investment became a reality, thanks to the expert guidance provided by the MIYOM Equities team through the Entrust platform. The entire process unfolded smoothly and effortlessly. I take immense satisfaction in both contributing to the creation of new homes and enjoying returns that exceed the market average.'
+                    },
+                    {
+                        name: 'Lorrie, Cincinnati, OH',
+                        role: 'INVESTOR',
+                        text: 'In today’s ever-changing economy, deciding how to invest for your future can be overwhelming. What to believe, who to trust, and how does it work were questions I asked myself. This was my future and my parent’s hard-earned wages that I was entrusting to MIOYM. They provided an overview of their investment strategy in a no-pressure conversation. They encouraged questions and welcomed my taking the contract for legal review. I know it seems too good to have a dependable, high-rate return annually, but I am living proof! Along the way, MIOYM’s account managers provided regular updates on my investment and answered my concerns in real time. Real estate investment remains one of the safest and most lucrative strategies for growing your personal wealth story.'
+                    },
+                    {
+                        name: 'Anthony Jacobs',
+                        role: 'HOMEOWNER',
+                        text: 'My experience with MIOYM was THE BEST! With everybody involved, Marc Cox and Regina Jones were the most helpful in every way. Everyone went above and beyond the call of duty. My wife and I entered a RENT TO BUY program. Our credit could have been better, so they had a credit repair guy named Alex, who was very helpful. However, there were many bumps in the road that were our own fault. Marc and Regina could\'ve dropped us at any point during our program, but they didn\'t. THEY BUSTED THEMSELVES TO GET US THE HOUSE!!!!! We are forever grateful and will NEVER forget what they did for us. YOU ARE THE BEST!!!!!'
+                    },
+                    {
+                        name: 'Jennifer Silva',
+                        role: 'HOMEOWNER',
+                        text: 'I took a leap of faith three years ago today and entrusted Marc Cox and his team to make our dreams come true. He has since become my brother for all eternity and after. We fought, bickered, and fought some more, but he kept his word and helped us get a home. Today, we are so grateful to this angel of ours and love him deeply!!! All the struggles, losses, pain, sweat, and tears were worth what we have today. Our Home!! We love you, Guardian Angel, and forever will. Here\'s to more years of memories in our humble home.'
+                    },
+                    {
+                        name: 'David Miller',
+                        role: 'HOMEOWNER',
+                        text: 'Marc and Diaisha, thanks for all your help getting us into our new home. It wouldn\'t have been possible without you. There were a few road bumps along the way, but somehow, Marc managed to keep things going forward when others turned us away. We couldn\'t be more appreciative. We will always be your best friends from Troy, NY, and we recommend your services to anyone looking for a home to call their own.'
+                    },
+                    {
+                        name: 'Marlyene Alves Araujo',
+                        role: 'HOMEOWNER',
+                        text: 'We are delighted with our new home. Thanks so much, guys, for the help. With our first home.'
+                    }
+                ],
+                updateVisibleSlides() {
+                    if (window.innerWidth >= 1024) {
+                        this.visibleSlides = 3;
+                    } else if (window.innerWidth >= 768) {
+                        this.visibleSlides = 2;
+                    } else {
+                        this.visibleSlides = 1;
+                    }
+                    if (this.activeSlide > this.maxSlide) {
+                        this.activeSlide = Math.max(0, this.maxSlide);
+                    }
+                },
+                startInterval() {
+                    if (this.interval) clearInterval(this.interval);
+                    this.interval = setInterval(() => {
+                        this.activeSlide = this.activeSlide >= this.maxSlide ? 0 : this.activeSlide + 1;
+                    }, 5000);
+                },
+                goToSlide(index) {
+                    this.activeSlide = index;
+                    this.startInterval();
+                },
+                init() {
+                    this.updateVisibleSlides();
+                    window.addEventListener('resize', () => this.updateVisibleSlides());
+                    this.startInterval();
+                }
+            }" class="relative w-full overflow-hidden fade-in pb-4">
                 
-                <!-- Card 2 -->
-                <div class="rounded-2xl p-6 border border-gray-700/50 hover:border-gray-600 transition-colors duration-300 cursor-pointer" style="background-color: #282525;">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-quote-left text-white text-xl mr-3"></i>
-                    </div>
-                    <p class="text-white text-sm leading-relaxed mb-6">
-                        "Thanks to MIOYM's First-Time Homeowner Program, I was able to purchase my dream home despite past credit challenges. Their guidance made the impossible possible."
-                    </p>
-                    <div class="border-t border-gray-700/50 pt-4">
-                        <h4 class="text-white font-semibold">Sarah Rodriguez</h4>
-                        <span class="text-white text-xs uppercase tracking-wider">Homeowner</span>
-                    </div>
+                <div class="flex transition-transform duration-500 ease-in-out gap-6"
+                     :style="`transform: translateX(calc(-${activeSlide * (100 / visibleSlides)}% - ${activeSlide * (24 / visibleSlides)}px))`">
+                    
+                    <template x-for="(item, index) in testimonials" :key="index">
+                        <div class="flex-none w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333333%-16px)]">
+                            <div class="flex flex-col h-full rounded-2xl p-6 border border-gray-700/50 hover:border-gray-600 transition-colors duration-300 cursor-pointer" style="background-color: #282525;">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-quote-left text-white text-xl mr-3"></i>
+                                </div>
+                                <p class="text-white text-justify text-sm leading-relaxed mb-6 flex-grow whitespace-pre-wrap">"<span x-text="item.text"></span>"</p>
+                                <div class="border-t border-gray-700/50 pt-4 flex justify-between items-center mt-auto">
+                                    <div>
+                                        <h4 class="text-white font-semibold" x-text="item.name"></h4>
+                                        <span class="text-white text-xs uppercase tracking-wider" x-text="item.role"></span>
+                                    </div>
+                                    <div class="flex text-yellow-500 text-sm gap-1">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
                 </div>
-                
-                <!-- Card 3 -->
-                <div class="rounded-2xl p-6 border border-gray-700/50 hover:border-gray-600 transition-colors duration-300 cursor-pointer" style="background-color: #282525;">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-quote-left text-white text-xl mr-3"></i>
-                    </div>
-                    <p class="text-white text-sm leading-relaxed mb-6">
-                        "The level of professionalism and communication from MIOYM is unmatched. I've invested in multiple properties and each experience has been seamless and profitable."
-                    </p>
-                    <div class="border-t border-gray-700/50 pt-4">
-                        <h4 class="text-white font-semibold">David Chen</h4>
-                        <span class="text-white text-xs uppercase tracking-wider">Investor</span>
-                    </div>
+
+                <!-- Dots -->
+                <div class="flex justify-center mt-8 gap-2">
+                    <template x-for="i in (maxSlide + 1)">
+                        <button @click="goToSlide(i - 1)" 
+                                class="w-3 h-3 rounded-full transition-colors duration-300"
+                                :class="activeSlide === (i - 1) ? 'bg-amber-500' : 'bg-gray-600'"
+                                aria-label="Go to slide"></button>
+                    </template>
                 </div>
             </div>
         </div>
@@ -772,34 +788,60 @@
                 
                 <!-- Right Side - Contact Form -->
                 <div class="fade-in">
-                    <form class="bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/10 shadow-2xl">
+                    <!-- Display Success Message if any -->
+                    @if(session('success'))
+                        <div class="mb-6 p-4 bg-green-500/20 border border-green-500/50 rounded-lg text-green-200 text-center">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                    <!-- Display Validation Errors -->
+                    @if($errors->any())
+                        <div class="mb-6 p-4 bg-red-500/20 border border-red-500/50 rounded-lg text-red-200">
+                            <ul class="list-disc list-inside">
+                                @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <form action="{{ route('contact.submit') }}" method="POST" class="bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/10 shadow-2xl">
+                        @csrf
+                        <!-- HONEYPOT FIELD: Hidden from real users, bots will fill this out -->
+                        <input type="text" name="website_url" class="hidden" style="display:none !important" autocomplete="off" tabindex="-1">
+                        
                         <div class="grid grid-cols-1 gap-4 mb-4">
-                            <input type="text" placeholder="Name" class="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-400 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:bg-white/20 transition-all">
-                            <input type="email" placeholder="Email Address" class="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-400 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:bg-white/20 transition-all">
-                            <input type="tel" placeholder="Mobile Number" class="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-400 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:bg-white/20 transition-all">
-                            <textarea placeholder="Message" rows="4" class="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-400 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:bg-white/20 transition-all resize-none"></textarea>
+                            <input type="text" name="name" placeholder="John Doe" required class="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-400 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:bg-white/20 transition-all" value="{{ old('name') }}">
+                            <input type="email" name="email" placeholder="john.doe@example.com" required class="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-400 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:bg-white/20 transition-all" value="{{ old('email') }}">
+                            <input type="tel" name="phone" placeholder="Mobile Number (+1 (xxx) xxx-xxxx)" required maxlength="17" oninput="formatUSPhone(this)" class="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-400 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:bg-white/20 transition-all" value="{{ old('phone') }}">
+                            <textarea name="message" placeholder="Message" rows="4" required class="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-400 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:bg-white/20 transition-all resize-none">{{ old('message') }}</textarea>
                         </div>
                         
                         <!-- Checkboxes -->
                         <div class="space-y-3 mb-6">
                             <label class="flex items-start gap-3 cursor-pointer">
-                                <input type="checkbox" class="w-4 h-4 mt-1 rounded border-white/30 bg-white/10 text-amber-500 focus:ring-amber-500 focus:ring-offset-0 cursor-pointer">
+                                <input type="checkbox" name="consent_marketing" required class="w-4 h-4 mt-1 rounded border-white/30 bg-white/10 text-amber-500 focus:ring-amber-500 focus:ring-offset-0 cursor-pointer" {{ old('consent_marketing') ? 'checked' : '' }}>
                                 <span class="text-gray-300 text-xs leading-relaxed">By entering your telephone number and email you are providing consent to receive marketing communications including emails and phone calls from Mioym Commercial Capital. Consent is not a condition of purchase. Message and data rates may apply. Reply STOP to stop, HELP for help. Note: Messages will involve real estate investment opportunities and info regarding our affordable homes program.</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="checkbox" class="w-4 h-4 rounded border-white/30 bg-white/10 text-amber-500 focus:ring-amber-500 focus:ring-offset-0 cursor-pointer">
+                                <input type="checkbox" name="sms_consent" required class="w-4 h-4 rounded border-white/30 bg-white/10 text-amber-500 focus:ring-amber-500 focus:ring-offset-0 cursor-pointer" {{ old('sms_consent') ? 'checked' : '' }}>
                                 <span class="text-gray-300 text-sm">I want to receive SMS texts about products & services.</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="checkbox" class="w-4 h-4 rounded border-white/30 bg-white/10 text-amber-500 focus:ring-amber-500 focus:ring-offset-0 cursor-pointer">
+                                <input type="checkbox" name="terms" required class="w-4 h-4 rounded border-white/30 bg-white/10 text-amber-500 focus:ring-amber-500 focus:ring-offset-0 cursor-pointer" {{ old('terms') ? 'checked' : '' }}>
                                 <span class="text-gray-300 text-sm">I accept terms & conditions.</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="checkbox" class="w-4 h-4 rounded border-white/30 bg-white/10 text-amber-500 focus:ring-amber-500 focus:ring-offset-0 cursor-pointer">
+                                <input type="checkbox" name="email_consent" required class="w-4 h-4 rounded border-white/30 bg-white/10 text-amber-500 focus:ring-amber-500 focus:ring-offset-0 cursor-pointer" {{ old('email_consent') ? 'checked' : '' }}>
                                 <span class="text-gray-300 text-sm">I want emails about products & services.</span>
                             </label>
                         </div>
                         
+                        <!-- Google reCAPTCHA v2 Widget -->
+                        <div class="mb-6 flex justify-center lg:justify-start">
+                            <div class="g-recaptcha" data-sitekey="{{ env('RECAPTCHA_SITE_KEY', 'your-site-key-here') }}"></div>
+                        </div>
+
                         <!-- Submit Button -->
                         <button type="submit" class="w-full py-4 text-white font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer shadow-lg" style="background-color: #171313;">
                             <span>Send Message</span>
@@ -812,7 +854,40 @@
     </section>
 
     @livewireScripts
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
+        // US Phone Number Formatter
+        function formatUSPhone(input) {
+            let value = input.value.replace(/\D/g, ''); // Remove non-digits
+            
+            // Normalize: If user pastes number starting with 1, remove the 1 temporarily
+            if (value.startsWith('1')) {
+                value = value.substring(1);
+            }
+            
+            let formatted = '+1 ';
+            
+            // Ensure the first digit (area code) is between 2 and 9
+            if (value.length > 0) {
+                if (value[0] === '0' || value[0] === '1') {
+                    value = value.substring(1); // Drop invalid first digit
+                }
+            }
+
+            if (value.length > 0) {
+                formatted += '(' + value.substring(0, 3);
+            }
+            if (value.length >= 4) {
+                formatted += ') ' + value.substring(3, 6);
+            }
+            if (value.length >= 7) {
+                formatted += '-' + value.substring(6, 10);
+            }
+            
+            // Allow backspacing properly by not prepending +1 if input is empty
+            input.value = value.length === 0 ? '' : formatted;
+        }
+
         // Fade In on Scroll Animation
         const observerOptions = {
             root: null,

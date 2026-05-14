@@ -1,40 +1,40 @@
 @php
     $firmDropdownItems = [
-        'About Us' => '/the-firm/about-us',
-        'Team' => '/the-firm/team',
-        'Investors' => '/the-firm/investor',
+        'About Us' => route('aboutUs'),
+        'Team' => route('team'),
+        'Investors' => route('investor'),
     ];
     
     $solutionsDropdown = [
-        'Single Family Residential' => '/solutions/single-family-residential',
-        'Deal Finder' => '#',
-        'Process' => '/solutions/process',
-        'Commercial Properties' => '/solutions/commercial-property',
-        'MIOYM Reality Partners' => '/solutions/mioym-realty-partners',
+        'Single Family Residential' => route('singleFamilyResidential'),
+        'Deal Finder' => 'https://deal-finder-lake.vercel.app/login',
+        'Process' => route('process'),
+        'Commercial Properties' => route('commercialProperties'),
+        'MIOYM Reality Partners' => route('mioymRealtyPartners'),
     ];
     
     $assetManagementDropdown = [
-        'Affordable Home Program' => '/asset-management/affordable-home-program',
-        'Strategic Property Preservation' => '/asset-management/strategic-property-preservation',
-        'National Foreclosure Prevention' => '/asset-management/national-foreclosure-prevention',
-        'Cash For Homes' => '#',
+        'Affordable Home Program' => route('affordableHomeProgram'),
+        'Strategic Property Preservation' => route('strategicPropertyPreservation'),
+        'National Foreclosure Prevention' => route('nationalForeclosurePrevention'),
+        'Cash For Homes' => 'https://cashforhomes.mioym.com/',
     ];
     
     $lendingDropdown = [
-        'MIOYM Commercial Capital' => '#',
-        'MIOYM Joint Venture' => '#',
+        'MIOYM Commercial Capital' => 'https://mioymcommercialcapital.com/',
+        'MIOYM Joint Venture' => route('mioymJointVenture'),
     ];
     
     $newsDropdown = [
-        'Blogs' => '/news/blogs',
-        'Testimonials' => '/news/testimonials',
+        'Blogs' => route('blogs'),
+        'Testimonials' => route('testimonials'),
     ];
 @endphp
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <nav class="fixed top-0 left-0 right-0 z-50 bg-[#201B1B] border-b border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,7 +66,7 @@
                         <div class="dropdown-menu hidden absolute top-full left-0 mt-2 w-48 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2" onmouseenter="this.parentElement.dataset.open='true'" onmouseleave="this.parentElement.dataset.open='false'; setTimeout(() => { if(this.parentElement.dataset.open === 'false') this.classList.add('hidden') }, 200)">
                             @foreach($firmDropdownItems as $label => $href)
                                 <a href="{{ $href }}" 
-                                   class="block px-4 py-2 text-sm {{ request()->is(ltrim($href, '/')) ? 'text-white bg-white/10 font-semibold' : 'text-gray-300 hover:text-white hover:bg-white/5' }} transition-colors"
+                                   class="block px-4 py-2 text-sm {{ request()->url() == $href ? 'text-white bg-white/10 font-semibold' : 'text-gray-300 hover:text-white hover:bg-white/5' }} transition-colors"
                                    style="font-family: 'Inter', sans-serif;">
                                     {{ $label }}
                                 </a>
@@ -158,7 +158,7 @@
 
             <!-- Investor Portal Button -->
             <div class="hidden lg:block">
-                <a href="#" 
+                <a href="https://mioym-equities-be48b.web.app/login" 
                    class="inline-flex items-center uppercase px-5 py-2.5 bg-[#524949] text-white text-sm font-semibold rounded-lg hover:text-black hover:bg-gray-100 transition-colors duration-200"
                    style="font-family: 'Plus Jakarta Sans', sans-serif;">
                     Investor Portal

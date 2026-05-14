@@ -83,69 +83,237 @@
             <div class="max-w-7xl mx-auto relative z-10">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
                     
-                    <!-- Team Member 1 -->
+                    <!-- Team Member 1 - Marc Cox -->
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
-                        <!-- Image Placeholder -->
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <span class="absolute text-white/30 text-sm uppercase tracking-widest">Image Placeholder</span>
+                            <img src="{{ asset('img/marc.jpg') }}" alt="MARC COX" class="w-full h-full object-cover">
                         </div>
-                        
-                        <!-- Gradient Overlay for Text Readability -->
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                        
-                        <!-- Text Content -->
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
-                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                                MARC COX
-                            </h3>
-                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">
-                                CEO & FOUNDER MIOYM GROUP
-                            </p>
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">MARC COX</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">CEO & FOUNDER MIOYM GROUP</p>
                         </div>
                     </div>
 
-                    <!-- Team Member 2 -->
+                    <!-- Team Member 2 - Robert Costomiris -->
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
-                        <!-- Image Placeholder -->
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <span class="absolute text-white/30 text-sm uppercase tracking-widest">Image Placeholder</span>
+                            <img src="{{ asset('img/rob.jpg') }}" alt="ROBERT COSTOMIRIS" class="w-full h-full object-cover">
                         </div>
-                        
-                        <!-- Gradient Overlay for Text Readability -->
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                        
-                        <!-- Text Content -->
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
-                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                                ROBERT COSTOMIRIS
-                            </h3>
-                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">
-                                PRESIDENT MIOYM EQUITIES
-                            </p>
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">ROBERT COSTOMIRIS</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">PRESIDENT MIOYM EQUITIES</p>
                         </div>
                     </div>
 
-                    <!-- Team Member 3 -->
+                    <!-- Team Member 3 - EA Kratzman -->
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
-                        <!-- Image Placeholder -->
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <span class="absolute text-white/30 text-sm uppercase tracking-widest">Image Placeholder</span>
+                            <img src="{{ asset('img/kratzman.jpg') }}" alt="EA KRATZMAN" class="w-full h-full object-cover">
                         </div>
-                        
-                        <!-- Gradient Overlay for Text Readability -->
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                        
-                        <!-- Text Content -->
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
-                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                                EA KRATZMAN
-                            </h3>
-                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">
-                                VP INVESTOR RELATIONS
-                            </p>
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">EA KRATZMAN</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">VP INVESTOR RELATIONS</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 4 - Marcos Lofredo -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/lofredo.png') }}" alt="MARCOS LOFREDO" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">MARCOS LOFfREDO</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">DIRECTOR OF CONSTRUCTION</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 5 - LUIS Blanco -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/blanco.png') }}" alt="LUIS BLANCO" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">LUIS BLANCO</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">VENDOR MANAGEMENT</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 6 - PAUL Carter -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/carter.webp') }}" alt="PAUL CARTER" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">PAUL CARTER</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">GROUND UP DEVELOPMENT</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 7 - Jason StrohlI -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/jason.png') }}" alt="JASON STROHLI" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">JASON STROHLI</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">MIOYM REALTY PARTNERS</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 8 - Steve ANASTAS -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/steve.png') }}" alt="STEVE ANASTAS" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">STEVE ANASTAS</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">VP BUSINESS DEVELOMENT</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 9 - Dariusz Corbey -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/corbey.webp') }}" alt="DARIUSZ CORBEY" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">DARIUSZ CORBEY</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">Investments Business Development</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 10 - Nicole Williams -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/nicole.webp') }}" alt="NICOLE WILLIAMS" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">NICOLE WILLIAMS</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">ASSET MANAGER</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 11 - Kimberly Williams -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/kimberly.jpg') }}" alt="KIMBERLY WILLIAMS" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">KIMBERLY WILLIAMS</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">Single Family Acquisition Manager</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 12 - Connie Biaggi -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/connie.png') }}" alt="CONNIE BIAGGI" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">CONNIE BIAGGI</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">EXECUTIVE ADMINISTRATOR</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 13 - Thomas Gage -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/thomas.png') }}" alt="THOMAS GAGE" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">THOMAS GAGE</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">COMPLIANCE OFFICER</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 14 - Apoorv Bansal -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/bansal.webp') }}" alt="APOORV BANSAL" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">APOORV BANSAL</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">ANALYST/ CAPITAL MARKETS</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 15 - Irwin Boris -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/boris.png') }}" alt="IRWIN BORIS" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">IRWIN BORIS</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">CHIEF INVESTMENT OFFICER MULTIFAMILY</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 16 - Remi Okoli -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/remi.webp') }}" alt="REMI OKOLI" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">REMI OKOLI</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">DIRECTOR OF MARKETING</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 17 - Tyevon Jefferson -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/jeff.webp') }}" alt="TYEVON JEFFERSON" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">TYEVON JEFFERSON</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">TRADE DESK</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 18 - Gabriel Barragan -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black">
+                            <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
+                            <img src="{{ asset('img/gab.webp') }}" alt="GABRIEL BARRAGAN" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                            <h3 class="text-white text-xl lg:text-2xl font-bold tracking-wide mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">GABRIEL BARRAGAN</h3>
+                            <p class="text-gray-300 text-xs lg:text-sm font-medium tracking-wider uppercase">MIOYM COMMERCIAL CAPITAL</p>
                         </div>
                     </div>
 
@@ -157,3 +325,4 @@
     @include('components.footer')
 </body>
 </html>
+

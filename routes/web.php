@@ -1,7 +1,11 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
+
+// Contact Form Submit with Rate Limiting (3 requests per minute)
+Route::post('/contact/submit', [ContactController::class, 'submit'])->middleware('throttle:3,1')->name('contact.submit');
 
 // Landing Page
 Route::get('/', function () { return view('landingPage');})->name('landing');
@@ -22,6 +26,11 @@ Route::get('/solutions/commercial-property', function () { return view('commerci
 // Deal Finder SubDomain nila
 // Mioym Realty Partners
 Route::get('/solutions/mioym-realty-partners', function () { return view('mioymRealtyPartners');})->name('mioymRealtyPartners');
+// Voucher Assistance Program
+Route::get('/solutions/mioym-realty-partners/voucher-assistance-program', function () { return view('voucherAssistanceProgram');})->name('voucherAssistanceProgram');
+//Join Mioym Reality Partners
+Route::get('/solutions/mioym-realty-partners/join-mioym-reality-partners', function () { return view('joinMioymRealityPartners');})->name('joinMioymRealityPartners');
+
 
 // Affordable Home Program  
 Route::get('/asset-management/affordable-home-program', function () { return view('affordableHomeProgram');})->name('affordableHomeProgram');
@@ -31,10 +40,10 @@ Route::get('/asset-management/strategic-property-preservation', function () { re
 Route::get('/asset-management/national-foreclosure-prevention', function () { return view('nationalForeclosurePrevention');})->name('nationalForeclosurePrevention');
 // Cash For Homes ay SubDomain nila
 
-// Lending Page naman is SubDomain din nila
+// Mioym Joint Venture
+Route::get('/lending/mioym-joint-venture', function () { return view('mioymJointVenture');})->name('mioymJointVenture');
 
 // News (Blogs and Testimonials)
 Route::get('/news/blogs', function () { return view('blogs');})->name('blogs');
 Route::get('/news/testimonials', function () { return view('testimonials');})->name('testimonials');
-// Login
-Route::get('/login', [LoginController::class, 'LoginView'])->name('login');
+

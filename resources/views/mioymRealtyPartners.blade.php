@@ -48,7 +48,7 @@
     
     <main class="pt-16 lg:pt-20">
         <!-- Hero Banner Section -->
-        <section class="relative w-full overflow-hidden bg-black flex items-center min-h-[300px] lg:min-h-[400px]">
+        <section class="relative w-full overflow-hidden bg-black flex items-center min-h-[200px] lg:min-h-[300px]">
             <!-- Abstract Background Image -->
             <div class="absolute inset-0 z-0">
                 <img src="{{ asset('img/bgAboutUs.png') }}" alt="Background Texture" class="w-full h-full object-cover opacity-60">
@@ -237,3 +237,4 @@
     </script>
 </body>
 </html>
+

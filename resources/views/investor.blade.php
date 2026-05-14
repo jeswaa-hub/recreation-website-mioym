@@ -57,50 +57,158 @@
         <section class="px-4 sm:px-6 lg:px-8 py-16 lg:py-20" style="background: linear-gradient(to bottom, #0b0b0c 0%, #18181b 100%);">
             <div class="max-w-6xl mx-auto">
                 <!-- Slideshow Container -->
-                <div x-data="{ currentSlide: 1, totalSlides: 3 }" class="relative w-full aspect-[16/9] md:aspect-[21/9] bg-[#1a1a1a] rounded-lg overflow-hidden shadow-2xl">
+                <div x-data="{ 
+                        currentSlide: 1, 
+                        totalSlides: 9,
+                        interval: null,
+                        startInterval() {
+                            if (this.interval) clearInterval(this.interval);
+                            this.interval = setInterval(() => {
+                                this.currentSlide = this.currentSlide === this.totalSlides ? 1 : this.currentSlide + 1;
+                            }, 5000);
+                        },
+                        init() {
+                            this.startInterval();
+                        }
+                    }" 
+                    @mouseenter="if(interval) clearInterval(interval)"
+                    @mouseleave="startInterval()"
+                    class="relative w-full aspect-video bg-[#1a1a1a] rounded-lg overflow-hidden shadow-2xl group">
                     
                     <!-- Slides -->
                     <div class="relative w-full h-full">
                         <!-- Slide 1 (Active) -->
                         <div x-show="currentSlide === 1" 
                              x-transition:enter="transition ease-out duration-500"
-                             x-transition:enter-start="opacity-0 transform translate-x-8"
-                             x-transition:enter-end="opacity-100 transform translate-x-0"
+                             x-transition:enter-start="opacity-0"
+                             x-transition:enter-end="opacity-100"
                              x-transition:leave="transition ease-in duration-300"
-                             x-transition:leave-start="opacity-100 transform translate-x-0"
-                             x-transition:leave-end="opacity-0 transform -translate-x-8"
+                             x-transition:leave-start="opacity-100"
+                             x-transition:leave-end="opacity-0"
                              class="absolute inset-0 w-full h-full">
                             <!-- Image Background Placeholder -->
                             <div class="absolute inset-0 placeholder-surface flex items-center justify-center">
-                                <span class="placeholder-label text-sm text-white/50">Cityscape Image Placeholder</span>
+                                <img src="{{ asset('img/investorimg1.png') }}" alt="Investor 1" class="w-full h-full object-contain rounded-lg">
                             </div>
-                            
                         </div>
 
-                        <!-- Slide 2 (Placeholder) -->
-                        <div x-show="currentSlide === 2" style="display: none;" class="absolute inset-0 w-full h-full bg-[#2a2a2a] flex items-center justify-center">
-                            <span class="text-white text-2xl font-bold">Slide 2 Placeholder</span>
-                            <div class="absolute top-6 right-12 bg-[#d9663b] text-white font-bold px-4 py-2">02</div>
+                        <!-- Slide 2 -->
+                        <div x-show="currentSlide === 2" 
+                             x-transition:enter="transition ease-out duration-500"
+                             x-transition:enter-start="opacity-0"
+                             x-transition:enter-end="opacity-100"
+                             x-transition:leave="transition ease-in duration-300"
+                             x-transition:leave-start="opacity-100"
+                             x-transition:leave-end="opacity-0"
+                             style="display: none;" class="absolute inset-0 w-full h-full bg-[#2a2a2a] flex items-center justify-center">
+                            <img src="{{ asset('img/investorimg2.png') }}" alt="Investor 2" class="w-full h-full object-contain rounded-lg">
                         </div>
 
-                        <!-- Slide 3 (Placeholder) -->
-                        <div x-show="currentSlide === 3" style="display: none;" class="absolute inset-0 w-full h-full bg-[#1a1a1a] flex items-center justify-center">
-                            <span class="text-white text-2xl font-bold">Slide 3 Placeholder</span>
-                            <div class="absolute top-6 right-12 bg-[#d9663b] text-white font-bold px-4 py-2">03</div>
+                        <!-- Slide 3 -->
+                        <div x-show="currentSlide === 3" 
+                             x-transition:enter="transition ease-out duration-500"
+                             x-transition:enter-start="opacity-0"
+                             x-transition:enter-end="opacity-100"
+                             x-transition:leave="transition ease-in duration-300"
+                             x-transition:leave-start="opacity-100"
+                             x-transition:leave-end="opacity-0"
+                             style="display: none;" class="absolute inset-0 w-full h-full bg-[#1a1a1a] flex items-center justify-center">
+                            <img src="{{ asset('img/investorimg3.png') }}" alt="Investor 3" class="w-full h-full object-contain rounded-lg">
+                        </div>
+                        
+                        <!-- Slide 4 -->
+                        <div x-show="currentSlide === 4" 
+                             x-transition:enter="transition ease-out duration-500"
+                             x-transition:enter-start="opacity-0"
+                             x-transition:enter-end="opacity-100"
+                             x-transition:leave="transition ease-in duration-300"
+                             x-transition:leave-start="opacity-100"
+                             x-transition:leave-end="opacity-0"
+                             style="display: none;" class="absolute inset-0 w-full h-full bg-[#2a2a2a] flex items-center justify-center">
+                            <img src="{{ asset('img/investorimg4.png') }}" alt="Investor 4" class="w-full h-full object-contain rounded-lg">
+                        </div>
+                        
+                        <!-- Slide 5 -->
+                        <div x-show="currentSlide === 5" 
+                             x-transition:enter="transition ease-out duration-500"
+                             x-transition:enter-start="opacity-0"
+                             x-transition:enter-end="opacity-100"
+                             x-transition:leave="transition ease-in duration-300"
+                             x-transition:leave-start="opacity-100"
+                             x-transition:leave-end="opacity-0"
+                             style="display: none;" class="absolute inset-0 w-full h-full bg-[#1a1a1a] flex items-center justify-center">
+                            <img src="{{ asset('img/investorimg5.png') }}" alt="Investor 5" class="w-full h-full object-contain rounded-lg">
+                        </div>
+                        
+                        <!-- Slide 6 -->
+                        <div x-show="currentSlide === 6" 
+                             x-transition:enter="transition ease-out duration-500"
+                             x-transition:enter-start="opacity-0"
+                             x-transition:enter-end="opacity-100"
+                             x-transition:leave="transition ease-in duration-300"
+                             x-transition:leave-start="opacity-100"
+                             x-transition:leave-end="opacity-0"
+                             style="display: none;" class="absolute inset-0 w-full h-full bg-[#2a2a2a] flex items-center justify-center">
+                            <img src="{{ asset('img/investorimg6.png') }}" alt="Investor 6" class="w-full h-full object-contain rounded-lg">
+                        </div>
+                        
+                        <!-- Slide 7 -->
+                        <div x-show="currentSlide === 7" 
+                             x-transition:enter="transition ease-out duration-500"
+                             x-transition:enter-start="opacity-0"
+                             x-transition:enter-end="opacity-100"
+                             x-transition:leave="transition ease-in duration-300"
+                             x-transition:leave-start="opacity-100"
+                             x-transition:leave-end="opacity-0"
+                             style="display: none;" class="absolute inset-0 w-full h-full bg-[#1a1a1a] flex items-center justify-center">
+                            <img src="{{ asset('img/investorimg7.png') }}" alt="Investor 7" class="w-full h-full object-contain rounded-lg">
+                        </div>
+                        
+                        <!-- Slide 8 -->
+                        <div x-show="currentSlide === 8" 
+                             x-transition:enter="transition ease-out duration-500"
+                             x-transition:enter-start="opacity-0"
+                             x-transition:enter-end="opacity-100"
+                             x-transition:leave="transition ease-in duration-300"
+                             x-transition:leave-start="opacity-100"
+                             x-transition:leave-end="opacity-0"
+                             style="display: none;" class="absolute inset-0 w-full h-full bg-[#2a2a2a] flex items-center justify-center">
+                            <img src="{{ asset('img/investorimg8.png') }}" alt="Investor 8" class="w-full h-full object-contain rounded-lg">
+                        </div>
+                        
+                        <!-- Slide 9 -->
+                        <div x-show="currentSlide === 9" 
+                             x-transition:enter="transition ease-out duration-500"
+                             x-transition:enter-start="opacity-0"
+                             x-transition:enter-end="opacity-100"
+                             x-transition:leave="transition ease-in duration-300"
+                             x-transition:leave-start="opacity-100"
+                             x-transition:leave-end="opacity-0"
+                             style="display: none;" class="absolute inset-0 w-full h-full bg-[#1a1a1a] flex items-center justify-center">
+                            <img src="{{ asset('img/investorimg9.png') }}" alt="Investor 9" class="w-full h-full object-contain rounded-lg">
                         </div>
                     </div>
 
                     <!-- Left Arrow -->
-                    <button @click="currentSlide = currentSlide === 1 ? totalSlides : currentSlide - 1" 
-                            class="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors p-2 z-20 focus:outline-none">
-                        <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <button @click="currentSlide = currentSlide === 1 ? totalSlides : currentSlide - 1; startInterval();" 
+                            class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-[#d9663b] text-white p-3 rounded-full transition-all duration-300 z-20 focus:outline-none shadow-lg opacity-80 hover:opacity-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
                     </button>
 
                     <!-- Right Arrow -->
-                    <button @click="currentSlide = currentSlide === totalSlides ? 1 : currentSlide + 1" 
-                            class="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors p-2 z-20 focus:outline-none">
-                        <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <button @click="currentSlide = currentSlide === totalSlides ? 1 : currentSlide + 1; startInterval();" 
+                            class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-[#d9663b] text-white p-3 rounded-full transition-all duration-300 z-20 focus:outline-none shadow-lg opacity-80 hover:opacity-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
                     </button>
+                    
+                    <!-- Slide Indicators -->
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+                        <template x-for="i in totalSlides" :key="i">
+                            <button @click="currentSlide = i; startInterval();" 
+                                    :class="{'w-6 bg-[#d9663b]': currentSlide === i, 'w-2 bg-white/50 hover:bg-white/80': currentSlide !== i}"
+                                    class="h-2 rounded-full transition-all duration-300 focus:outline-none"></button>
+                        </template>
+                    </div>
                 </div>
             </div>
         </section>
@@ -443,3 +551,4 @@
 
 </body>
 </html>
+

@@ -86,7 +86,7 @@
                             <!-- Image Placeholder -->
                             <div class="w-full aspect-[4/3] bg-[#2a2a2a] rounded-[24px] mb-8 flex items-center justify-center border border-white/10 shadow-lg relative overflow-hidden flex-shrink-0">
                                 <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                                <span class="text-gray-400 font-medium tracking-widest uppercase text-sm relative z-10">Image Placeholder 1</span>
+                                <img src="{{ asset('img/residentialImg1.jpg') }}" alt="Principle 1" class="w-full h-full object-cover">
                             </div>
                             
                             <!-- Number & Title -->
@@ -116,7 +116,7 @@
                             <!-- Image Placeholder -->
                             <div class="w-full aspect-[4/3] bg-[#2a2a2a] rounded-[24px] mb-8 flex items-center justify-center border border-white/10 shadow-lg relative overflow-hidden flex-shrink-0">
                                 <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                                <span class="text-gray-400 font-medium tracking-widest uppercase text-sm relative z-10">Image Placeholder 2</span>
+                                <img src="{{ asset('img/residentialImg2.jpg') }}" alt="Principle 2" class="w-full h-full object-cover">
                             </div>
                             
                             <!-- Number & Title -->
@@ -146,7 +146,7 @@
                             <!-- Image Placeholder -->
                             <div class="w-full aspect-[4/3] bg-[#2a2a2a] rounded-[24px] mb-8 flex items-center justify-center border border-white/10 shadow-lg relative overflow-hidden flex-shrink-0">
                                 <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                                <span class="text-gray-400 font-medium tracking-widest uppercase text-sm relative z-10">Image Placeholder 3</span>
+                                <img src="{{ asset('img/residentialImg3.jpg') }}" alt="Principle 3" class="w-full h-full object-cover">
                             </div>
                             
                             <!-- Number & Title -->
@@ -244,7 +244,7 @@
                     <div class="bg-[#141414] rounded-[32px] p-4 lg:p-5 flex flex-col items-center border border-white/5 shadow-2xl transition-transform duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
                         <div class="w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] rounded-[24px] overflow-hidden mb-6 bg-[#2a2a2a] flex items-center justify-center relative border border-white/10">
                             <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                            <span class="text-gray-500 uppercase tracking-widest text-sm font-bold relative z-10">Image Placeholder</span>
+                            <img src="{{ asset('img/residentialImg4.png') }}" alt="Principle 4" class="w-full h-full object-cover">
                         </div>
                         <div class="text-center px-4 mb-6 flex-grow flex items-center">
                             <h3 class="text-white text-lg lg:text-xl font-bold leading-snug" style="font-family: 'Plus Jakarta Sans', sans-serif;">
@@ -260,11 +260,11 @@
                     <div class="bg-[#141414] rounded-[32px] p-4 lg:p-5 flex flex-col items-center border border-white/5 shadow-2xl transition-transform duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
                         <div class="w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] rounded-[24px] overflow-hidden mb-6 bg-[#2a2a2a] flex items-center justify-center relative border border-white/10">
                             <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                            <span class="text-gray-500 uppercase tracking-widest text-sm font-bold relative z-10">Image Placeholder</span>
+                            <img src="{{ asset('img/residentialImg5.jpg') }}" alt="Principle 5" class="w-full h-full object-cover">
                         </div>
                         <div class="text-center px-4 mb-6 flex-grow flex items-center">
                             <h3 class="text-white text-lg lg:text-xl font-bold leading-snug" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                                224 High St, Newark, NJ 07102
+                                2403 W Rogers Ave, Baltimore, MD 21209
                             </h3>
                         </div>
                         <button type="button" onclick="openModal('modal-2')" class="w-full max-w-[200px] py-3 lg:py-3.5 bg-[#e0e0e0] hover:bg-white text-black text-sm font-extrabold rounded-xl transition-colors duration-300 text-center uppercase tracking-wider mb-2 focus:outline-none" style="font-family: 'Plus Jakarta Sans', sans-serif;">
@@ -276,11 +276,11 @@
                     <div class="bg-[#141414] rounded-[32px] p-4 lg:p-5 flex flex-col items-center border border-white/5 shadow-2xl transition-transform duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
                         <div class="w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] rounded-[24px] overflow-hidden mb-6 bg-[#2a2a2a] flex items-center justify-center relative border border-white/10">
                             <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                            <span class="text-gray-500 uppercase tracking-widest text-sm font-bold relative z-10">Image Placeholder</span>
+                            <img src="{{ asset('img/residentialImg6.jpg') }}" alt="Principle 6" class="w-full h-full object-cover">
                         </div>
                         <div class="text-center px-4 mb-6 flex-grow flex items-center">
                             <h3 class="text-white text-lg lg:text-xl font-bold leading-snug" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                                45-12 11th St, Long Island City, NY 11101
+                                6 Shawnee Dr, Wenonah, NJ 08090
                             </h3>
                         </div>
                         <button type="button" onclick="openModal('modal-3')" class="w-full max-w-[200px] py-3 lg:py-3.5 bg-[#e0e0e0] hover:bg-white text-black text-sm font-extrabold rounded-xl transition-colors duration-300 text-center uppercase tracking-wider mb-2 focus:outline-none" style="font-family: 'Plus Jakarta Sans', sans-serif;">
@@ -292,11 +292,11 @@
                     <div class="bg-[#141414] rounded-[32px] p-4 lg:p-5 flex flex-col items-center border border-white/5 shadow-2xl transition-transform duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
                         <div class="w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] rounded-[24px] overflow-hidden mb-6 bg-[#2a2a2a] flex items-center justify-center relative border border-white/10">
                             <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                            <span class="text-gray-500 uppercase tracking-widest text-sm font-bold relative z-10">Image Placeholder</span>
+                            <img src="{{ asset('img/residentialImg7.png') }}" alt="Principle 7" class="w-full h-full object-cover">
                         </div>
                         <div class="text-center px-4 mb-6 flex-grow flex items-center">
                             <h3 class="text-white text-lg lg:text-xl font-bold leading-snug" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                                88 Purchase St, Purchase, NY 10577
+                               1333 Beecher Ln, Norfolk, VA 23509
                             </h3>
                         </div>
                         <button type="button" onclick="openModal('modal-4')" class="w-full max-w-[200px] py-3 lg:py-3.5 bg-[#e0e0e0] hover:bg-white text-black text-sm font-extrabold rounded-xl transition-colors duration-300 text-center uppercase tracking-wider mb-2 focus:outline-none" style="font-family: 'Plus Jakarta Sans', sans-serif;">
@@ -316,36 +316,57 @@
                         Request More Info
                     </h2>
                     
-                    <form action="#" method="POST" class="space-y-6">
+                    <!-- Display Success Message if any -->
+                    @if(session('success'))
+                        <div class="mb-6 p-4 bg-green-500/20 border border-green-500/50 rounded-lg text-green-200 text-center">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                    <!-- Display Validation Errors -->
+                    @if($errors->any())
+                        <div class="mb-6 p-4 bg-red-500/20 border border-red-500/50 rounded-lg text-red-200">
+                            <ul class="list-disc list-inside">
+                                @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <form action="{{ route('contact.submit') }}" method="POST" class="space-y-6">
+                        @csrf
+                        <!-- HONEYPOT FIELD: Hidden from real users, bots will fill this out -->
+                        <input type="text" name="website_url" class="hidden" style="display:none !important" autocomplete="off" tabindex="-1">
+                        
                         <!-- Name -->
                         <div>
                             <label for="name" class="block text-white text-sm font-bold tracking-wider mb-2 uppercase" style="font-family: 'Plus Jakarta Sans', sans-serif;">Name</label>
-                            <input type="text" id="name" name="name" class="w-full bg-[#d9d9d9] border-none rounded-xl px-4 py-4 text-black focus:ring-2 focus:ring-white/50 outline-none transition-shadow" required>
+                            <input type="text" id="name" name="name" value="{{ old('name') }}" class="w-full bg-[#d9d9d9] border-none rounded-xl px-4 py-4 text-black focus:ring-2 focus:ring-white/50 outline-none transition-shadow" required>
                         </div>
                         
                         <!-- Email -->
                         <div>
                             <label for="email" class="block text-white text-sm font-bold tracking-wider mb-2 uppercase" style="font-family: 'Plus Jakarta Sans', sans-serif;">Email Address</label>
-                            <input type="email" id="email" name="email" class="w-full bg-[#d9d9d9] border-none rounded-xl px-4 py-4 text-black focus:ring-2 focus:ring-white/50 outline-none transition-shadow" required>
+                            <input type="email" id="email" name="email" value="{{ old('email') }}" class="w-full bg-[#d9d9d9] border-none rounded-xl px-4 py-4 text-black focus:ring-2 focus:ring-white/50 outline-none transition-shadow" required>
                         </div>
                         
                         <!-- Mobile Number -->
                         <div>
                             <label for="phone" class="block text-white text-sm font-bold tracking-wider mb-2 uppercase" style="font-family: 'Plus Jakarta Sans', sans-serif;">Mobile Number</label>
-                            <input type="tel" id="phone" name="phone" class="w-full bg-[#d9d9d9] border-none rounded-xl px-4 py-4 text-black focus:ring-2 focus:ring-white/50 outline-none transition-shadow" required>
+                            <input type="tel" id="phone" name="phone" value="{{ old('phone') }}" placeholder="+1 (xxx) xxx-xxxx" maxlength="17" oninput="formatUSPhone(this)" class="w-full bg-[#d9d9d9] border-none rounded-xl px-4 py-4 text-black focus:ring-2 focus:ring-white/50 outline-none transition-shadow" required>
                         </div>
                         
                         <!-- Message -->
                         <div>
                             <label for="message" class="block text-white text-sm font-bold tracking-wider mb-2 uppercase" style="font-family: 'Plus Jakarta Sans', sans-serif;">Message</label>
-                            <textarea id="message" name="message" rows="6" class="w-full bg-[#d9d9d9] border-none rounded-xl px-4 py-4 text-black focus:ring-2 focus:ring-white/50 outline-none transition-shadow resize-none" required></textarea>
+                            <textarea id="message" name="message" rows="6" class="w-full bg-[#d9d9d9] border-none rounded-xl px-4 py-4 text-black focus:ring-2 focus:ring-white/50 outline-none transition-shadow resize-none" required>{{ old('message') }}</textarea>
                         </div>
                         
                         <!-- Disclaimers & Checkboxes -->
                         <div class="mt-8 space-y-6">
                             <div class="flex items-start gap-4">
                                 <div class="flex items-center h-6 mt-1">
-                                    <input id="consent_marketing" name="consent_marketing" type="checkbox" class="w-5 h-5 rounded-sm bg-[#d9d9d9] border-none text-black focus:ring-0 cursor-pointer" required>
+                                    <input id="consent_marketing" name="consent_marketing" type="checkbox" class="w-5 h-5 rounded-sm bg-[#d9d9d9] border-none text-black focus:ring-0 cursor-pointer" required {{ old('consent_marketing') ? 'checked' : '' }}>
                                 </div>
                                 <div class="text-sm text-gray-300 font-light leading-relaxed">
                                     <p class="mb-2">By entering your telephone number and email you are providing consent to receive marketing communications including emails and phone calls from Mioym Commercial Capital. Consent is not a condition of purchase. Message and data rates may apply. Reply STOP to stop, HELP for help.</p>
@@ -355,18 +376,23 @@
                             
                             <div class="space-y-3 pt-2">
                                 <label class="flex items-center gap-4 cursor-pointer">
-                                    <input type="checkbox" class="w-5 h-5 rounded-sm bg-[#d9d9d9] border-none text-black focus:ring-0 cursor-pointer">
+                                    <input type="checkbox" name="sms_consent" class="w-5 h-5 rounded-sm bg-[#d9d9d9] border-none text-black focus:ring-0 cursor-pointer" required {{ old('sms_consent') ? 'checked' : '' }}>
                                     <span class="text-sm text-gray-300 font-light">I want to receive SMS texts about products & services</span>
                                 </label>
                                 <label class="flex items-center gap-4 cursor-pointer">
-                                    <input type="checkbox" class="w-5 h-5 rounded-sm bg-[#d9d9d9] border-none text-black focus:ring-0 cursor-pointer" required>
+                                    <input type="checkbox" name="terms" class="w-5 h-5 rounded-sm bg-[#d9d9d9] border-none text-black focus:ring-0 cursor-pointer" required {{ old('terms') ? 'checked' : '' }}>
                                     <span class="text-sm text-gray-300 font-light">I accept terms & conditions</span>
                                 </label>
                                 <label class="flex items-center gap-4 cursor-pointer">
-                                    <input type="checkbox" class="w-5 h-5 rounded-sm bg-[#d9d9d9] border-none text-black focus:ring-0 cursor-pointer">
+                                    <input type="checkbox" name="email_consent" class="w-5 h-5 rounded-sm bg-[#d9d9d9] border-none text-black focus:ring-0 cursor-pointer" required {{ old('email_consent') ? 'checked' : '' }}>
                                     <span class="text-sm text-gray-300 font-light">I want emails about products & services</span>
                                 </label>
                             </div>
+                        </div>
+
+                        <!-- Google reCAPTCHA v2 Widget -->
+                        <div class="mt-8 flex justify-end">
+                            <div class="g-recaptcha" data-sitekey="{{ env('RECAPTCHA_SITE_KEY', 'your-site-key-here') }}"></div>
                         </div>
                         
                         <!-- Submit Button -->
@@ -391,7 +417,7 @@
                 <div class="flex flex-col md:flex-row p-8 lg:p-12 gap-10 items-center">
                     <div class="w-full md:w-3/5">
                         <div class="w-full aspect-[16/10] rounded-[24px] overflow-hidden bg-[#2a2a2a] flex items-center justify-center relative border border-black/10">
-                            <span class="text-gray-500 uppercase tracking-widest text-base font-bold">Image Placeholder</span>
+                            <img src="{{ asset('img/residentialImg4.png') }}" alt="Principle 1" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-black text-xl lg:text-2xl font-bold leading-snug mt-8 text-center" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                             1401 S Williams St, Westmont, IL 60559
@@ -430,32 +456,32 @@
                 <div class="flex flex-col md:flex-row p-8 lg:p-12 gap-10 items-center">
                     <div class="w-full md:w-3/5">
                         <div class="w-full aspect-[16/10] rounded-[24px] overflow-hidden bg-[#2a2a2a] flex items-center justify-center relative border border-black/10">
-                            <span class="text-gray-500 uppercase tracking-widest text-base font-bold">Image Placeholder</span>
+                            <img src="{{ asset('img/residentialImg5.jpg') }}" alt="Principle 5" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-black text-xl lg:text-2xl font-bold leading-snug mt-8 text-center" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                            224 High St, Newark, NJ 07102
+                            2403 W Rogers Ave, Baltimore, MD 21209
                         </h3>
                     </div>
                     <div class="w-full md:w-2/5 text-black text-xl lg:text-2xl font-medium" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                         <div class="flex justify-between border-b border-black/10 py-4">
                             <span>Purchase</span>
-                            <span>$350,000</span>
+                            <span>$240,000</span>
                         </div>
                         <div class="flex justify-between border-b border-black/10 py-3">
                             <span>Reno & Add't Costs</span>
-                            <span>$45,000</span>
+                            <span>$94,000</span>
                         </div>
                         <div class="flex justify-between border-b border-black/10 py-3">
                             <span>Total Cost</span>
-                            <span>$395,000</span>
+                            <span>$334,000</span>
                         </div>
                         <div class="flex justify-between border-b border-black/10 py-3">
                             <span>Sale Price</span>
-                            <span>$520,000</span>
+                            <span>$508,000</span>
                         </div>
                         <div class="flex justify-between py-3 font-bold">
                             <span>Total Profit</span>
-                            <span>$125,000</span>
+                            <span>$174,000</span>
                         </div>
                     </div>
                 </div>
@@ -469,32 +495,32 @@
                 <div class="flex flex-col md:flex-row p-8 lg:p-12 gap-10 items-center">
                     <div class="w-full md:w-3/5">
                         <div class="w-full aspect-[16/10] rounded-[24px] overflow-hidden bg-[#2a2a2a] flex items-center justify-center relative border border-black/10">
-                            <span class="text-gray-500 uppercase tracking-widest text-base font-bold">Image Placeholder</span>
+                            <img src="{{ asset('img/residentialImg6.jpg') }}" alt="Principle 6" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-black text-xl lg:text-2xl font-bold leading-snug mt-8 text-center" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                            45-12 11th St, Long Island City, NY 11101
+                            6 Shawnee Dr, Wenonah, NJ 08090
                         </h3>
                     </div>
                     <div class="w-full md:w-2/5 text-black text-xl lg:text-2xl font-medium" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                         <div class="flex justify-between border-b border-black/10 py-4">
                             <span>Purchase</span>
-                            <span>$850,000</span>
+                            <span>$214,723</span>
                         </div>
                         <div class="flex justify-between border-b border-black/10 py-3">
                             <span>Reno & Add't Costs</span>
-                            <span>$120,000</span>
+                            <span>$77,018</span>
                         </div>
                         <div class="flex justify-between border-b border-black/10 py-3">
                             <span>Total Cost</span>
-                            <span>$970,000</span>
+                            <span>$291,746</span>
                         </div>
                         <div class="flex justify-between border-b border-black/10 py-3">
                             <span>Sale Price</span>
-                            <span>$1,350,000</span>
+                            <span>$578,471</span>
                         </div>
                         <div class="flex justify-between py-3 font-bold">
                             <span>Total Profit</span>
-                            <span>$380,000</span>
+                            <span>$286,731</span>
                         </div>
                     </div>
                 </div>
@@ -508,32 +534,32 @@
                 <div class="flex flex-col md:flex-row p-8 lg:p-12 gap-10 items-center">
                     <div class="w-full md:w-3/5">
                         <div class="w-full aspect-[16/10] rounded-[24px] overflow-hidden bg-[#2a2a2a] flex items-center justify-center relative border border-black/10">
-                            <span class="text-gray-500 uppercase tracking-widest text-base font-bold">Image Placeholder</span>
+                            <img src="{{ asset('img/residentialImg7.png') }}" alt="Principle 2" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-black text-xl lg:text-2xl font-bold leading-snug mt-8 text-center" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                            88 Purchase St, Purchase, NY 10577
+                           1333 Beecher Ln, Norfolk, VA 23509
                         </h3>
                     </div>
                     <div class="w-full md:w-2/5 text-black text-xl lg:text-2xl font-medium" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                         <div class="flex justify-between border-b border-black/10 py-4">
                             <span>Purchase</span>
-                            <span>$1,200,000</span>
+                            <span>$300,000</span>
                         </div>
                         <div class="flex justify-between border-b border-black/10 py-3">
                             <span>Reno & Add't Costs</span>
-                            <span>$150,000</span>
+                            <span>$50,000</span>
                         </div>
                         <div class="flex justify-between border-b border-black/10 py-3">
                             <span>Total Cost</span>
-                            <span>$1,350,000</span>
+                            <span>$350,000</span>
                         </div>
                         <div class="flex justify-between border-b border-black/10 py-3">
                             <span>Sale Price</span>
-                            <span>$1,850,000</span>
+                            <span>$600,000</span>
                         </div>
                         <div class="flex justify-between py-3 font-bold">
                             <span>Total Profit</span>
-                            <span>$500,000</span>
+                            <span>$250,000</span>
                         </div>
                     </div>
                 </div>
@@ -546,7 +572,41 @@
 
     <!-- AOS JS for scroll animations -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Google reCAPTCHA v2 Script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
+        // US Phone Number Formatter
+        function formatUSPhone(input) {
+            let value = input.value.replace(/\D/g, ''); // Remove non-digits
+            
+            // Normalize: If user pastes number starting with 1, remove the 1 temporarily
+            if (value.startsWith('1')) {
+                value = value.substring(1);
+            }
+            
+            let formatted = '+1 ';
+            
+            // Ensure the first digit (area code) is between 2 and 9
+            if (value.length > 0) {
+                if (value[0] === '0' || value[0] === '1') {
+                    value = value.substring(1); // Drop invalid first digit
+                }
+            }
+
+            if (value.length > 0) {
+                formatted += '(' + value.substring(0, 3);
+            }
+            if (value.length >= 4) {
+                formatted += ') ' + value.substring(3, 6);
+            }
+            if (value.length >= 7) {
+                formatted += '-' + value.substring(6, 10);
+            }
+            
+            // Allow backspacing properly by not prepending +1 if input is empty
+            input.value = value.length === 0 ? '' : formatted;
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             AOS.init({
                 once: true,
