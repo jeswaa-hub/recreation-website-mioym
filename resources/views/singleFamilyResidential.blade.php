@@ -341,13 +341,13 @@
                         <!-- Name -->
                         <div>
                             <label for="name" class="block text-white text-sm font-bold tracking-wider mb-2 uppercase" style="font-family: 'Plus Jakarta Sans', sans-serif;">Name</label>
-                            <input type="text" id="name" name="name" value="{{ old('name') }}" class="w-full bg-[#d9d9d9] border-none rounded-xl px-4 py-4 text-black focus:ring-2 focus:ring-white/50 outline-none transition-shadow" required>
+                            <input type="text" id="name" name="name" value="{{ old('name') }}" placeholder="John Doe" class="w-full bg-[#d9d9d9] border-none rounded-xl px-4 py-4 text-black focus:ring-2 focus:ring-white/50 outline-none transition-shadow" required>
                         </div>
                         
                         <!-- Email -->
                         <div>
                             <label for="email" class="block text-white text-sm font-bold tracking-wider mb-2 uppercase" style="font-family: 'Plus Jakarta Sans', sans-serif;">Email Address</label>
-                            <input type="email" id="email" name="email" value="{{ old('email') }}" class="w-full bg-[#d9d9d9] border-none rounded-xl px-4 py-4 text-black focus:ring-2 focus:ring-white/50 outline-none transition-shadow" required>
+                            <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="example@example.com" class="w-full bg-[#d9d9d9] border-none rounded-xl px-4 py-4 text-black focus:ring-2 focus:ring-white/50 outline-none transition-shadow" required>
                         </div>
                         
                         <!-- Mobile Number -->
@@ -391,13 +391,13 @@
                         </div>
 
                         <!-- Google reCAPTCHA v2 Widget -->
-                        <div class="mt-8 flex justify-end">
+                        <div class="mt-8 flex justify-start">
                             <div class="g-recaptcha" data-sitekey="{{ env('RECAPTCHA_SITE_KEY', 'your-site-key-here') }}"></div>
                         </div>
                         
                         <!-- Submit Button -->
-                        <div class="flex justify-end pt-6">
-                            <button type="submit" class="flex items-center gap-3 bg-[#141414] hover:bg-black text-white px-8 py-4 rounded-xl font-bold transition-colors border border-white/10 focus:outline-none focus:ring-2 focus:ring-white/50" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        <div class="flex pt-6">
+                            <button type="submit" class="w-full flex items-center justify-center gap-3 bg-[#141414] hover:bg-black text-white px-8 py-4 rounded-xl font-bold transition-colors border border-white/10 focus:outline-none focus:ring-2 focus:ring-white/50" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                                 <svg class="w-5 h-5 transform rotate-90 -mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
                                 SEND MESSAGE
                             </button>
