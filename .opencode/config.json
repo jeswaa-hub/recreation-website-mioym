@@ -1,0 +1,62 @@
+{
+  "model": "qwen/qwen-3.6-plus",
+  "models": {
+    "primary": "qwen/qwen-3.6-plus",
+    "architect": "qwen/qwen-3.6-plus",
+    "frontend": "qwen/qwen-3.6-plus",
+    "backend": "qwen/qwen-3.6-plus",
+    "database": "minimax/minimax-m2.5",
+    "devops": "deepseek/deepseek-v4-flash",
+    "qa": "nemotron/nemotron-3-super",
+    "security": "nemotron/nemotron-3-super",
+    "wasm": "deepseek/deepseek-v4-flash",
+    "documentation": "qwen/qwen-3.6-plus"
+  },
+  "agents": {
+    "primary": {
+      "role": "Chief AI Architect & Multi-Agent Orchestrator — responsible for system-wide reasoning, project planning, architecture decisions, and final validation across the Laravel + Inertia.js ecosystem.",
+      "mode": "agent",
+      "model": "qwen/qwen-3.6-plus"
+    },
+    "secondary": {
+      "role": "Principal Full-Stack Architect — responsible for Laravel + Inertia.js architecture, SSR strategy, and React-Laravel boundary design.",
+      "mode": "agent",
+      "model": "qwen/qwen-3.6-plus"
+    },
+    "frontend": {
+      "role": "Senior React + Inertia.js Frontend Specialist — expert in React 19, Tailwind CSS, shadcn/ui, and complex UI systems.",
+      "mode": "subagent",
+      "model": "qwen/qwen-3.6-plus"
+    },
+    "backend": {
+      "role": "Senior Laravel Backend Engineer — expert in Laravel 11+, PHP 8.3, service architecture, and Eloquent optimization.",
+      "mode": "subagent",
+      "model": "qwen/qwen-3.6-plus"
+    },
+    "database": {
+      "role": "Database & Query Optimization Architect — specializes in schema design, indexing strategies, and performance-critical workloads.",
+      "mode": "subagent",
+      "model": "minimax/minimax-m2.5"
+    },
+    "devops": {
+      "role": "DevOps & Infrastructure Engineer — responsible for CI/CD, Docker, Dokploy, and high-speed deployment workflows.",
+      "mode": "subagent",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "QA": {
+      "role": "Senior QA & Automated Testing Engineer — specializes in Playwright, Pest, and regression analysis.",
+      "mode": "subagent",
+      "model": "nemotron/nemotron-3-super"
+    },
+    "Cybersecurity": {
+      "role": "Application Security Engineer — expert in Laravel hardening, OWASP mitigation, and penetration analysis.",
+      "mode": "subagent",
+      "model": "nemotron/nemotron-3-super"
+    },
+    "wasm": {
+      "role": "WebAssembly & Performance Optimization Specialist — expert in Rust/C++ WASM integration and performance modules.",
+      "mode": "subagent",
+      "model": "deepseek/deepseek-v4-flash"
+    }
+  }
+}
