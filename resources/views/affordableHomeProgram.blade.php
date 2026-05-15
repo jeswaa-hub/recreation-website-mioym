@@ -118,6 +118,24 @@
             opacity: 0.85;
             pointer-events: none;
         }
+        .reveal {
+            opacity: 0;
+            transform: translateY(18px);
+            transition: opacity 700ms cubic-bezier(0.2, 0.65, 0.2, 1), transform 700ms cubic-bezier(0.2, 0.65, 0.2, 1);
+            transition-delay: var(--d, 0ms);
+            will-change: opacity, transform;
+        }
+        .reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -125,16 +143,10 @@
     
     <main class="pt-16 lg:pt-20">
         <section class="hero-surface">
-            <svg class="hero-art" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true">
-                <path d="M0 0H1200V520H0V0Z" fill="transparent"/>
-                <path d="M740 0H1200V520H670C815 420 965 450 1065 360C1165 270 1185 140 1200 0Z" fill="#2C2727" opacity="0.95"/>
-                <path d="M810 0H1200V520H720C860 440 980 455 1075 390C1165 325 1188 205 1200 90Z" fill="#3A3434" opacity="0.75"/>
-                <circle cx="1045" cy="95" r="160" fill="#D9D9D9" opacity="0.06"/>
-                <circle cx="210" cy="420" r="210" fill="#D9D9D9" opacity="0.05"/>
-            </svg>
-            <div class="absolute -left-40 top-36 h-[420px] w-[420px] rounded-full bg-[#D9D9D9]/10 blur-3xl"></div>
-            <div class="absolute -right-56 -top-40 h-[520px] w-[520px] rounded-full bg-[#D9D9D9]/10 blur-3xl"></div>
-            <div class="absolute -right-20 bottom-24 h-[360px] w-[360px] rounded-full bg-[#D9D9D9]/10 blur-3xl"></div>
+            <div class="absolute inset-0 -z-10">
+                <img src="{{ asset('img/bgAboutUs.png') }}" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-black/70 -z-10"></div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
                 <div class="relative z-10">
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight" style="font-family: 'Plus Jakarta Sans', sans-serif;">
@@ -150,7 +162,7 @@
 
                 <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 mb-24">
                     <!-- Feature 1 -->
-                    <div class="feature-card">
+                    <div class="feature-card reveal" data-reveal style="--d: 0ms;">
                         <div class="feature-media">
                             <div class="feature-media-inner aspect-video">
                                 <img src="{{ asset('img/ahp1.jpg') }}" alt="Nationwide Down Payment Provided" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.jpg') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
@@ -168,7 +180,7 @@
                     </div>
 
                     <!-- Feature 2 -->
-                    <div class="feature-card">
+                    <div class="feature-card reveal" data-reveal style="--d: 120ms;">
                         <div class="feature-media">
                             <div class="feature-media-inner aspect-video">
                                 <img src="{{ asset('img/ahp2.jpg') }}" alt="Closing Costs Provided!" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.jpg') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
@@ -186,7 +198,7 @@
                     </div>
 
                     <!-- Feature 3 -->
-                    <div class="feature-card">
+                    <div class="feature-card reveal" data-reveal style="--d: 240ms;">
                         <div class="feature-media">
                             <div class="feature-media-inner aspect-video">
                                 <img src="{{ asset('img/ahp3.jpg') }}" alt="Credit Qualification" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.jpg') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
@@ -206,13 +218,13 @@
 
                 <!-- Properties & Call Section -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
-                    <div class="bg-[#2D2D2D]/55 rounded-[44px] p-4 shadow-2xl">
+                    <div class="bg-[#2D2D2D]/55 rounded-[44px] p-4 shadow-2xl reveal" data-reveal style="--d: 0ms;">
                         <div class="rounded-[34px] overflow-hidden aspect-[16/10]">
                             <img src="{{ asset('img/house.png') }}" alt="Available Properties" class="w-full h-full object-cover" data-fallback="{{ asset('img/house1.png') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                         </div>
                     </div>
                     <div class="space-y-4">
-                        <div class="action-card">
+                        <div class="action-card reveal" data-reveal style="--d: 120ms;">
                             <div class="flex items-center gap-4 flex-1 min-w-0">
                                 <div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl leading-none text-white">
                                     <i class="fas fa-home"></i>
@@ -226,7 +238,7 @@
                             </a>
                         </div>
 
-                        <div class="action-card">
+                        <div class="action-card reveal" data-reveal style="--d: 240ms;">
                             <div class="flex items-center gap-4 flex-1 min-w-0">
                                 <div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl leading-none text-white">
                                     <i class="fas fa-phone-alt"></i>
@@ -250,7 +262,7 @@
                             $teamMembers = [
                                 ['name' => 'KEITH VANNAH PONGOT', 'role' => 'OPERATION MANAGER', 'img' => 'keith.jpg'],
                                 ['name' => 'BEVERLY CABANAS', 'role' => 'LEASING AGENT', 'img' => 'beverly.jpg'],
-                                ['name' => 'ZEE BACSID', 'role' => 'LEASING AGENT', 'img' => 'beverly.jpg'],
+                                ['name' => 'ZEE BACSID', 'role' => 'LEASING AGENT', 'img' => 'zee.jpg'],
                                 ['name' => 'SUZETTA PATIÑO', 'role' => 'LEASING AGENT', 'img' => 'suzette.jpg'],
                                 ['name' => 'JACE SAN PEDRO', 'role' => 'LEASING AGENT', 'img' => 'jace.jpg'],
                                 ['name' => 'JOSIE DISCAYA', 'role' => 'LEASING AGENT', 'img' => 'josie.jpg'],
@@ -258,10 +270,10 @@
                         @endphp
 
                         @foreach($teamMembers as $member)
-                        <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                        <div class="relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl reveal" data-reveal style="--d: {{ $loop->index * 90 }}ms;">
                             <div class="absolute inset-0 flex items-center justify-center bg-black">
                                 <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                                <img src="{{ asset('img/' . $member['img']) }}" alt="{{ $member['name'] }}" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0">
+                                <img src="{{ asset('img/' . $member['img']) }}" alt="{{ $member['name'] }}" class="w-full h-full object-cover">
                             </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 right-0 p-6 text-left">
@@ -275,6 +287,28 @@
             </div>
         </section>
     </main>
+
+    <script>
+        (function () {
+            const elements = Array.from(document.querySelectorAll('[data-reveal]'));
+            if (!('IntersectionObserver' in window)) {
+                elements.forEach((el) => el.classList.add('is-visible'));
+                return;
+            }
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.12 }
+            );
+            elements.forEach((el) => observer.observe(el));
+        })();
+    </script>
 
     @include('components.footer')
 </body>

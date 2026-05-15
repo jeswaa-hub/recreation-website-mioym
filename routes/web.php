@@ -41,9 +41,8 @@ Route::get('/asset-management/national-foreclosure-prevention', function () { re
 // Cash For Homes ay SubDomain nila
 
 // Mioym Joint Venture
-Route::get('/lending/mioym-joint-venture', function () { return view('mioymJointVenture');})->name('mioymJointVenture');
+Route::get('/lending/mioym-joint-venture', function () { return view('mioymjointventure');})->name('mioymJointVenture');
 
 // News (Blogs and Testimonials)
 Route::get('/news/blogs', function () { return view('blogs');})->name('blogs');
 Route::get('/news/testimonials', function () { return view('testimonials');})->name('testimonials');
-

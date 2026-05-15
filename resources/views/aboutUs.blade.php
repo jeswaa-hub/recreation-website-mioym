@@ -46,7 +46,10 @@
     <main class="pt-16 lg:pt-20">
         <!-- Hero Section -->
         <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-            <div class="absolute inset-0 " style="background-image: url('{{ asset('img/bgAboutUs.png') }}'); background-size: cover; background-position: center; z-index: -1;"></div>
+            <div class="absolute inset-0 -z-10">
+                <img src="{{ asset('img/bgAboutUs.png') }}" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-black/70 -z-10"></div>
             <div class="max-w-7xl mx-auto text-center relative z-10" data-aos="fade-down" data-aos-duration="1000">
                 <h1 class="uppercase text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                     About Us
@@ -58,10 +61,10 @@
         <section class="py-40 px-5 sm:px-6 lg:px-8 relative overflow-hidden" style="background: linear-gradient(to bottom, #0D0D0E 0%, #666666 200%);">
             <!-- Decorative Circles -->
             <div class="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] rounded-full pointer-events-none" style="background-color: #777777; filter: blur(40px);">
-                <div class="absolute inset-0 rounded-full" style="background-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\"); opacity: 0.15;"></div>
+                <div class="absolute inset-0 rounded-full" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%270 0 200 200%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27noise%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.65%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23noise)%27/%3E%3C/svg%3E'); opacity: 0.15;"></div>
             </div>
             <div class="absolute bottom-[-100px] right-[-100px] w-[300px] h-[300px] rounded-full pointer-events-none" style="background-color: #777777; filter: blur(40px);">
-                <div class="absolute inset-0 rounded-full" style="background-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\"); opacity: 0.15;"></div>
+                <div class="absolute inset-0 rounded-full" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%270 0 200 200%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27noise%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.65%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23noise)%27/%3E%3C/svg%3E'); opacity: 0.15;"></div>
             </div>
             
             <div class="max-w-7xl mx-auto relative">
@@ -83,7 +86,9 @@
         
         <!-- Next Section with Background Image -->
         <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden" style="background: linear-gradient(to bottom, #000000 0%, #1a1a1a 100%);">
-            <div class="absolute inset-0 z-0" style="background-image: url('{{ asset('img/bgaboutUs1.png') }}'); background-size: cover; background-position: center; opacity: 0.15;"></div>
+            <div class="absolute inset-0 z-0 opacity-15">
+                <img src="{{ asset('img/bgaboutUs1.png') }}" alt="" class="w-full h-full object-cover">
+            </div>
             <div class="max-w-7xl mx-auto relative z-10">
                 <div class="flex flex-col lg:flex-row items-center gap-12">
                     <!-- Left: Marc Cox Image -->
@@ -132,4 +137,3 @@
     </script>
 </body>
 </html>
-

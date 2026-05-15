@@ -133,7 +133,11 @@
             </div>
         </section>
         <!-- Why Choose Section -->
-        <section class="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-screen flex items-center" style="background-image: url('{{ asset('img/mioymRealtyBG.png') }}'); background-size: cover; background-position: center;">
+        <section class="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-screen flex items-center">
+            <div class="absolute inset-0 -z-10">
+                <img src="{{ asset('img/mioymRealtyBG.png') }}" alt="" class="w-full h-full object-cover" data-fallback="{{ asset('img/bgAboutUs.png') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+            </div>
+            <div class="absolute inset-0 bg-black/55 -z-10"></div>
             <div class="max-w-7xl mx-auto relative z-10">
                 <!-- Header -->
                 <div class="text-center mb-16" data-aos="fade-up">
@@ -189,7 +193,7 @@
                             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         </div>
                         <h3 class="text-xl font-bold mb-2 uppercase" style="font-family: 'Plus Jakarta Sans', sans-serif;">Client Satisfaction</h3>
-                        <p class="text-white/70 text-sm font-bold mb-4 mt-2uppercase">Your Contentment Matters</p>
+                        <p class="text-white/70 text-sm font-bold mb-4 mt-2 uppercase">Your Contentment Matters</p>
                         <p class="text-sm leading-relaxed">
                             Your success is our measure of success. We are dedicated to helping you secure stable, comfortable housing and ensuring the entire experience feels supportive and positive.
                         </p>
@@ -237,4 +241,3 @@
     </script>
 </body>
 </html>
-

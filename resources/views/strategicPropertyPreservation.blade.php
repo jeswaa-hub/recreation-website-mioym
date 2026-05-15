@@ -165,16 +165,10 @@
 
     <main class="pt-16 lg:pt-20">
         <section class="hero-surface">
-            <svg class="hero-art" viewBox="0 0 1200 560" preserveAspectRatio="none" aria-hidden="true">
-                <path d="M0 0H1200V560H0V0Z" fill="transparent"/>
-                <path d="M740 0H1200V560H660C820 450 980 490 1085 390C1185 292 1195 150 1200 0Z" fill="#2C2727" opacity="0.95"/>
-                <path d="M820 0H1200V560H720C875 470 1000 495 1095 425C1175 365 1192 240 1200 110Z" fill="#3A3434" opacity="0.75"/>
-                <circle cx="1060" cy="110" r="170" fill="#D9D9D9" opacity="0.06"/>
-                <circle cx="230" cy="470" r="230" fill="#D9D9D9" opacity="0.05"/>
-            </svg>
-            <div class="absolute -left-40 top-40 h-[420px] w-[420px] rounded-full bg-[#D9D9D9]/10 blur-3xl"></div>
-            <div class="absolute -right-56 -top-48 h-[520px] w-[520px] rounded-full bg-[#D9D9D9]/10 blur-3xl"></div>
-            <div class="absolute -right-24 bottom-24 h-[360px] w-[360px] rounded-full bg-[#D9D9D9]/10 blur-3xl"></div>
+            <div class="absolute inset-0 -z-10">
+                <img src="{{ asset('img/bgAboutUs.png') }}" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-black/70 -z-10"></div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
                 <div class="relative z-10">
