@@ -10,10 +10,10 @@
             <div class="flex flex-col items-center sm:items-start space-y-6">
                 <div class="flex items-center gap-4">
                     <div class="w-24 h-24 rounded-full border-2 border-gray-600 overflow-hidden bg-gray-800 flex items-center justify-center">
-                        <img src="{{ asset('img/inc5000-badge.png') }}" alt="Inc. 5000 America's Fastest Growing Private Companies badge - MIOYM ranked in top 5000" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="{{ asset('img/inc5000-badge.webp') }}" alt="Inc. 5000 America's Fastest Growing Private Companies badge - MIOYM ranked in top 5000" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     </div>
                     <div class="w-24 h-24 flex items-center justify-center">
-                        <img src="{{ asset('img/logo.png') }}" alt="MIOYM Logo" class="w-full h-full object-contain">
+                        <img src="{{ asset('img/logo.webp') }}" alt="MIOYM Logo" class="w-full h-full object-contain">
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@
     <meta name="author" content="MIOYM">
     <meta name="robots" content="index, follow">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>MIOYM Equities | Distressed Asset Investment Firm | Fix & Flip Real Estate</title>
@@ -21,7 +21,7 @@
         "name": "MIOYM",
         "description": "Distressed Asset Equity Firm specializing in residential and commercial real estate investment with 17.5% annual returns.",
         "url": "https://mioym.com",
-        "logo": "https://mioym.com/img/logo.png",
+        "logo": "https://mioym.com/img/logo.webp",
         "founder": {
             "@type": "Person",
             "name": "Marc Cox",
@@ -51,7 +51,6 @@
     }
     </script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     @livewireStyles
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -329,10 +328,10 @@
         
         <!-- Bottom Left Image -->
         <div class="absolute bottom-[-250px] left-[0px] w-[400px] sm:w-[500px] lg:w-[500px] h-auto z-[-100]">
-            <img src="{{ asset('img/bgImg.png') }}" alt="MIOYM Distressed Asset Real Estate - Investment Property Background" class="w-full h-auto object-contain" loading="lazy">
+            <img src="{{ asset('img/bgImg.webp') }}" alt="MIOYM Distressed Asset Real Estate - Investment Property Background" class="w-full h-auto object-contain" loading="lazy">
         </div>
         
-        <div class="max-w-7xl mx-auto w-full relative z-10">
+        <div class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Left Content -->
                 <div>
@@ -355,7 +354,7 @@
                 <!-- Right Side - House Image + Stats -->
                 <div class="relative hidden lg:block">
                     <!-- House Image -->
-                    <img src="{{ asset('img/house.png') }}" alt="Affordable Residential Property for First-Time Homebuyers - MIOYM Investment" class="w-full max-w-lg mx-auto object-contain hero-image" loading="lazy">
+                    <img src="{{ asset('img/house.webp') }}" alt="Affordable Residential Property for First-Time Homebuyers - MIOYM Investment" class="w-full max-w-lg mx-auto object-contain hero-image" loading="lazy">
                     
                     <!-- Floating Stats Container 1 - Top Left -->
                     <div class="absolute top-0 right-0 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center floating-stat">
@@ -386,62 +385,7 @@
     </section>
 
     <!-- Our Partners Section -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden flex justify-center" style="background: #000000;">
-        <div class="w-full max-w-7xl relative z-10 mx-auto">
-            <!-- Section Header -->
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                    Our Partners
-                </h2>
-                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
-                    Trusted by leading organizations and institutions in the real estate industry
-                </p>
-            </div>
-            
-            <!-- Automatic Carousel with 3 Images and Fade Effect -->
-            <div class="fade-in" x-data="{
-                currentIndex: 0,
-                images: [
-                    '{{ asset('img/buildings.png') }}',
-                    '{{ asset('img/image_3.png') }}',
-                    '{{ asset('img/mioymbuilding.png') }}',
-                    '{{ asset('img/residential.jpg') }}',
-                    '{{ asset('img/sales_process.jpg') }}',
-                    '{{ asset('img/multifamliy.jpg') }}'
-                ],
-                get visibleImages() {
-                    let images = [];
-                    for (let i = 0; i < 3; i++) {
-                        images.push(this.images[(this.currentIndex + i) % this.images.length]);
-                    }
-                    return images;
-                },
-                init() {
-                    setInterval(() => {
-                        this.currentIndex = (this.currentIndex + 1) % this.images.length;
-                    }, 4000);
-                }
-            }">
-                <!-- Carousel Container with Fade Effect -->
-                <div class="relative rounded-2xl overflow-hidden">
-                    <!-- Left Fade -->
-                    <div class="absolute left-0 top-0 bottom-0 w-20 lg:w-32 z-10 pointer-events-none" style="background: linear-gradient(to right, #666666, transparent);"></div>
-                    
-                    <!-- Right Fade -->
-                    <div class="absolute right-0 top-0 bottom-0 w-20 lg:w-32 z-10 pointer-events-none" style="background: linear-gradient(to left, #000000, transparent);"></div>
-                    
-                    <!-- Images Container -->
-                    <div class="flex gap-4">
-                        <template x-for="(img, idx) in visibleImages" :key="idx">
-                            <div class="flex-1 h-[100px] lg:h-[140px] rounded-xl overflow-hidden transition-all duration-500 flex items-center justify-center bg-white/5" :class="idx === 1 ? 'lg:scale-105' : ''">
-                                <img :src="img" alt="Partner" class="w-full h-full object-contain object-center">
-                            </div>
-                        </template>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('components.ourPartner')
 
     <!-- About the Firm Section -->
     <section class="py-10 px-4 sm:px-6 lg:px-8">
@@ -455,8 +399,8 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-5">
                 <!-- Left: Text Block -->
                 <div class="space-y-10 lg:space-y-2">
-                    <!-- Glassmorphism Card with bg2.png -->
-                    <div class="rounded-2xl p-8 sm:p-10 border-t border-white/20 relative overflow-hidden fade-in-left" style="background-image: url('{{ asset('img/bg2.png') }}'); background-size: cover; background-position: center;">
+                    <!-- Glassmorphism Card with bg2.webp -->
+                    <div class="rounded-2xl p-8 sm:p-10 border-t border-white/20 relative overflow-hidden fade-in-left" style="background-image: url('{{ asset('img/bg2.webp') }}'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-black/40"></div>
                         <div class="relative z-10 text-center">
                             <h3 class="text-4xl text-center lg:text-5xl sm:text-3xl font-bold text-white mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
@@ -482,8 +426,8 @@
                 
                 <!-- Right: Quote + Image -->
                 <div class="flex flex-col gap-3">
-                    <!-- Quote Block with bg1.png -->
-                    <div class="rounded-2xl p-8 sm:p-10 border-t border-white/20 relative overflow-hidden fade-in-right" style="background-image: url('{{ asset('img/bg1.png') }}'); background-size: cover; background-position: center;">
+                    <!-- Quote Block with bg1.webp -->
+                    <div class="rounded-2xl p-8 sm:p-10 border-t border-white/20 relative overflow-hidden fade-in-right" style="background-image: url('{{ asset('img/bg1.webp') }}'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-black/50"></div>
                         <div class="relative z-10">
                             <span class="absolute top-1 left-1 text-5xl text-white/30 font-serif">“</span>
@@ -499,7 +443,7 @@
                     
                     <!-- Building Image -->
                     <div class="rounded-2xl overflow-hidden fade-in">
-                        <img src="{{ asset('img/mioymbuilding.png') }}" alt="MIOYM Corporate Office - 2900 Westchester Avenue, Purchase, NY" class="w-full h-64 sm:h-80 object-cover" loading="lazy">
+                        <img src="{{ asset('img/mioymbuilding.webp') }}" alt="MIOYM Corporate Office - 2900 Westchester Avenue, Purchase, NY" class="w-full h-64 sm:h-80 object-cover" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -507,7 +451,7 @@
     </section>
 
     <!-- MIOYM Equities Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden" style="background-image: url('{{ asset('img/bgimg1.png') }}'); background-size: cover; background-position: center;">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden" style="background-image: url('{{ asset('img/bgimg1.webp') }}'); background-size: cover; background-position: center;">
         <div class="absolute inset-0" style="background: rgba(0, 0, 0, 0.7);"></div>
         
         <div class="max-w-7xl mx-auto relative z-10">
@@ -529,7 +473,7 @@
                 <!-- Card 1 -->
                 <div class="rounded-2xl overflow-hidden flex flex-col backdrop-blur-md transition-all duration-300 group fade-in stagger-1 card-hover" style="background: rgba(22, 1, 1, 0.2); border: 1px solid rgba(255, 255, 255, 0.1);">
                     <div class="h-48 bg-gray-800 flex items-center justify-center overflow-hidden flex-shrink-0">
-                        <img src="{{ asset('img/residential.jpg') }}" alt="Residential Properties Investment - Distressed Mortgages and REO Properties" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <img src="{{ asset('img/residential.webp') }}" alt="Residential Properties Investment - Distressed Mortgages and REO Properties" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-white font-semibold text-lg mb-2" style="font-family: 'Plus Jakarta Sans', sans-serif;">Residential</h3>
@@ -544,7 +488,7 @@
                 <!-- Card 2 -->
                 <div class="rounded-2xl overflow-hidden flex flex-col backdrop-blur-md transition-all duration-300 group fade-in stagger-2 card-hover" style="background: rgba(22, 1, 1, 0.2); border: 1px solid rgba(255, 255, 255, 0.1);">
                     <div class="h-48 bg-gray-800 flex items-center justify-center overflow-hidden flex-shrink-0">
-                        <img src="{{ asset('img/sales_process.jpg') }}" alt="Fix and Flip Investment Process - 17.5% Annual Returns Program" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <img src="{{ asset('img/sales_process.webp') }}" alt="Fix and Flip Investment Process - 17.5% Annual Returns Program" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-white font-semibold text-lg mb-2" style="font-family: 'Plus Jakarta Sans', sans-serif;">Individual Investors</h3>
@@ -559,7 +503,7 @@
                 <!-- Card 3 -->
                 <div class="rounded-2xl overflow-hidden flex flex-col backdrop-blur-md transition-all duration-300 group fade-in stagger-3 card-hover" style="background: rgba(22, 1, 1, 0.2); border: 1px solid rgba(255, 255, 255, 0.1);">
                     <div class="h-48 bg-gray-800 flex items-center justify-center overflow-hidden flex-shrink-0">
-                        <img src="{{ asset('img/rent_to_own.jpg') }}" alt="MIOYM Rent To Own Program - First-Time Homebuyer Solution" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <img src="{{ asset('img/rent_to_own.webp') }}" alt="MIOYM Rent To Own Program - First-Time Homebuyer Solution" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-white font-semibold text-lg mb-2" style="font-family: 'Plus Jakarta Sans', sans-serif;">The MIOYM to Own Program</h3>
@@ -574,7 +518,7 @@
                 <!-- Card 4 -->
                 <div class="rounded-2xl overflow-hidden flex flex-col backdrop-blur-md transition-all duration-300 group fade-in stagger-4 card-hover" style="background: rgba(22, 1, 1, 0.2); border: 1px solid rgba(255, 255, 255, 0.1);">
                     <div class="h-48 bg-gray-800 flex items-center justify-center overflow-hidden flex-shrink-0">
-                        <img src="{{ asset('img/multifamliy.jpg') }}" alt="Multi-Family Properties Investment - Commercial Real Estate Ventures" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <img src="{{ asset('img/multifamliy.webp') }}" alt="Multi-Family Properties Investment - Commercial Real Estate Ventures" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-white font-semibold text-lg mb-2" style="font-family: 'Plus Jakarta Sans', sans-serif;">Institutional Investors/ Commercial Ventures</h3>
@@ -604,12 +548,12 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12 p-5 rounded-2xl fade-in" style="background: linear-gradient(235deg, #282525 0%, #574F4F 54%, #968181 100%);">
                     <!-- Left: Image with Gradient -->
                     <div class="rounded-lg overflow-hidden h-[400px] lg:h-[600px] fade-in-left" >
-                        <img src="{{ asset('img/image_3.png') }}" alt="Individual Investors - MIOYM Investment Program" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/image_3.webp') }}" alt="Individual Investors - MIOYM Investment Program" class="w-full h-full object-cover">
                     </div>
                     
                     <!-- Right: Text Content -->
                     <div class="text-left relative p-5">
-                        <img src="{{ asset('img/buildings.png') }}" alt="MIOYM Buildings" class="absolute top-[207px] w-full h-full object-cover opacity-50 z-10 rounded-lg hidden lg:block">
+                        <img src="{{ asset('img/buildings.webp') }}" alt="MIOYM Buildings" class="absolute top-[207px] w-full h-full object-cover opacity-50 z-10 rounded-lg hidden lg:block">
                         <h3 class="text-center text-3xl sm:text-4xl font-bold text-white mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                             Individual Investors
                         </h3>
@@ -624,12 +568,12 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center p-5 rounded-2xl" style="background: linear-gradient(235deg, #968181  0%, #574F4F 54%, #282525 100%);">
                         <!-- Right: Image with Gradient (First on mobile, right on desktop) -->
                         <div class="rounded-lg overflow-hidden h-[250px] lg:h-[600px] order-1 lg:order-2 fade-in-scale">
-                            <img src="{{ asset('img/image_4.png') }}" alt="Institutional Investors - MIOYM Investment Program" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/image_4.webp') }}" alt="Institutional Investors - MIOYM Investment Program" class="w-full h-full object-cover">
                         </div>
                         
                         <!-- Left: Text Content (Second on mobile, left on desktop) -->
                         <div class="text-left relative p-5 order-2 lg:order-1">
-                            <img src="{{ asset('img/buildings.png') }}" alt="MIOYM Buildings" class="absolute top-[207px] inset-0 w-full h-full object-cover opacity-30 z-10 rounded-lg hidden lg:block">
+                            <img src="{{ asset('img/buildings.webp') }}" alt="MIOYM Buildings" class="absolute top-[207px] inset-0 w-full h-full object-cover opacity-30 z-10 rounded-lg hidden lg:block">
                             <h3 class="text-center lg:text-left text-3xl sm:text-4xl font-bold text-white mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                                 Institutional Investors
                             </h3>
@@ -646,7 +590,7 @@
 
     <!-- Testimonials Section -->
     <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden" style="background: linear-gradient(to bottom, #000000 0%, #1a1a1a 100%);">
-        <div class="absolute inset-0 z-0" style="background-image: url('{{ asset('img/bgFeedback.png') }}'); background-size: cover; background-position: center;"></div>
+        <div class="absolute inset-0 z-0" style="background-image: url('{{ asset('img/bgFeedback.webp') }}'); background-size: cover; background-position: center;"></div>
         <div class="max-w-7xl mx-auto relative z-10">
             <!-- Section Header -->
             <div class="text-center mb-12 fade-in">
@@ -770,7 +714,7 @@
 
     <!-- Request More Info Section -->
     <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden" style="background: linear-gradient(to bottom, #1a1a1a 0%, #000000 100%);">
-        <div class="absolute inset-0 z-0" style="background-image: url('{{ asset('img/bgContact.png') }}'); background-size: cover; background-position: center;"></div>
+        <div class="absolute inset-0 z-0" style="background-image: url('{{ asset('img/bgContact.webp') }}'); background-size: cover; background-position: center;"></div>
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- Left Side - Text Content -->
@@ -782,7 +726,7 @@
                         MIOYM is a vertically integrated real estate firm dedicated to creating value and delivering consistent returns to investors through a proven, conservative and disciplined investment and management strategy.<br>MIOYM's primary objectives are capital preservation and generating long-term total return with a strong emphasis on current income by investing in single-family communities in high-density suburban markets.
                     </p>
                     <div class="mt-4 absolute bottom-[-6%] left-0 right-0 -z-10 hidden lg:block">
-                        <img src="{{ asset('img/houseB.png') }}" alt="MIOYM House" class="w-full max-w-2xl mx-auto lg:mx-0">
+                        <img src="{{ asset('img/houseB.webp') }}" alt="MIOYM House" class="w-full max-w-2xl mx-auto lg:mx-0">
                     </div>
                 </div>
                 

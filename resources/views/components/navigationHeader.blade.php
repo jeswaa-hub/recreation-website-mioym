@@ -31,12 +31,8 @@
     ];
 @endphp
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<nav class="fixed top-0 left-0 right-0 z-50 bg-[#201B1B] border-b border-white/5">
+<!-- Navigation Header -->
+<nav x-data="{ mobileMenuOpen: false }" class="fixed top-0 left-0 right-0 z-50 bg-[#201B1B] border-b border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16 lg:h-20">
             <!-- Logo -->
@@ -55,15 +51,22 @@
                     </a>
                     
                     <!-- The Firm Dropdown -->
-                    <div class="relative group" data-dropdown="firm" onmouseenter="this.dataset.open='true'; this.querySelector('.dropdown-menu').classList.remove('hidden')" onmouseleave="this.dataset.open='false'; setTimeout(() => { if(this.dataset.open === 'false') this.querySelector('.dropdown-menu').classList.add('hidden') }, 200)">
-                        <button type="button" 
-                                class="text-sm font-medium {{ request()->is('the-firm/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
-                                style="font-family: 'Inter', sans-serif;"
-                                onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
+                    <div x-data="{ open: false, leaveTimeout: null }" @mouseenter="clearTimeout(leaveTimeout); open = true" @mouseleave="leaveTimeout = setTimeout(() => open = false, 100)" class="relative group">
+                        <a href="{{ route('aboutUs') }}" 
+                           class="text-sm font-medium {{ request()->is('the-firm/about-us', 'the-firm/team', 'the-firm/investor') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
+                           style="font-family: 'Inter', sans-serif;">
                             The Firm
-                            <i class="fas fa-chevron-down text-xs"></i>
-                        </button>
-                        <div class="dropdown-menu hidden absolute top-full left-0 mt-2 w-48 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2" onmouseenter="this.parentElement.dataset.open='true'" onmouseleave="this.parentElement.dataset.open='false'; setTimeout(() => { if(this.parentElement.dataset.open === 'false') this.classList.add('hidden') }, 200)">
+                            <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
+                        </a>
+                        <div x-show="open" 
+                             x-transition:enter="transition ease-out duration-200"
+                             x-transition:enter-start="opacity-0 translate-y-2"
+                             x-transition:enter-end="opacity-100 translate-y-0"
+                             x-transition:leave="transition ease-in duration-150"
+                             x-transition:leave-start="opacity-100 translate-y-0"
+                             x-transition:leave-end="opacity-0 translate-y-2"
+                             style="display: none;"
+                             class="absolute top-full left-0 mt-2 w-48 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2">
                             @foreach($firmDropdownItems as $label => $href)
                                 <a href="{{ $href }}" 
                                    class="block px-4 py-2 text-sm {{ request()->url() == $href ? 'text-white bg-white/10 font-semibold' : 'text-gray-300 hover:text-white hover:bg-white/5' }} transition-colors"
@@ -75,15 +78,22 @@
                     </div>
                     
                     <!-- Solutions Dropdown -->
-                    <div class="relative group" data-dropdown="solutions" onmouseenter="this.dataset.open='true'; this.querySelector('.dropdown-menu').classList.remove('hidden')" onmouseleave="this.dataset.open='false'; setTimeout(() => { if(this.dataset.open === 'false') this.querySelector('.dropdown-menu').classList.add('hidden') }, 200)">
-                        <button type="button" 
-                                class="text-sm font-medium {{ request()->is('solutions/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
-                                style="font-family: 'Inter', sans-serif;"
-                                onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
+                    <div x-data="{ open: false, leaveTimeout: null }" @mouseenter="clearTimeout(leaveTimeout); open = true" @mouseleave="leaveTimeout = setTimeout(() => open = false, 100)" class="relative group">
+                        <a href="{{ route('singleFamilyResidential') }}" 
+                           class="text-sm font-medium {{ request()->is('solutions/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
+                           style="font-family: 'Inter', sans-serif;">
                             Solutions
-                            <i class="fas fa-chevron-down text-xs"></i>
-                        </button>
-                        <div class="dropdown-menu hidden absolute top-full left-0 mt-2 w-56 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2" onmouseenter="this.parentElement.dataset.open='true'" onmouseleave="this.parentElement.dataset.open='false'; setTimeout(() => { if(this.parentElement.dataset.open === 'false') this.classList.add('hidden') }, 200)">
+                            <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
+                        </a>
+                        <div x-show="open" 
+                             x-transition:enter="transition ease-out duration-200"
+                             x-transition:enter-start="opacity-0 translate-y-2"
+                             x-transition:enter-end="opacity-100 translate-y-0"
+                             x-transition:leave="transition ease-in duration-150"
+                             x-transition:leave-start="opacity-100 translate-y-0"
+                             x-transition:leave-end="opacity-0 translate-y-2"
+                             style="display: none;"
+                             class="absolute top-full left-0 mt-2 w-56 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2">
                             @foreach($solutionsDropdown as $label => $href)
                                 <a href="{{ $href }}" 
                                    class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-colors"
@@ -95,15 +105,22 @@
                     </div>
                     
                     <!-- Asset Management Dropdown -->
-                    <div class="relative group" data-dropdown="asset" onmouseenter="this.dataset.open='true'; this.querySelector('.dropdown-menu').classList.remove('hidden')" onmouseleave="this.dataset.open='false'; setTimeout(() => { if(this.dataset.open === 'false') this.querySelector('.dropdown-menu').classList.add('hidden') }, 200)">
-                        <button type="button" 
-                                class="text-sm font-medium {{ request()->is('asset-management/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
-                                style="font-family: 'Inter', sans-serif;"
-                                onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
+                    <div x-data="{ open: false, leaveTimeout: null }" @mouseenter="clearTimeout(leaveTimeout); open = true" @mouseleave="leaveTimeout = setTimeout(() => open = false, 100)" class="relative group">
+                        <a href="{{ route('affordableHomeProgram') }}" 
+                           class="text-sm font-medium {{ request()->is('asset-management/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
+                           style="font-family: 'Inter', sans-serif;">
                             Asset Management
-                            <i class="fas fa-chevron-down text-xs"></i>
-                        </button>
-                        <div class="dropdown-menu hidden absolute top-full left-0 mt-2 w-56 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2" onmouseenter="this.parentElement.dataset.open='true'" onmouseleave="this.parentElement.dataset.open='false'; setTimeout(() => { if(this.parentElement.dataset.open === 'false') this.classList.add('hidden') }, 200)">
+                            <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
+                        </a>
+                        <div x-show="open" 
+                             x-transition:enter="transition ease-out duration-200"
+                             x-transition:enter-start="opacity-0 translate-y-2"
+                             x-transition:enter-end="opacity-100 translate-y-0"
+                             x-transition:leave="transition ease-in duration-150"
+                             x-transition:leave-start="opacity-100 translate-y-0"
+                             x-transition:leave-end="opacity-0 translate-y-2"
+                             style="display: none;"
+                             class="absolute top-full left-0 mt-2 w-56 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2">
                             @foreach($assetManagementDropdown as $label => $href)
                                 <a href="{{ $href }}" 
                                    class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-colors"
@@ -115,15 +132,22 @@
                     </div>
                     
                     <!-- Lending Dropdown -->
-                    <div class="relative group" data-dropdown="lending" onmouseenter="this.dataset.open='true'; this.querySelector('.dropdown-menu').classList.remove('hidden')" onmouseleave="this.dataset.open='false'; setTimeout(() => { if(this.dataset.open === 'false') this.querySelector('.dropdown-menu').classList.add('hidden') }, 200)">
-                        <button type="button" 
-                                class="text-sm font-medium {{ request()->is('lending/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
-                                style="font-family: 'Inter', sans-serif;"
-                                onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
+                    <div x-data="{ open: false, leaveTimeout: null }" @mouseenter="clearTimeout(leaveTimeout); open = true" @mouseleave="leaveTimeout = setTimeout(() => open = false, 100)" class="relative group">
+                        <a href="https://mioymcommercialcapital.com/" 
+                           class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
+                           style="font-family: 'Inter', sans-serif;">
                             Lending
-                            <i class="fas fa-chevron-down text-xs"></i>
-                        </button>
-                        <div class="dropdown-menu hidden absolute top-full left-0 mt-2 w-52 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2" onmouseenter="this.parentElement.dataset.open='true'" onmouseleave="this.parentElement.dataset.open='false'; setTimeout(() => { if(this.parentElement.dataset.open === 'false') this.classList.add('hidden') }, 200)">
+                            <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
+                        </a>
+                        <div x-show="open" 
+                             x-transition:enter="transition ease-out duration-200"
+                             x-transition:enter-start="opacity-0 translate-y-2"
+                             x-transition:enter-end="opacity-100 translate-y-0"
+                             x-transition:leave="transition ease-in duration-150"
+                             x-transition:leave-start="opacity-100 translate-y-0"
+                             x-transition:leave-end="opacity-0 translate-y-2"
+                             style="display: none;"
+                             class="absolute top-full left-0 mt-2 w-52 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2">
                             @foreach($lendingDropdown as $label => $href)
                                 <a href="{{ $href }}" 
                                    class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-colors"
@@ -135,15 +159,22 @@
                     </div>
                     
                     <!-- News Dropdown -->
-                    <div class="relative group" data-dropdown="news" onmouseenter="this.dataset.open='true'; this.querySelector('.dropdown-menu').classList.remove('hidden')" onmouseleave="this.dataset.open='false'; setTimeout(() => { if(this.dataset.open === 'false') this.querySelector('.dropdown-menu').classList.add('hidden') }, 200)">
-                        <button type="button" 
-                                class="text-sm font-medium {{ request()->is('news/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
-                                style="font-family: 'Inter', sans-serif;"
-                                onclick="const parent = this.parentElement; const isOpen = parent.querySelector('.dropdown-menu').classList.contains('hidden'); document.querySelectorAll('[data-dropdown] .dropdown-menu').forEach(d => d.classList.add('hidden')); if(isOpen) parent.querySelector('.dropdown-menu').classList.remove('hidden');">
+                    <div x-data="{ open: false, leaveTimeout: null }" @mouseenter="clearTimeout(leaveTimeout); open = true" @mouseleave="leaveTimeout = setTimeout(() => open = false, 100)" class="relative group">
+                        <a href="{{ route('blogs') }}" 
+                           class="text-sm font-medium {{ request()->is('news/blogs', 'news/testimonials') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
+                           style="font-family: 'Inter', sans-serif;">
                             News
-                            <i class="fas fa-chevron-down text-xs"></i>
-                        </button>
-                        <div class="dropdown-menu hidden absolute top-full left-0 mt-2 w-40 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2" onmouseenter="this.parentElement.dataset.open='true'" onmouseleave="this.parentElement.dataset.open='false'; setTimeout(() => { if(this.parentElement.dataset.open === 'false') this.classList.add('hidden') }, 200)">
+                            <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
+                        </a>
+                        <div x-show="open" 
+                             x-transition:enter="transition ease-out duration-200"
+                             x-transition:enter-start="opacity-0 translate-y-2"
+                             x-transition:enter-end="opacity-100 translate-y-0"
+                             x-transition:leave="transition ease-in duration-150"
+                             x-transition:leave-start="opacity-100 translate-y-0"
+                             x-transition:leave-end="opacity-0 translate-y-2"
+                             style="display: none;"
+                             class="absolute top-full left-0 mt-2 w-40 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2">
                             @foreach($newsDropdown as $label => $href)
                                 <a href="{{ $href }}" 
                                    class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-colors"
@@ -168,14 +199,22 @@
             <!-- Mobile Menu Button -->
             <button type="button" 
                     class="lg:hidden p-2 text-gray-300 hover:text-white focus:outline-none"
-                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    @click="mobileMenuOpen = !mobileMenuOpen">
                 <i class="fas fa-bars text-lg"></i>
             </button>
         </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-[#201B1B] border-t border-white/5">
+    <div x-show="mobileMenuOpen" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-4"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 translate-y-0"
+         x-transition:leave-end="opacity-0 -translate-y-4"
+         style="display: none;" 
+         class="lg:hidden bg-[#201B1B] border-t border-white/5 shadow-2xl absolute w-full left-0">
         <div class="px-4 py-4 space-y-3">
             <!-- Home -->
             <a href="/" 
@@ -185,17 +224,16 @@
             </a>
             
             <!-- Mobile The Firm Dropdown -->
-            <div class="space-y-2">
-                <button type="button" 
+            <div x-data="{ open: false }" class="space-y-2">
+                <button @click="open = !open" type="button" 
                         class="flex items-center justify-between w-full text-base font-medium text-gray-300 hover:text-white"
-                        style="font-family: 'Inter', sans-serif;"
-                        onclick="document.getElementById('mobile-firm-dropdown').classList.toggle('hidden')">
+                        style="font-family: 'Inter', sans-serif;">
                     The Firm
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </button>
-                <div id="mobile-firm-dropdown" class="hidden pl-4 space-y-2">
+                <div x-show="open" style="display: none;" class="pl-4 space-y-2">
                     @foreach($firmDropdownItems as $label => $href)
                         <a href="{{ $href }}" 
                            class="block text-sm text-gray-400 hover:text-white transition-colors"
@@ -207,17 +245,16 @@
             </div>
             
             <!-- Mobile Solutions Dropdown -->
-            <div class="space-y-2">
-                <button type="button" 
+            <div x-data="{ open: false }" class="space-y-2">
+                <button @click="open = !open" type="button" 
                         class="flex items-center justify-between w-full text-base font-medium text-gray-300 hover:text-white"
-                        style="font-family: 'Inter', sans-serif;"
-                        onclick="document.getElementById('mobile-solutions-dropdown').classList.toggle('hidden')">
+                        style="font-family: 'Inter', sans-serif;">
                     Solutions
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </button>
-                <div id="mobile-solutions-dropdown" class="hidden pl-4 space-y-2">
+                <div x-show="open" style="display: none;" class="pl-4 space-y-2">
                     @foreach($solutionsDropdown as $label => $href)
                         <a href="{{ $href }}" 
                            class="block text-sm text-gray-400 hover:text-white transition-colors"
@@ -229,17 +266,16 @@
             </div>
             
             <!-- Mobile Asset Management Dropdown -->
-            <div class="space-y-2">
-                <button type="button" 
+            <div x-data="{ open: false }" class="space-y-2">
+                <button @click="open = !open" type="button" 
                         class="flex items-center justify-between w-full text-base font-medium text-gray-300 hover:text-white"
-                        style="font-family: 'Inter', sans-serif;"
-                        onclick="document.getElementById('mobile-asset-dropdown').classList.toggle('hidden')">
+                        style="font-family: 'Inter', sans-serif;">
                     Asset Management
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </button>
-                <div id="mobile-asset-dropdown" class="hidden pl-4 space-y-2">
+                <div x-show="open" style="display: none;" class="pl-4 space-y-2">
                     @foreach($assetManagementDropdown as $label => $href)
                         <a href="{{ $href }}" 
                            class="block text-sm text-gray-400 hover:text-white transition-colors"
@@ -251,17 +287,16 @@
             </div>
             
             <!-- Mobile Lending Dropdown -->
-            <div class="space-y-2">
-                <button type="button" 
+            <div x-data="{ open: false }" class="space-y-2">
+                <button @click="open = !open" type="button" 
                         class="flex items-center justify-between w-full text-base font-medium text-gray-300 hover:text-white"
-                        style="font-family: 'Inter', sans-serif;"
-                        onclick="document.getElementById('mobile-lending-dropdown').classList.toggle('hidden')">
+                        style="font-family: 'Inter', sans-serif;">
                     Lending
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </button>
-                <div id="mobile-lending-dropdown" class="hidden pl-4 space-y-2">
+                <div x-show="open" style="display: none;" class="pl-4 space-y-2">
                     @foreach($lendingDropdown as $label => $href)
                         <a href="{{ $href }}" 
                            class="block text-sm text-gray-400 hover:text-white transition-colors"
@@ -273,17 +308,16 @@
             </div>
             
             <!-- Mobile News Dropdown -->
-            <div class="space-y-2">
-                <button type="button" 
+            <div x-data="{ open: false }" class="space-y-2">
+                <button @click="open = !open" type="button" 
                         class="flex items-center justify-between w-full text-base font-medium text-gray-300 hover:text-white"
-                        style="font-family: 'Inter', sans-serif;"
-                        onclick="document.getElementById('mobile-news-dropdown').classList.toggle('hidden')">
+                        style="font-family: 'Inter', sans-serif;">
                     News
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </button>
-                <div id="mobile-news-dropdown" class="hidden pl-4 space-y-2">
+                <div x-show="open" style="display: none;" class="pl-4 space-y-2">
                     @foreach($newsDropdown as $label => $href)
                         <a href="{{ $href }}" 
                            class="block text-sm text-gray-400 hover:text-white transition-colors"
@@ -294,7 +328,7 @@
                 </div>
             </div>
             
-            <a href="#" 
+            <a href="https://mioym-equities-be48b.web.app/login" 
                class="block w-full text-center px-5 py-3 mt-4 bg-white text-[#201B1B] text-sm font-semibold rounded-lg"
                style="font-family: 'Plus Jakarta Sans', sans-serif;">
                 Investor Portal
