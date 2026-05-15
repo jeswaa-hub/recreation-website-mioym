@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 Route::post('/contact/submit', [ContactController::class, 'submit'])->middleware('throttle:3,1')->name('contact.submit');
 
 // Landing Page
-Route::get('/', function () { return view('landingPage');})->name('landing');
+Route::get('/', function () { return view('landingPage');})->name('landingPage');
 // About Us
 Route::get('/the-firm/about-us', function () { return view('aboutUs');})->name('aboutUs');
 // Team
