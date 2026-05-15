@@ -133,7 +133,11 @@
             </div>
         </section>
         <!-- Why Choose Section -->
-        <section class="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-screen flex items-center" style="background-image: url('{{ asset('img/mioymRealtyBG.webp') }}'); background-size: cover; background-position: center;">
+        <section class="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-screen flex items-center">
+            <div class="absolute inset-0 -z-10">
+                <img src="{{ asset('img/mioymRealtyBG.webp') }}" alt="" class="w-full h-full object-cover" data-fallback="{{ asset('img/bgAboutUs.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+            </div>
+            <div class="absolute inset-0 bg-black/55 -z-10"></div>
             <div class="max-w-7xl mx-auto relative z-10">
                 <!-- Header -->
                 <div class="text-center mb-16" data-aos="fade-up">
@@ -237,4 +241,3 @@
     </script>
 </body>
 </html>
-

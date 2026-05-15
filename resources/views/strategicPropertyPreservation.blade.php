@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strategic Property Preservation | MIOYM</title>
     <meta name="description" content="Strategic Property Preservation LLC provides property preservation, inspections, loss mitigation, and REO management services nationwide.">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/webp" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -166,7 +166,7 @@
     <main class="pt-16 lg:pt-20">
         <section class="hero-surface">
             <div class="absolute inset-0 -z-10">
-                <img src="{{ asset('img/bgAboutUs.png') }}" alt="" class="w-full h-full object-cover">
+                <img src="{{ asset('img/bgAboutUs.webp') }}" alt="" class="w-full h-full object-cover">
             </div>
             <div class="absolute inset-0 bg-black/70 -z-10"></div>
 
@@ -275,7 +275,7 @@
                         <div class="spp-bento-card md:col-span-7">
                             <div class="grid grid-cols-1 sm:grid-cols-[240px_1fr] gap-6 p-5">
                                 <div class="spp-bento-media aspect-[16/10]">
-                                    <img src="{{ asset('img/imgteam1.png') }}" alt="Asset Management Expertise" class="w-full h-full object-cover" data-fallback="{{ asset('img/bgAboutUs.png') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                                    <img src="{{ asset('img/imgteam1.webp') }}" alt="Asset Management Expertise" class="w-full h-full object-cover" data-fallback="{{ asset('img/bgAboutUs.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                                 </div>
                                 <div class="min-w-0">
                                     <h3 class="spp-bento-title text-xl">Asset Management Expertise</h3>

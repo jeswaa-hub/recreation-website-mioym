@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIOYM Joint Venture | MIOYM</title>
     <meta name="description" content="MIOYM Joint Venture program: you find the deal, we fund the deal, we split the profit. Learn the key aspects of a real estate joint venture agreement.">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/webp" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,11 +71,11 @@
     <main class="pt-16 lg:pt-20">
         <section class="relative overflow-hidden">
             <div class="absolute inset-0 -z-10">
-                <img src="{{ asset('img/imgAboutUs.png') }}" alt="" class="w-full h-full object-cover" data-fallback="{{ asset('img/bgAboutUs.png') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                <img src="{{ asset('img/imgAboutUs.png') }}" alt="" class="w-full h-full object-cover" data-fallback="{{ asset('img/bgAboutUs.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
             </div>
             <div class="absolute inset-0 bg-black/70 -z-10"></div>
             <div class="absolute inset-0 -z-10 opacity-35">
-                <img src="{{ asset('img/investorbg.png') }}" alt="" class="w-full h-full object-cover">
+                <img src="{{ asset('img/investorbg.webp') }}" alt="" class="w-full h-full object-cover">
             </div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
@@ -129,12 +129,12 @@
                 <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div class="jv-card p-2 reveal" data-reveal style="--d: 0ms;">
                         <div class="rounded-2xl overflow-hidden aspect-[16/10] bg-black/20">
-                            <img src="{{ asset('img/house1.png') }}" alt="Joint venture property" class="w-full h-full object-cover" data-fallback="{{ asset('img/house.png') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                            <img src="{{ asset('img/house1.webp') }}" alt="Joint venture property" class="w-full h-full object-cover" data-fallback="{{ asset('img/house.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                         </div>
                     </div>
                     <div class="jv-card p-2 reveal" data-reveal style="--d: 120ms;">
                         <div class="rounded-2xl overflow-hidden aspect-[16/10] bg-black/20">
-                            <img src="{{ asset('img/houseB.png') }}" alt="Joint venture property" class="w-full h-full object-cover" data-fallback="{{ asset('img/houseC.png') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                            <img src="{{ asset('img/houseB.webp') }}" alt="Joint venture property" class="w-full h-full object-cover" data-fallback="{{ asset('img/houseC.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                         </div>
                     </div>
                 </div>

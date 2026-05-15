@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Affordable Home Program | MIOYM Equities</title>
     <meta name="description" content="Unlock Your Dream Home with MIOYM Affordable Homes. Nationwide down payment and closing costs provided.">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/webp" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -146,28 +146,22 @@
         }
         .hero-surface {
             position: relative;
-            background:
-                radial-gradient(520px 520px at 96% 14%, rgba(217, 217, 217, 0.16) 0 34%, transparent 35%),
-                radial-gradient(520px 520px at 12% 92%, rgba(217, 217, 217, 0.12) 0 32%, transparent 33%),
-                radial-gradient(900px 420px at 72% 18%, rgba(217, 217, 217, 0.12), transparent 62%),
-                linear-gradient(180deg, #0b0a0a 0%, #151212 100%);
+            background: linear-gradient(180deg, #000000 0%, #171717 60%, #5a5a5a 100%);
             overflow: hidden;
         }
         .hero-surface::before {
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(90deg, rgba(217, 217, 217, 0.22) 0%, rgba(217, 217, 217, 0.10) 12%, transparent 26%);
-            clip-path: polygon(0 0, 8% 0, 0 55%);
-            opacity: 0.65;
+            background: none;
+            opacity: 0;
         }
         .hero-surface::after {
             content: '';
             position: absolute;
             inset: 0;
-            background:
-                radial-gradient(800px 320px at 64% 12%, rgba(0, 0, 0, 0.55), transparent 70%),
-                radial-gradient(780px 340px at 86% 22%, rgba(0, 0, 0, 0.35), transparent 72%);
+            background: none;
+            opacity: 0;
             pointer-events: none;
         }
         .hero-art {
@@ -202,17 +196,27 @@
     @include('components.navigationHeader')
     
     <main class="pt-16 lg:pt-20">
-        <section class="hero-surface">
+        <section class="relative overflow-hidden">
             <div class="absolute inset-0 -z-10">
-                <img src="{{ asset('img/bgAboutUs.png') }}" alt="" class="w-full h-full object-cover">
+                <img src="{{ asset('img/bgAboutUs.webp') }}" alt="" class="w-full h-full object-cover object-center">
             </div>
             <div class="absolute inset-0 bg-black/70 -z-10"></div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight text-center" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                    Affordable Home<br>Program
+                </h1>
+            </div>
+        </section>
+
+        <section class="hero-surface relative overflow-hidden">
+            <div class="absolute inset-0 pointer-events-none z-0">
+                <img src="{{ asset('img/Rectangle.webp') }}" alt="" class="absolute left-[-140px] top-[-100px] w-[280px] sm:w-[380px] lg:w-[520px] max-w-none opacity-55">
+                <img src="{{ asset('img/Rectangle.webp') }}" alt="" class="absolute right-[-140px] top-[600px] w-[280px] sm:w-[380px] lg:w-[520px] max-w-none opacity-55">
+            </div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
                 <div class="relative z-10">
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                        Affordable Home<br>Program
-                    </h1>
-                    <div class="mt-10 flex justify-center">
+                    <div class="mt-6 flex justify-center">
                         <h2 class="text-lg sm:text-xl lg:text-2xl font-semibold text-white/90 text-center leading-snug" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                             Unlock Your Dream Home with MIOYM
                             <span class="block">Affordable Homes.</span>
@@ -225,7 +229,7 @@
                     <div class="feature-card reveal" data-reveal style="--d: 0ms;">
                         <div class="feature-media">
                             <div class="feature-media-inner aspect-video">
-                                <img src="{{ asset('img/ahp1.jpg') }}" alt="Nationwide Down Payment Provided" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.jpg') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                                <img src="{{ asset('img/ahp1.jpg') }}" alt="Nationwide Down Payment Provided" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                             </div>
                         </div>
                         <div class="feature-icon-wrapper">
@@ -243,7 +247,7 @@
                     <div class="feature-card reveal" data-reveal style="--d: 120ms;">
                         <div class="feature-media">
                             <div class="feature-media-inner aspect-video">
-                                <img src="{{ asset('img/ahp2.jpg') }}" alt="Closing Costs Provided!" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.jpg') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                                <img src="{{ asset('img/ahp2.jpg') }}" alt="Closing Costs Provided!" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                             </div>
                         </div>
                         <div class="feature-icon-wrapper">
@@ -261,7 +265,7 @@
                     <div class="feature-card reveal" data-reveal style="--d: 240ms;">
                         <div class="feature-media">
                             <div class="feature-media-inner aspect-video">
-                                <img src="{{ asset('img/ahp3.jpg') }}" alt="Credit Qualification" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.jpg') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                                <img src="{{ asset('img/ahp3.jpg') }}" alt="Credit Qualification" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                             </div>
                         </div>
                         <div class="feature-icon-wrapper">
@@ -280,7 +284,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
                     <div class="rounded-[44px] overflow-hidden shadow-2xl reveal" data-reveal style="--d: 0ms;">
                         <div class="aspect-[16/10] bg-black/20">
-                            <img src="{{ asset('img/ahp4.webp') }}" alt="Available Properties" class="w-full h-full object-contain" data-fallback="{{ asset('img/house.png') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                            <img src="{{ asset('img/ahp4.webp') }}" alt="Available Properties" class="w-full h-full object-contain" data-fallback="{{ asset('img/house.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                         </div>
                     </div>
                     <div class="space-y-4">
