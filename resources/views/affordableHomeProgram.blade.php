@@ -71,18 +71,78 @@
             padding: 18px 26px 28px;
         }
         .action-card {
-            background: rgba(45, 45, 45, 0.85);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 16px;
-            padding: 14px 18px;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.22) 0%, rgba(255, 255, 255, 0.06) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            border-radius: 20px;
+            padding: 18px 24px;
             display: flex;
-            align-items: center;
+            align-items: stretch;
             justify-content: space-between;
             gap: 1.5rem;
-            transition: background 0.3s ease;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+            transition: transform 0.25s ease, background 0.25s ease;
         }
         .action-card:hover {
-            background: rgba(61, 61, 61, 0.9);
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.28) 0%, rgba(255, 255, 255, 0.08) 100%);
+            transform: translateY(-1px);
+        }
+        .action-icon {
+            width: 76px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            flex: 0 0 auto;
+        }
+        .action-icon svg {
+            width: 58px;
+            height: 58px;
+            display: block;
+            overflow: visible;
+            filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.45));
+        }
+        .action-main {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+        .action-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 0;
+            padding-top: 6px;
+        }
+        .action-cta {
+            display: flex;
+            align-items: flex-end;
+        }
+        .action-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        .action-btn {
+            background: #D9D9D9;
+            color: #201B1B;
+            padding: 9px 18px;
+            border-radius: 9px;
+            font-weight: 800;
+            font-size: 0.75rem;
+            letter-spacing: 0.02em;
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+            transition: background 0.2s ease;
+            white-space: nowrap;
+        }
+        .action-btn:hover {
+            background: #ffffff;
+        }
+        .action-btn--caps {
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
         }
         .hero-surface {
             position: relative;
@@ -218,38 +278,48 @@
 
                 <!-- Properties & Call Section -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
-                    <div class="bg-[#2D2D2D]/55 rounded-[44px] p-4 shadow-2xl reveal" data-reveal style="--d: 0ms;">
-                        <div class="rounded-[34px] overflow-hidden aspect-[16/10]">
-                            <img src="{{ asset('img/house.png') }}" alt="Available Properties" class="w-full h-full object-cover" data-fallback="{{ asset('img/house1.png') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                    <div class="rounded-[44px] overflow-hidden shadow-2xl reveal" data-reveal style="--d: 0ms;">
+                        <div class="aspect-[16/10] bg-black/20">
+                            <img src="{{ asset('img/ahp4.webp') }}" alt="Available Properties" class="w-full h-full object-contain" data-fallback="{{ asset('img/house.png') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                         </div>
                     </div>
                     <div class="space-y-4">
                         <div class="action-card reveal" data-reveal style="--d: 120ms;">
-                            <div class="flex items-center gap-4 flex-1 min-w-0">
-                                <div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl leading-none text-white">
-                                    <i class="fas fa-home"></i>
+                            <div class="action-main">
+                                <div class="action-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3 11.5L12 4l9 7.5"></path>
+                                        <path d="M5.5 10.8V20h13V10.8"></path>
+                                        <path d="M9.5 20v-6h5v6"></path>
+                                    </svg>
                                 </div>
-                                <div class="min-w-0">
-                                    <p class="text-sm sm:text-base font-semibold text-white/90 leading-snug">Browse our Available Properties</p>
+                                <div class="action-text">
+                                    <p class="action-title text-base sm:text-lg text-white leading-snug">Browse our Available Properties</p>
                                 </div>
                             </div>
-                            <a href="{{ route('singleFamilyResidential') }}" class="bg-[#D9D9D9] text-[#201B1B] px-4 py-2 rounded-md font-bold text-xs sm:text-sm uppercase whitespace-nowrap hover:bg-white transition-colors">
-                                View Properties
-                            </a>
+                            <div class="action-cta">
+                                <a href="{{ route('singleFamilyResidential') }}" class="action-btn action-btn--caps">
+                                    View Properties
+                                </a>
+                            </div>
                         </div>
 
                         <div class="action-card reveal" data-reveal style="--d: 240ms;">
-                            <div class="flex items-center gap-4 flex-1 min-w-0">
-                                <div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl leading-none text-white">
-                                    <i class="fas fa-phone-alt"></i>
+                            <div class="action-main">
+                                <div class="action-icon" aria-hidden="true">
+                                    <svg viewBox="-1 -1 26 26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.9v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.1 5.18 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L9.1 10.9a16 16 0 0 0 4 4l1.57-1.1a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.9z"></path>
+                                    </svg>
                                 </div>
-                                <div class="min-w-0">
-                                    <p class="text-sm sm:text-base font-semibold text-white/90 leading-snug">Book a Call today to discuss your options.</p>
+                                <div class="action-text">
+                                    <p class="action-title text-base sm:text-lg text-white leading-snug">Book a Call today to discuss your options.</p>
                                 </div>
                             </div>
-                            <a href="tel:9145669050" class="bg-[#D9D9D9] text-[#201B1B] px-4 py-2 rounded-md font-bold text-xs sm:text-sm whitespace-nowrap hover:bg-white transition-colors">
-                                Book a Call with us
-                            </a>
+                            <div class="action-cta">
+                                <a href="tel:9145669050" class="action-btn">
+                                    Book a Call with us
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
