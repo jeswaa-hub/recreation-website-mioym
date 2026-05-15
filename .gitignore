@@ -7,7 +7,7 @@
 /storage/pail
 /vendor
 .trae/documents
-.opencode/skills
+.opencode/
 .env
 .env.backup
 .env.production

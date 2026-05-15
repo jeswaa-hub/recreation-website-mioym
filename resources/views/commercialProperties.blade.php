@@ -6,7 +6,7 @@
     <title>Commercial Properties | Institutional Real Estate | MIOYM Equities</title>
     <meta name="description" content="Explore MIOYM Equities' Commercial Properties portfolio. We identify undervalued commercial assets with income and long-term growth potential.">
     <meta name="keywords" content="Commercial Properties, Real Estate, MIOYM Equities, Property Investment, Institutional Real Estate">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +52,7 @@
         <section class="relative w-full overflow-hidden bg-black flex items-center min-h-[300px] lg:min-h-[400px]">
             <!-- Abstract Background Image -->
             <div class="absolute inset-0 z-0">
-                <img src="{{ asset('img/bgAboutUs.png') }}" alt="Background Texture" class="w-full h-full object-cover">
+                <img src="{{ asset('img/bgAboutUs.webp') }}" alt="Background Texture" class="w-full h-full object-cover">
             </div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-12 lg:py-0">
@@ -66,7 +66,7 @@
 
                     <!-- Right: 3D Commercial Model Image -->
                     <div class="w-full lg:w-1/2 relative flex justify-center lg:justify-end hidden lg:flex" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                        <img src="{{ asset('img/commercialprop.png') }}" alt="Commercial Property by MIOYM Equities" class="w-full max-w-[500px] lg:max-w-[750px] h-auto object-contain drop-shadow-2xl">
+                        <img src="{{ asset('img/commercialprop.webp') }}" alt="Commercial Property by MIOYM Equities" class="w-full max-w-[500px] lg:max-w-[750px] h-auto object-contain drop-shadow-2xl">
                     </div>
                 </div>
             </div>
@@ -81,17 +81,17 @@
                     <div class="w-full lg:w-1/2 relative h-[500px] sm:h-[650px]" data-aos="fade-right" data-aos-duration="1000">
                         <!-- Top Left Image -->
                         <div class="absolute top-0 lg:top-[-10%] left-0 lg:left-0 w-[85%] lg:w-[65%] h-[40%] lg:h-[50%] rounded-2xl overflow-hidden shadow-2xl z-0 bg-[#2a2a2a]">
-                            <img src="{{ asset('img/commercialpropimg1.png') }}" alt="Commercial Property by MIOYM Equities" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/commercialpropimg1.webp') }}" alt="Commercial Property by MIOYM Equities" class="w-full h-full object-cover">
                         </div>
                         
                         <!-- Bottom Left Image -->
                         <div class="absolute bottom-0 lg:bottom-0 left-0 lg:left-[-7%] w-[85%] lg:w-[65%] h-[40%] lg:h-[45%] rounded-2xl overflow-hidden shadow-2xl z-10 bg-[#3a3a3a]">
-                            <img src="{{ asset('img/commercialpropimg3.png') }}" alt="Commercial Property by MIOYM Equities" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/commercialpropimg3.webp') }}" alt="Commercial Property by MIOYM Equities" class="w-full h-full object-cover">
                         </div>
                         
                         <!-- Middle Right Image (Overlapping) -->
                         <div class="absolute top-[30%] lg:top-[25%] right-0 lg:right-[-7%] w-[85%] lg:w-[70%] h-[40%] lg:h-[45%] rounded-2xl overflow-hidden shadow-2xl z-20 bg-[#1a1a1a]">
-                            <img src="{{ asset('img/commercialpropimg2.png') }}" alt="Commercial Property by MIOYM Equities" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/commercialpropimg2.webp') }}" alt="Commercial Property by MIOYM Equities" class="w-full h-full object-cover">
                         </div>
                     </div>
 

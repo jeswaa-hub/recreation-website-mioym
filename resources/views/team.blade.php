@@ -6,7 +6,7 @@
     <title>Our Executive Team | MIOYM Equities Institutional Real Estate</title>
     <meta name="description" content="Meet the expert executive team at MIOYM Equities. We are an institutional real estate investment firm driving 15% annual returns and rebuilding communities.">
     <meta name="keywords" content="Executive Team, Institutional Real Estate, Real Estate Experts, MIOYM Equities, Investment Professionals">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
     <main class="pt-16 lg:pt-20">
         <!-- Hero Section -->
         <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-[300px] flex items-center justify-center">
-            <div class="absolute inset-0" style="background-image: url('{{ asset('img/bgAboutUs.png') }}'); background-size: cover; background-position: center;"></div>
+            <div class="absolute inset-0" style="background-image: url('{{ asset('img/bgAboutUs.webp') }}'); background-size: cover; background-position: center;"></div>
             <div class="max-w-7xl mx-auto text-center relative z-10">
                 <h1 class="uppercase text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-wider" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                     OUR EXECUTIVE TEAM
@@ -47,17 +47,17 @@
         <section class="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-[#1c1c1c]">
             <!-- Decorative Background Elements -->
             <div class="absolute left-[-100px] top-0  z-0 opacity-40  hidden lg:block">
-                <img src="{{ asset('img/imgteam3.png') }}" alt="" class="h-[800px] w-auto object-contain transform">
+                <img src="{{ asset('img/imgteam3.webp') }}" alt="" class="h-[800px] w-auto object-contain transform">
             </div>
             <div class="absolute right-0 top-0 z-0 opacity-40 pointer-events-none hidden lg:block">
-                <img src="{{ asset('img/imgteam2.png') }}" alt="" class="h-[800px] w-auto object-contain">
+                <img src="{{ asset('img/imgteam2.webp') }}" alt="" class="h-[800px] w-auto object-contain">
             </div>
 
             <div class="max-w-7xl mx-auto relative z-10 sm:px-5 lg:px-8">
                 <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                     <!-- Left: Team Image -->
                     <div class="w-full lg:w-1/2 relative">
-                        <img src="{{ asset('img/imgteam1.png') }}" alt="MIOYM Equities Institutional Real Estate Investment Experts Collaborating" class="w-full h-auto object-contain drop-shadow-2xl relative z-10">
+                        <img src="{{ asset('img/imgteam1.webp') }}" alt="MIOYM Equities Institutional Real Estate Investment Experts Collaborating" class="w-full h-auto object-contain drop-shadow-2xl relative z-10">
                     </div>
                     
                     <!-- Right: Text Content -->
@@ -87,7 +87,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/marc.jpg') }}" alt="MARC COX" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/marc.webp') }}" alt="MARC COX" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -100,7 +100,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/rob.jpg') }}" alt="ROBERT COSTOMIRIS" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/rob.webp') }}" alt="ROBERT COSTOMIRIS" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -113,7 +113,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/kratzman.jpg') }}" alt="EA KRATZMAN" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/kratzman.webp') }}" alt="EA KRATZMAN" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -126,7 +126,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/lofredo.png') }}" alt="MARCOS LOFREDO" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/lofredo.webp') }}" alt="MARCOS LOFREDO" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -139,7 +139,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/blanco.png') }}" alt="LUIS BLANCO" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/blanco.webp') }}" alt="LUIS BLANCO" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -152,7 +152,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/carter.webp') }}" alt="PAUL CARTER" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/carter.webp') }}" alt="PAUL CARTER" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -165,7 +165,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/jason.png') }}" alt="JASON STROHLI" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/jason.webp') }}" alt="JASON STROHLI" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -178,7 +178,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/steve.png') }}" alt="STEVE ANASTAS" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/steve.webp') }}" alt="STEVE ANASTAS" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -191,7 +191,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/corbey.webp') }}" alt="DARIUSZ CORBEY" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/corbey.webp') }}" alt="DARIUSZ CORBEY" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -204,7 +204,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/nicole.webp') }}" alt="NICOLE WILLIAMS" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/nicole.webp') }}" alt="NICOLE WILLIAMS" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -217,7 +217,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/kimberly.jpg') }}" alt="KIMBERLY WILLIAMS" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/kimberly.webp') }}" alt="KIMBERLY WILLIAMS" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -230,7 +230,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/connie.png') }}" alt="CONNIE BIAGGI" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/connie.webp') }}" alt="CONNIE BIAGGI" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -243,7 +243,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/thomas.png') }}" alt="THOMAS GAGE" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/thomas.webp') }}" alt="THOMAS GAGE" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -256,7 +256,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/bansal.webp') }}" alt="APOORV BANSAL" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/bansal.webp') }}" alt="APOORV BANSAL" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -269,7 +269,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/boris.png') }}" alt="IRWIN BORIS" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/boris.webp') }}" alt="IRWIN BORIS" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -282,7 +282,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/remi.webp') }}" alt="REMI OKOLI" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/remi.webp') }}" alt="REMI OKOLI" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -295,7 +295,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/jeff.webp') }}" alt="TYEVON JEFFERSON" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/jeff.webp') }}" alt="TYEVON JEFFERSON" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
@@ -308,7 +308,7 @@
                     <div class="group relative rounded-2xl overflow-hidden bg-black aspect-[3/4] shadow-2xl transition-transform duration-300 hover:-translate-y-2">
                         <div class="absolute inset-0 flex items-center justify-center bg-black">
                             <div class="w-full h-full" style="background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);"></div>
-                            <img src="{{ asset('img/gab.webp') }}" alt="GABRIEL BARRAGAN" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/team/gab.webp') }}" alt="GABRIEL BARRAGAN" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8">

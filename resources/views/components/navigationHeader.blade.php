@@ -31,12 +31,7 @@
     ];
 @endphp
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<!-- Ginamit ang Alpine.js para sa mas maayos, walang conflict, at standard na Navigation Behavior -->
+<!-- Navigation Header -->
 <nav x-data="{ mobileMenuOpen: false }" class="fixed top-0 left-0 right-0 z-50 bg-[#201B1B] border-b border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16 lg:h-20">
@@ -56,13 +51,13 @@
                     </a>
                     
                     <!-- The Firm Dropdown -->
-                    <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative group">
-                        <button @click="open = !open" type="button" 
-                                class="text-sm font-medium {{ request()->is('about-us', 'team', 'investor') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
-                                style="font-family: 'Inter', sans-serif;">
+                    <div x-data="{ open: false, leaveTimeout: null }" @mouseenter="clearTimeout(leaveTimeout); open = true" @mouseleave="leaveTimeout = setTimeout(() => open = false, 100)" class="relative group">
+                        <a href="{{ route('aboutUs') }}" 
+                           class="text-sm font-medium {{ request()->is('the-firm/about-us', 'the-firm/team', 'the-firm/investor') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
+                           style="font-family: 'Inter', sans-serif;">
                             The Firm
                             <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
-                        </button>
+                        </a>
                         <div x-show="open" 
                              x-transition:enter="transition ease-out duration-200"
                              x-transition:enter-start="opacity-0 translate-y-2"
@@ -83,13 +78,13 @@
                     </div>
                     
                     <!-- Solutions Dropdown -->
-                    <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative group">
-                        <button @click="open = !open" type="button" 
-                                class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
-                                style="font-family: 'Inter', sans-serif;">
+                    <div x-data="{ open: false, leaveTimeout: null }" @mouseenter="clearTimeout(leaveTimeout); open = true" @mouseleave="leaveTimeout = setTimeout(() => open = false, 100)" class="relative group">
+                        <a href="{{ route('singleFamilyResidential') }}" 
+                           class="text-sm font-medium {{ request()->is('solutions/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
+                           style="font-family: 'Inter', sans-serif;">
                             Solutions
                             <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
-                        </button>
+                        </a>
                         <div x-show="open" 
                              x-transition:enter="transition ease-out duration-200"
                              x-transition:enter-start="opacity-0 translate-y-2"
@@ -110,13 +105,13 @@
                     </div>
                     
                     <!-- Asset Management Dropdown -->
-                    <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative group">
-                        <button @click="open = !open" type="button" 
-                                class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
-                                style="font-family: 'Inter', sans-serif;">
+                    <div x-data="{ open: false, leaveTimeout: null }" @mouseenter="clearTimeout(leaveTimeout); open = true" @mouseleave="leaveTimeout = setTimeout(() => open = false, 100)" class="relative group">
+                        <a href="{{ route('affordableHomeProgram') }}" 
+                           class="text-sm font-medium {{ request()->is('asset-management/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
+                           style="font-family: 'Inter', sans-serif;">
                             Asset Management
                             <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
-                        </button>
+                        </a>
                         <div x-show="open" 
                              x-transition:enter="transition ease-out duration-200"
                              x-transition:enter-start="opacity-0 translate-y-2"
@@ -137,13 +132,13 @@
                     </div>
                     
                     <!-- Lending Dropdown -->
-                    <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative group">
-                        <button @click="open = !open" type="button" 
-                                class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
-                                style="font-family: 'Inter', sans-serif;">
+                    <div x-data="{ open: false, leaveTimeout: null }" @mouseenter="clearTimeout(leaveTimeout); open = true" @mouseleave="leaveTimeout = setTimeout(() => open = false, 100)" class="relative group">
+                        <a href="https://mioymcommercialcapital.com/" 
+                           class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
+                           style="font-family: 'Inter', sans-serif;">
                             Lending
                             <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
-                        </button>
+                        </a>
                         <div x-show="open" 
                              x-transition:enter="transition ease-out duration-200"
                              x-transition:enter-start="opacity-0 translate-y-2"
@@ -164,13 +159,13 @@
                     </div>
                     
                     <!-- News Dropdown -->
-                    <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative group">
-                        <button @click="open = !open" type="button" 
-                                class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1"
-                                style="font-family: 'Inter', sans-serif;">
+                    <div x-data="{ open: false, leaveTimeout: null }" @mouseenter="clearTimeout(leaveTimeout); open = true" @mouseleave="leaveTimeout = setTimeout(() => open = false, 100)" class="relative group">
+                        <a href="{{ route('blogs') }}" 
+                           class="text-sm font-medium {{ request()->is('news/blogs', 'news/testimonials') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1"
+                           style="font-family: 'Inter', sans-serif;">
                             News
                             <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
-                        </button>
+                        </a>
                         <div x-show="open" 
                              x-transition:enter="transition ease-out duration-200"
                              x-transition:enter-start="opacity-0 translate-y-2"

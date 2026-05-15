@@ -6,7 +6,7 @@
     <title>Single Family Residential | Institutional Real Estate | MIOYM Equities</title>
     <meta name="description" content="Explore MIOYM Equities' Single Family Residential real estate portfolio. We revitalize neighborhoods and deliver strong returns for our investors.">
     <meta name="keywords" content="Single Family Residential, Real Estate, MIOYM Equities, Property Investment, Institutional Real Estate">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +52,7 @@
         <section class="relative w-full overflow-hidden bg-black flex items-center min-h-[300px] lg:min-h-[300px]">
             <!-- Abstract Background Image -->
             <div class="absolute inset-0 z-0">
-                <img src="{{ asset('img/bgResidential.png') }}" alt="Background Texture" class="w-full h-full object-cover">
+                <img src="{{ asset('img/bgResidential.webp') }}" alt="Background Texture" class="w-full h-full object-cover">
             </div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-12  lg:py-0">
@@ -66,7 +66,7 @@
 
                     <!-- Right: 3D House Model Image -->
                     <div class="w-full lg:w-1/2 relative flex justify-center lg:justify-end hidden lg:flex" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                        <img src="{{ asset('img/house1.png') }}" alt="Single Family Residential Property by MIOYM Equities" class="w-full max-w-[500px] lg:max-w-[750px] h-auto object-contain drop-shadow-2xl">
+                        <img src="{{ asset('img/house1.webp') }}" alt="Single Family Residential Property by MIOYM Equities" class="w-full max-w-[500px] lg:max-w-[750px] h-auto object-contain drop-shadow-2xl">
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                             <!-- Image Placeholder -->
                             <div class="w-full aspect-[4/3] bg-[#2a2a2a] rounded-[24px] mb-8 flex items-center justify-center border border-white/10 shadow-lg relative overflow-hidden flex-shrink-0">
                                 <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                                <img src="{{ asset('img/residentialImg1.jpg') }}" alt="Principle 1" class="w-full h-full object-cover">
+                                <img src="{{ asset('img/residentialImg1.webp') }}" alt="Principle 1" class="w-full h-full object-cover">
                             </div>
                             
                             <!-- Number & Title -->
@@ -116,7 +116,7 @@
                             <!-- Image Placeholder -->
                             <div class="w-full aspect-[4/3] bg-[#2a2a2a] rounded-[24px] mb-8 flex items-center justify-center border border-white/10 shadow-lg relative overflow-hidden flex-shrink-0">
                                 <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                                <img src="{{ asset('img/residentialImg2.jpg') }}" alt="Principle 2" class="w-full h-full object-cover">
+                                <img src="{{ asset('img/residentialImg2.webp') }}" alt="Principle 2" class="w-full h-full object-cover">
                             </div>
                             
                             <!-- Number & Title -->
@@ -146,7 +146,7 @@
                             <!-- Image Placeholder -->
                             <div class="w-full aspect-[4/3] bg-[#2a2a2a] rounded-[24px] mb-8 flex items-center justify-center border border-white/10 shadow-lg relative overflow-hidden flex-shrink-0">
                                 <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                                <img src="{{ asset('img/residentialImg3.jpg') }}" alt="Principle 3" class="w-full h-full object-cover">
+                                <img src="{{ asset('img/residentialImg3.webp') }}" alt="Principle 3" class="w-full h-full object-cover">
                             </div>
                             
                             <!-- Number & Title -->
@@ -186,12 +186,12 @@
                 <div data-aos="fade-up" data-aos-delay="200" x-data="{
                     currentIndex: 0,
                     images: [
-                        '{{ asset('img/buildings.png') }}',
-                        '{{ asset('img/image_3.png') }}',
-                        '{{ asset('img/mioymbuilding.png') }}',
-                        '{{ asset('img/residential.jpg') }}',
-                        '{{ asset('img/sales_process.jpg') }}',
-                        '{{ asset('img/multifamliy.jpg') }}'
+                        '{{ asset('img/buildings.webp') }}',
+                        '{{ asset('img/image_3.webp') }}',
+                        '{{ asset('img/mioymbuilding.webp') }}',
+                        '{{ asset('img/residential.webp') }}',
+                        '{{ asset('img/sales_process.webp') }}',
+                        '{{ asset('img/multifamliy.webp') }}'
                     ],
                     get visibleImages() {
                         let images = [];
@@ -244,7 +244,7 @@
                     <div class="bg-[#141414] rounded-[32px] p-4 lg:p-5 flex flex-col items-center border border-white/5 shadow-2xl transition-transform duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
                         <div class="w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] rounded-[24px] overflow-hidden mb-6 bg-[#2a2a2a] flex items-center justify-center relative border border-white/10">
                             <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                            <img src="{{ asset('img/residentialImg4.png') }}" alt="Principle 4" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/residentialImg4.webp') }}" alt="Principle 4" class="w-full h-full object-cover">
                         </div>
                         <div class="text-center px-4 mb-6 flex-grow flex items-center">
                             <h3 class="text-white text-lg lg:text-xl font-bold leading-snug" style="font-family: 'Plus Jakarta Sans', sans-serif;">
@@ -260,7 +260,7 @@
                     <div class="bg-[#141414] rounded-[32px] p-4 lg:p-5 flex flex-col items-center border border-white/5 shadow-2xl transition-transform duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
                         <div class="w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] rounded-[24px] overflow-hidden mb-6 bg-[#2a2a2a] flex items-center justify-center relative border border-white/10">
                             <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                            <img src="{{ asset('img/residentialImg5.jpg') }}" alt="Principle 5" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/residentialImg5.webp') }}" alt="Principle 5" class="w-full h-full object-cover">
                         </div>
                         <div class="text-center px-4 mb-6 flex-grow flex items-center">
                             <h3 class="text-white text-lg lg:text-xl font-bold leading-snug" style="font-family: 'Plus Jakarta Sans', sans-serif;">
@@ -276,7 +276,7 @@
                     <div class="bg-[#141414] rounded-[32px] p-4 lg:p-5 flex flex-col items-center border border-white/5 shadow-2xl transition-transform duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
                         <div class="w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] rounded-[24px] overflow-hidden mb-6 bg-[#2a2a2a] flex items-center justify-center relative border border-white/10">
                             <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                            <img src="{{ asset('img/residentialImg6.jpg') }}" alt="Principle 6" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/residentialImg6.webp') }}" alt="Principle 6" class="w-full h-full object-cover">
                         </div>
                         <div class="text-center px-4 mb-6 flex-grow flex items-center">
                             <h3 class="text-white text-lg lg:text-xl font-bold leading-snug" style="font-family: 'Plus Jakarta Sans', sans-serif;">
@@ -292,7 +292,7 @@
                     <div class="bg-[#141414] rounded-[32px] p-4 lg:p-5 flex flex-col items-center border border-white/5 shadow-2xl transition-transform duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
                         <div class="w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] rounded-[24px] overflow-hidden mb-6 bg-[#2a2a2a] flex items-center justify-center relative border border-white/10">
                             <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-                            <img src="{{ asset('img/residentialImg7.png') }}" alt="Principle 7" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/residentialImg7.webp') }}" alt="Principle 7" class="w-full h-full object-cover">
                         </div>
                         <div class="text-center px-4 mb-6 flex-grow flex items-center">
                             <h3 class="text-white text-lg lg:text-xl font-bold leading-snug" style="font-family: 'Plus Jakarta Sans', sans-serif;">
@@ -417,7 +417,7 @@
                 <div class="flex flex-col md:flex-row p-8 lg:p-12 gap-10 items-center">
                     <div class="w-full md:w-3/5">
                         <div class="w-full aspect-[16/10] rounded-[24px] overflow-hidden bg-[#2a2a2a] flex items-center justify-center relative border border-black/10">
-                            <img src="{{ asset('img/residentialImg4.png') }}" alt="Principle 1" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/residentialImg4.webp') }}" alt="Principle 1" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-black text-xl lg:text-2xl font-bold leading-snug mt-8 text-center" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                             1401 S Williams St, Westmont, IL 60559
@@ -456,7 +456,7 @@
                 <div class="flex flex-col md:flex-row p-8 lg:p-12 gap-10 items-center">
                     <div class="w-full md:w-3/5">
                         <div class="w-full aspect-[16/10] rounded-[24px] overflow-hidden bg-[#2a2a2a] flex items-center justify-center relative border border-black/10">
-                            <img src="{{ asset('img/residentialImg5.jpg') }}" alt="Principle 5" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/residentialImg5.webp') }}" alt="Principle 5" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-black text-xl lg:text-2xl font-bold leading-snug mt-8 text-center" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                             2403 W Rogers Ave, Baltimore, MD 21209
@@ -495,7 +495,7 @@
                 <div class="flex flex-col md:flex-row p-8 lg:p-12 gap-10 items-center">
                     <div class="w-full md:w-3/5">
                         <div class="w-full aspect-[16/10] rounded-[24px] overflow-hidden bg-[#2a2a2a] flex items-center justify-center relative border border-black/10">
-                            <img src="{{ asset('img/residentialImg6.jpg') }}" alt="Principle 6" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/residentialImg6.webp') }}" alt="Principle 6" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-black text-xl lg:text-2xl font-bold leading-snug mt-8 text-center" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                             6 Shawnee Dr, Wenonah, NJ 08090
@@ -534,7 +534,7 @@
                 <div class="flex flex-col md:flex-row p-8 lg:p-12 gap-10 items-center">
                     <div class="w-full md:w-3/5">
                         <div class="w-full aspect-[16/10] rounded-[24px] overflow-hidden bg-[#2a2a2a] flex items-center justify-center relative border border-black/10">
-                            <img src="{{ asset('img/residentialImg7.png') }}" alt="Principle 2" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/residentialImg7.webp') }}" alt="Principle 2" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-black text-xl lg:text-2xl font-bold leading-snug mt-8 text-center" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                            1333 Beecher Ln, Norfolk, VA 23509

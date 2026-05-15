@@ -8,7 +8,7 @@
     <meta name="keywords" content="Real Estate Agent Career, Join MIOYM Realty Partners, Real Estate Jobs, Real Estate Leads, Institutional Real Estate Careers">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ url()->current() }}">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +37,7 @@
     <main class="pt-16 lg:pt-20">
         <!-- Hero Section -->
         <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-[300px] flex items-center justify-center">
-            <div class="absolute inset-0" style="background-image: url('{{ asset('img/bgAboutUs.png') }}'); background-size: cover; background-position: center;"></div>
+            <div class="absolute inset-0" style="background-image: url('{{ asset('img/bgAboutUs.webp') }}'); background-size: cover; background-position: center;"></div>
             <div class="max-w-7xl mx-auto text-center relative z-10">
                 <h1 class="uppercase text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-wider" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                     JOIN MIOYM REALTY PARTNERS
@@ -45,7 +45,7 @@
             </div>
         </section>
 
-        <img src="{{ asset('img/mioymrealtypartnerbg1.png') }}" alt="MIOYM Realty Partners Abstract Background Design" class="absolute lg:top-[70%] lg:left-[-20%] w-64 md:w-96 lg:w-[1000px] object-contain opacity-50 z-9999 pointer-events-none">
+        <img src="{{ asset('img/mioymrealtypartnerbg1.webp') }}" alt="MIOYM Realty Partners Abstract Background Design" class="absolute lg:top-[70%] lg:left-[-20%] w-64 md:w-96 lg:w-[1000px] object-contain opacity-50 z-9999 pointer-events-none">
 
         <!-- New Section -->
         <section class="py-10 px-10 overflow-hidden">
@@ -62,7 +62,7 @@
                     <!-- Image -->
                     <div class="w-full lg:w-1/2">
                         <div class="rounded-xl overflow-hidden shadow-2xl">
-                            <img src="{{ asset('img/mioymrealtypartnerimg1.png') }}" alt="Agents collaborating and smiling together" class="w-full h-auto object-cover">
+                            <img src="{{ asset('img/mioymrealtypartnerimg1.webp') }}" alt="Agents collaborating and smiling together" class="w-full h-auto object-cover">
                         </div>
                     </div>
 
@@ -82,7 +82,7 @@
         <!-- Become an Agent Section -->
         <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
             <!-- Background Decorative Images -->
-            <img src="{{ asset('img/mioymrealtypartnersbg2.png') }}" alt="MIOYM Real Estate Agent Career Abstract Background" class="absolute bottom-[-80%] right-[-30%] w-64 md:w-96 lg:w-[1200px] object-contain opacity-50 z-0 pointer-events-none">
+            <img src="{{ asset('img/mioymrealtypartnersbg2.webp') }}" alt="MIOYM Real Estate Agent Career Abstract Background" class="absolute bottom-[-80%] right-[-30%] w-64 md:w-96 lg:w-[1200px] object-contain opacity-50 z-0 pointer-events-none">
 
             <div class="max-w-6xl mx-auto relative z-10">
                 <div class="flex flex-col lg:flex-row  gap-12 lg:gap-20">

@@ -6,7 +6,7 @@
     <title>About Us | Institutional Real Estate Investment Firm | MIOYM Equities</title>
     <meta name="description" content="Discover MIOYM Equities, a leading institutional real estate firm. We rebuild communities while targeting 15% annual returns for our investors.">
     <meta name="keywords" content="Institutional Real Estate, 15% Annual Returns, Real Estate Investment Firm, Distressed Assets, Property Investment, MIOYM Equities">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +46,7 @@
     <main class="pt-16 lg:pt-20">
         <!-- Hero Section -->
         <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-            <div class="absolute inset-0 " style="background-image: url('{{ asset('img/bgAboutUs.png') }}'); background-size: cover; background-position: center; z-index: -1;"></div>
+            <div class="absolute inset-0 " style="background-image: url('{{ asset('img/bgAboutUs.webp') }}'); background-size: cover; background-position: center; z-index: -1;"></div>
             <div class="max-w-7xl mx-auto text-center relative z-10" data-aos="fade-down" data-aos-duration="1000">
                 <h1 class="uppercase text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                     About Us
@@ -76,19 +76,19 @@
                 
                 <!-- Right: Floating Image -->
                 <div class="hidden lg:block absolute right-[-30%] top-[-150%]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-                    <img src="{{ asset('img/houseC.png') }}" alt="MIOYM Equities Institutional Real Estate Property Portfolio" class="w-[70%] h-[50%]" style="z-index: 10;">
+                    <img src="{{ asset('img/houseC.webp') }}" alt="MIOYM Equities Institutional Real Estate Property Portfolio" class="w-[70%] h-[50%]" style="z-index: 10;">
                 </div>
             </div>
         </section>
         
         <!-- Next Section with Background Image -->
         <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden" style="background: linear-gradient(to bottom, #000000 0%, #1a1a1a 100%);">
-            <div class="absolute inset-0 z-0" style="background-image: url('{{ asset('img/bgaboutUs1.png') }}'); background-size: cover; background-position: center; opacity: 0.15;"></div>
+            <div class="absolute inset-0 z-0" style="background-image: url('{{ asset('img/bgaboutUs1.webp') }}'); background-size: cover; background-position: center; opacity: 0.15;"></div>
             <div class="max-w-7xl mx-auto relative z-10">
                 <div class="flex flex-col lg:flex-row items-center gap-12">
                     <!-- Left: Marc Cox Image -->
                     <div class="w-full lg:w-1/2 rounded-3xl overflow-hidden shadow-xl" data-aos="fade-up" data-aos-duration="800">
-                        <img src="{{ asset('img/MarcCox.png') }}" alt="Marc Cox - CEO of MIOYM Equities Institutional Real Estate Investment Firm" class="w-full h-auto object-cover">
+                        <img src="{{ asset('img/MarcCox.webp') }}" alt="Marc Cox - CEO of MIOYM Equities Institutional Real Estate Investment Firm" class="w-full h-auto object-cover">
                     </div>
                     
                     <!-- Right: Glassmorphism Container -->

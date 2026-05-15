@@ -6,7 +6,7 @@
     <title>Our Process | Institutional Real Estate | MIOYM Equities</title>
     <meta name="description" content="Discover MIOYM Equities' proven real estate investment and development process. We ensure maximum value creation through strategic acquisition and renovation.">
     <meta name="keywords" content="Real Estate Process, Property Development, MIOYM Equities, Investment Strategy, Institutional Real Estate">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +52,7 @@
         <section class="relative w-full overflow-hidden bg-black flex items-center justify-center min-h-[250px] lg:min-h-[300px]">
             <!-- Background Image -->
             <div class="absolute inset-0 z-0">
-                <img src="{{ asset('img/bgAboutUs.png') }}" alt="MIOYM Process Background" class="w-full h-full object-cover">
+                <img src="{{ asset('img/bgAboutUs.webp') }}" alt="MIOYM Process Background" class="w-full h-full object-cover">
             </div>
 
             <!-- Title -->
@@ -64,7 +64,7 @@
         </section>
         
         <!-- Process Steps Section -->
-        <section class="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-cover bg-center bg-no-repeat" style="background-image: url('{{ asset('img/processbg.png') }}');">
+        <section class="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-cover bg-center bg-no-repeat" style="background-image: url('{{ asset('img/processbg.webp') }}');">
             <!-- Dark Overlay for better contrast if needed -->
             <div class="absolute inset-0 bg-black/60 z-0"></div>
             
@@ -74,7 +74,7 @@
                     <!-- Step 1 -->
                     <div class="relative bg-[#5a5a5a] rounded-xl p-4 sm:p-6 shadow-2xl flex flex-col items-center border-2 border-transparent hover:border-white transition-colors duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="100">
                         <div class="w-full aspect-video rounded-lg overflow-hidden mb-6 bg-gray-800 flex items-center justify-center">
-                            <img src="{{ asset('img/processimg1.png') }}" alt="Process 1" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/processimg1.webp') }}" alt="Process 1" class="w-full h-full object-cover">
                         </div>
                         <p class="text-white text-center text-sm sm:text-base font-light leading-relaxed px-2">
                             Our Proprietary technology identifies distressed properties throughout 42 different states selling for 60% discounts.
@@ -86,7 +86,7 @@
                     <!-- Step 2 -->
                     <div class="relative bg-[#5a5a5a] rounded-xl p-4 sm:p-6 shadow-2xl flex flex-col items-center border-2 border-transparent hover:border-white transition-colors duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="200">
                         <div class="w-full aspect-video rounded-lg overflow-hidden mb-6 bg-gray-800 flex items-center justify-center">
-                            <img src="{{ asset('img/processimg2.png') }}" alt="Process 2" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/processimg2.webp') }}" alt="Process 2" class="w-full h-full object-cover">
                         </div>
                         <p class="text-white text-center text-sm sm:text-base font-light leading-relaxed px-2">
                             We determine the potential ARV and avoid overpaying for the house.
@@ -98,7 +98,7 @@
                     <!-- Step 3 -->
                     <div class="relative bg-[#5a5a5a] rounded-xl p-4 sm:p-6 shadow-2xl flex flex-col items-center border-2 border-transparent hover:border-white transition-colors duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="300">
                         <div class="w-full aspect-video rounded-lg overflow-hidden mb-6 bg-gray-800 flex items-center justify-center">
-                            <img src="{{ asset('img/processimg3.png') }}" alt="Process 3" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/processimg3.webp') }}" alt="Process 3" class="w-full h-full object-cover">
                         </div>
                         <p class="text-white text-center text-sm sm:text-base font-light leading-relaxed px-2">
                             We add value by renovating the property increasing its market value.
@@ -116,7 +116,7 @@
                         <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[15px] border-r-[15px] border-b-[25px] border-l-transparent border-r-transparent border-b-[#5a5a5a]"></div>
                         
                         <div class="w-full aspect-video rounded-lg overflow-hidden mb-6 bg-gray-800 flex items-center justify-center">
-                            <img src="{{ asset('img/processimg4.png') }}" alt="Process 4" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/processimg4.webp') }}" alt="Process 4" class="w-full h-full object-cover">
                         </div>
                         <p class="text-white text-center text-sm sm:text-base font-light leading-relaxed px-2">
                             Upon completion of rehab, we list the property with local realtor.
@@ -129,7 +129,7 @@
                         <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[15px] border-r-[15px] border-b-[25px] border-l-transparent border-r-transparent border-b-[#5a5a5a]"></div>
                         
                         <div class="w-full aspect-video rounded-lg overflow-hidden mb-6 bg-gray-800 flex items-center justify-center">
-                            <img src="{{ asset('img/processimg5.png') }}" alt="Process 5" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/processimg5.webp') }}" alt="Process 5" class="w-full h-full object-cover">
                         </div>
                         <p class="text-white text-center text-sm sm:text-base font-light leading-relaxed px-2">
                             We look to sell the property to a first-time home buyer within a year of purchasing the property.

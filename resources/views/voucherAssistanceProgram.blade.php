@@ -6,7 +6,7 @@
     <title>Voucher Assistance Program | MIOYM Equities</title>
     <meta name="description" content="Learn more about our Voucher Assistance Program and how we help families secure stable housing.">
     <meta name="keywords" content="Voucher Assistance Program, MIOYM Equities, Real Estate, Housing Assistance">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
     <main class="pt-16 lg:pt-20">
         <!-- Hero Section -->
         <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-[300px] flex items-center justify-center">
-            <div class="absolute inset-0" style="background-image: url('{{ asset('img/bgAboutUs.png') }}'); background-size: cover; background-position: center;"></div>
+            <div class="absolute inset-0" style="background-image: url('{{ asset('img/bgAboutUs.webp') }}'); background-size: cover; background-position: center;"></div>
             <div class="max-w-7xl mx-auto text-center relative z-10">
                 <h1 class="uppercase text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-wider" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                     VOUCHER ASSISTANCE PROGRAM
@@ -52,7 +52,7 @@
                     <!-- Left: Image Box -->
                     <div class="w-full lg:w-5/12 z-20 mb-8 lg:mb-0 lg:-mr-12">
                         <div class="overflow-hidden shadow-2xl relative">
-                            <img src="{{ asset('img/voucherAssistimg1.png') }}" alt="MIOYM Team Assisting Clients with Vouchers" class="w-full h-auto object-cover">
+                            <img src="{{ asset('img/voucherAssistimg1.webp') }}" alt="MIOYM Team Assisting Clients with Vouchers" class="w-full h-auto object-cover">
                         </div>
                     </div>
 

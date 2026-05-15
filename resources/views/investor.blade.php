@@ -6,7 +6,7 @@
     <title>Institutional Real Estate Investors | 15% Annual Returns | MIOYM</title>
     <meta name="description" content="Join MIOYM Equities as an institutional real estate investor. Explore our unique investment fund offering preferred 15% annual returns and zero management fees.">
     <meta name="keywords" content="Institutional Real Estate, 15% Annual Returns, Real Estate Investment Fund, Self-Directed IRA, MIOYM Equities, High Yield Real Estate">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +46,7 @@
 
     <main class="pt-16 lg:pt-20">
         <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-[300px] flex items-center justify-center">
-            <div class="absolute inset-0" style="background-image: url('{{ asset('img/bgAboutUs.png') }}'); background-size: cover; background-position: center;"></div>
+            <div class="absolute inset-0" style="background-image: url('{{ asset('img/bgAboutUs.webp') }}'); background-size: cover; background-position: center;"></div>
             <div class="max-w-7xl mx-auto text-center relative z-10">
                 <h1 class="uppercase text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-wider" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                     INVESTORS
@@ -88,7 +88,7 @@
                              class="absolute inset-0 w-full h-full">
                             <!-- Image Background Placeholder -->
                             <div class="absolute inset-0 placeholder-surface flex items-center justify-center">
-                                <img src="{{ asset('img/investorimg1.png') }}" alt="Investor 1" class="w-full h-full object-contain rounded-lg">
+                                <img src="{{ asset('img/investorimg1.webp') }}" alt="Investor 1" class="w-full h-full object-contain rounded-lg">
                             </div>
                         </div>
 
@@ -101,7 +101,7 @@
                              x-transition:leave-start="opacity-100"
                              x-transition:leave-end="opacity-0"
                              style="display: none;" class="absolute inset-0 w-full h-full bg-[#2a2a2a] flex items-center justify-center">
-                            <img src="{{ asset('img/investorimg2.png') }}" alt="Investor 2" class="w-full h-full object-contain rounded-lg">
+                            <img src="{{ asset('img/investorimg2.webp') }}" alt="Investor 2" class="w-full h-full object-contain rounded-lg">
                         </div>
 
                         <!-- Slide 3 -->
@@ -113,7 +113,7 @@
                              x-transition:leave-start="opacity-100"
                              x-transition:leave-end="opacity-0"
                              style="display: none;" class="absolute inset-0 w-full h-full bg-[#1a1a1a] flex items-center justify-center">
-                            <img src="{{ asset('img/investorimg3.png') }}" alt="Investor 3" class="w-full h-full object-contain rounded-lg">
+                            <img src="{{ asset('img/investorimg3.webp') }}" alt="Investor 3" class="w-full h-full object-contain rounded-lg">
                         </div>
                         
                         <!-- Slide 4 -->
@@ -125,7 +125,7 @@
                              x-transition:leave-start="opacity-100"
                              x-transition:leave-end="opacity-0"
                              style="display: none;" class="absolute inset-0 w-full h-full bg-[#2a2a2a] flex items-center justify-center">
-                            <img src="{{ asset('img/investorimg4.png') }}" alt="Investor 4" class="w-full h-full object-contain rounded-lg">
+                            <img src="{{ asset('img/investorimg4.webp') }}" alt="Investor 4" class="w-full h-full object-contain rounded-lg">
                         </div>
                         
                         <!-- Slide 5 -->
@@ -137,7 +137,7 @@
                              x-transition:leave-start="opacity-100"
                              x-transition:leave-end="opacity-0"
                              style="display: none;" class="absolute inset-0 w-full h-full bg-[#1a1a1a] flex items-center justify-center">
-                            <img src="{{ asset('img/investorimg5.png') }}" alt="Investor 5" class="w-full h-full object-contain rounded-lg">
+                            <img src="{{ asset('img/investorimg5.webp') }}" alt="Investor 5" class="w-full h-full object-contain rounded-lg">
                         </div>
                         
                         <!-- Slide 6 -->
@@ -149,7 +149,7 @@
                              x-transition:leave-start="opacity-100"
                              x-transition:leave-end="opacity-0"
                              style="display: none;" class="absolute inset-0 w-full h-full bg-[#2a2a2a] flex items-center justify-center">
-                            <img src="{{ asset('img/investorimg6.png') }}" alt="Investor 6" class="w-full h-full object-contain rounded-lg">
+                            <img src="{{ asset('img/investorimg6.webp') }}" alt="Investor 6" class="w-full h-full object-contain rounded-lg">
                         </div>
                         
                         <!-- Slide 7 -->
@@ -161,7 +161,7 @@
                              x-transition:leave-start="opacity-100"
                              x-transition:leave-end="opacity-0"
                              style="display: none;" class="absolute inset-0 w-full h-full bg-[#1a1a1a] flex items-center justify-center">
-                            <img src="{{ asset('img/investorimg7.png') }}" alt="Investor 7" class="w-full h-full object-contain rounded-lg">
+                            <img src="{{ asset('img/investorimg7.webp') }}" alt="Investor 7" class="w-full h-full object-contain rounded-lg">
                         </div>
                         
                         <!-- Slide 8 -->
@@ -173,7 +173,7 @@
                              x-transition:leave-start="opacity-100"
                              x-transition:leave-end="opacity-0"
                              style="display: none;" class="absolute inset-0 w-full h-full bg-[#2a2a2a] flex items-center justify-center">
-                            <img src="{{ asset('img/investorimg8.png') }}" alt="Investor 8" class="w-full h-full object-contain rounded-lg">
+                            <img src="{{ asset('img/investorimg8.webp') }}" alt="Investor 8" class="w-full h-full object-contain rounded-lg">
                         </div>
                         
                         <!-- Slide 9 -->
@@ -185,7 +185,7 @@
                              x-transition:leave-start="opacity-100"
                              x-transition:leave-end="opacity-0"
                              style="display: none;" class="absolute inset-0 w-full h-full bg-[#1a1a1a] flex items-center justify-center">
-                            <img src="{{ asset('img/investorimg9.png') }}" alt="Investor 9" class="w-full h-full object-contain rounded-lg">
+                            <img src="{{ asset('img/investorimg9.webp') }}" alt="Investor 9" class="w-full h-full object-contain rounded-lg">
                         </div>
                     </div>
 
@@ -230,7 +230,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
                     <article class="relative px-3 pt-3 pb-0 flex flex-col">
                         <div class="aspect-[11/13] flex items-center justify-center overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);">
-                            <img src="{{ asset('img/investor3.png') }}" alt="Vertically Integrated Approach in Institutional Real Estate" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/investor3.webp') }}" alt="Vertically Integrated Approach in Institutional Real Estate" class="w-full h-full object-cover">
                         </div>
                         <div class="relative -mt-[45%] ml-10 z-10 flex-1 flex flex-col">
                             <div class="absolute -top-8 right-4 w-20 h-20 rounded-full bg-[#e7e1dc] border-[5px] border-[#221d20] flex items-center justify-center shadow-lg z-20">
@@ -249,7 +249,7 @@
 
                     <article class="relative px-3 pt-3 pb-0 flex flex-col">
                         <div class="aspect-[11/13] flex items-center justify-center overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);">
-                            <img src="{{ asset('img/investor2.png') }}" alt="Tailored Investment Solutions for 15% Annual Returns" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/investor2.webp') }}" alt="Tailored Investment Solutions for 15% Annual Returns" class="w-full h-full object-cover">
                         </div>
                         <div class="relative -mt-[45%] ml-10 z-10 flex-1 flex flex-col">
                             <div class="absolute -top-8 right-4 w-20 h-20 rounded-full bg-[#e7e1dc] border-[5px] border-[#221d20] flex items-center justify-center shadow-lg z-20">
@@ -268,7 +268,7 @@
 
                     <article class="relative px-3 pt-3 pb-0 flex flex-col">
                         <div class="aspect-[11/13] flex items-center justify-center overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);">
-                            <img src="{{ asset('img/investor1.png') }}" alt="Rebuilding Communities through Real Estate Investment" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/investor1.webp') }}" alt="Rebuilding Communities through Real Estate Investment" class="w-full h-full object-cover">
                         </div>
                         <div class="relative -mt-[45%] ml-10 z-10 flex-1 flex flex-col">
                             <div class="absolute -top-8 right-4 w-20 h-20 rounded-full bg-[#e7e1dc] border-[5px] border-[#221d20] flex items-center justify-center shadow-lg z-20">
@@ -287,7 +287,7 @@
 
                     <article class="relative px-3 pt-3 pb-0 flex flex-col">
                         <div class="aspect-[11/13] flex items-center justify-center overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);">
-                            <img src="{{ asset('img/investor4.png') }}" alt="First-time Homebuyers" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/investor4.webp') }}" alt="First-time Homebuyers" class="w-full h-full object-cover">
                         </div>
                         <div class="relative -mt-[45%] ml-10 z-10 flex-1 flex flex-col">
                             <div class="absolute -top-8 right-4 w-20 h-20 rounded-full bg-[#e7e1dc] border-[5px] border-[#221d20] flex items-center justify-center shadow-lg z-20">
@@ -371,7 +371,7 @@
                         <div class="rounded-[16px] overflow-hidden mb-6">
                             <!-- Placeholder for the couple using laptop image -->
                             <div class="placeholder-surface w-full aspect-[4/3] flex items-center justify-center">
-                                <img src="{{ asset('img/investor5.png') }}" alt="Investors managing Self-Directed IRA for Institutional Real Estate" class="w-full h-full object-cover">
+                                <img src="{{ asset('img/investor5.webp') }}" alt="Investors managing Self-Directed IRA for Institutional Real Estate" class="w-full h-full object-cover">
                             </div>
                         </div>
                         
@@ -398,7 +398,7 @@
          <!-- Why Investors Choose MIOYM Stats Banner -->
          <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
              <!-- Background Image for the wavy texture -->
-             <div class="absolute inset-0 z-0" style="background-image: url('{{ asset('img/investorbg.png') }}'); background-size: cover; background-position: center;"></div>
+             <div class="absolute inset-0 z-0" style="background-image: url('{{ asset('img/investorbg.webp') }}'); background-size: cover; background-position: center;"></div>
              <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#2b2b2b]/90 z-0"></div>
              
              <div class="max-w-7xl mx-auto relative z-10">
@@ -505,12 +505,12 @@
                 <div class="fade-in" x-data="{
                     currentIndex: 0,
                     images: [
-                        '{{ asset('img/buildings.png') }}',
-                        '{{ asset('img/image_3.png') }}',
-                        '{{ asset('img/mioymbuilding.png') }}',
-                        '{{ asset('img/residential.jpg') }}',
-                        '{{ asset('img/sales_process.jpg') }}',
-                        '{{ asset('img/multifamliy.jpg') }}'
+                        '{{ asset('img/buildings.webp') }}',
+                        '{{ asset('img/image_3.webp') }}',
+                        '{{ asset('img/mioymbuilding.webp') }}',
+                        '{{ asset('img/residential.webp') }}',
+                        '{{ asset('img/sales_process.webp') }}',
+                        '{{ asset('img/multifamliy.webp') }}'
                     ],
                     get visibleImages() {
                         let images = [];

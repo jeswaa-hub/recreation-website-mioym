@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mioym Realty Partners | Institutional Real Estate | MIOYM Equities</title>
     <meta name="description" content="Collaborate with Mioym Realty Partners. We build enduring legacies and strong community impacts through strategic real estate partnerships.">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,12 +51,12 @@
         <section class="relative w-full overflow-hidden bg-black flex items-center min-h-[200px] lg:min-h-[300px]">
             <!-- Abstract Background Image -->
             <div class="absolute inset-0 z-0">
-                <img src="{{ asset('img/bgAboutUs.png') }}" alt="Background Texture" class="w-full h-full object-cover opacity-60">
+                <img src="{{ asset('img/bgAboutUs.webp') }}" alt="Background Texture" class="w-full h-full object-cover opacity-60">
             </div>
 
             <!-- Right: Handshake Image (Full Height) -->
             <div class="absolute top-0 right-0 h-full w-full lg:w-1/2 hidden lg:flex z-10" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                <img src="{{ asset('img/mioymRealtyimg2.png') }}" alt="Mioym Realty Partners Handshake" class="w-full h-full object-cover drop-shadow-2xl">
+                <img src="{{ asset('img/mioymRealtyimg2.webp') }}" alt="Mioym Realty Partners Handshake" class="w-full h-full object-cover drop-shadow-2xl">
             </div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full py-12 lg:py-0">
@@ -81,7 +81,7 @@
                     <!-- Left: Featured Image -->
                     <div class="w-full lg:w-1/2" data-aos="fade-right" data-aos-duration="1000">
                         <div class="rounded-[2rem] overflow-hidden shadow-2xl h-full">
-                            <img src="{{ asset('img/mioymRealtyImg1.png') }}" alt="Mioym Realty Services" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/mioymRealtyImg1.webp') }}" alt="Mioym Realty Services" class="w-full h-full object-cover">
                         </div>
                     </div>
 
@@ -99,7 +99,7 @@
                                 </p>
                             </div>
                             <div class="flex justify-end">
-                                <a href="{{ route('voucherAssistanceProgram') }}" class="inline-flex items-center gap-3 px-6 py-3 bg-[#2a1a1a] hover:bg-[#3a2a2a] text-white rounded-xl transition-all duration-300 group">
+                                <a href="{{ route('voucherAssistanceProgram') }}" class="inline-flex items-center gap-3 px-6 py-3 bg-[#2a1a1a] hover:bg-[#3a2a2a] text-white rounded-xl transition-all duration-300">
                                     <span class="font-bold text-sm tracking-wide">Explore Leasing Service</span>
                                     <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -119,7 +119,7 @@
                                 </p>
                             </div>
                             <div class="flex justify-end">
-                                <a href="{{ route('joinMioymRealityPartners') }}" class="inline-flex items-center gap-3 px-6 py-3 bg-[#2a1a1a] hover:bg-[#3a2a2a] text-white rounded-xl transition-all duration-300 group">
+                                <a href="{{ route('joinMioymRealityPartners') }}" class="inline-flex items-center gap-3 px-6 py-3 bg-[#2a1a1a] hover:bg-[#3a2a2a] text-white rounded-xl transition-all duration-300">
                                     <span class="font-bold text-sm tracking-wide">Join our brokerage</span>
                                     <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -133,7 +133,7 @@
             </div>
         </section>
         <!-- Why Choose Section -->
-        <section class="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-screen flex items-center" style="background-image: url('{{ asset('img/mioymRealtyBG.png') }}'); background-size: cover; background-position: center;">
+        <section class="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-screen flex items-center" style="background-image: url('{{ asset('img/mioymRealtyBG.webp') }}'); background-size: cover; background-position: center;">
             <div class="max-w-7xl mx-auto relative z-10">
                 <!-- Header -->
                 <div class="text-center mb-16" data-aos="fade-up">
