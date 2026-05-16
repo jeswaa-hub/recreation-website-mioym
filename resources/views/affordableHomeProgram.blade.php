@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Affordable Home Program | MIOYM Equities</title>
     <meta name="description" content="Unlock Your Dream Home with MIOYM Affordable Homes. Nationwide down payment and closing costs provided.">
+    <meta name="keywords" content="Affordable Home Program, Down Payment Assistance, MIOYM Equities, Home Ownership, Real Estate">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
     <link rel="icon" type="image/webp" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,11 +79,20 @@
             border-radius: 20px;
             padding: 18px 24px;
             display: flex;
-            align-items: stretch;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
             justify-content: space-between;
             gap: 1.5rem;
             box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
             transition: transform 0.25s ease, background 0.25s ease;
+        }
+        @media (min-width: 640px) {
+            .action-card {
+                flex-direction: row;
+                align-items: stretch;
+                text-align: left;
+            }
         }
         .action-card:hover {
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.28) 0%, rgba(255, 255, 255, 0.08) 100%);
@@ -94,6 +106,12 @@
             justify-content: center;
             color: #ffffff;
             flex: 0 0 auto;
+            margin: 0 auto;
+        }
+        @media (min-width: 640px) {
+            .action-icon {
+                margin: 0;
+            }
         }
         .action-icon svg {
             width: 58px;
@@ -104,10 +122,17 @@
         }
         .action-main {
             display: flex;
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: center;
             gap: 1rem;
             flex: 1 1 auto;
             min-width: 0;
+        }
+        @media (min-width: 640px) {
+            .action-main {
+                flex-direction: row;
+                align-items: flex-start;
+            }
         }
         .action-text {
             display: flex;
@@ -118,7 +143,16 @@
         }
         .action-cta {
             display: flex;
-            align-items: flex-end;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        @media (min-width: 640px) {
+            .action-cta {
+                align-items: flex-end;
+                justify-content: flex-end;
+                width: auto;
+            }
         }
         .action-title {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -128,14 +162,24 @@
         .action-btn {
             background: #D9D9D9;
             color: #201B1B;
-            padding: 9px 18px;
+            padding: 12px 18px;
             border-radius: 9px;
             font-weight: 800;
-            font-size: 0.75rem;
+            font-size: 0.85rem;
             letter-spacing: 0.02em;
             box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
             transition: background 0.2s ease;
-            white-space: nowrap;
+            white-space: normal;
+            width: 100%;
+            text-align: center;
+        }
+        @media (min-width: 640px) {
+            .action-btn {
+                width: auto;
+                padding: 9px 18px;
+                font-size: 0.75rem;
+                white-space: nowrap;
+            }
         }
         .action-btn:hover {
             background: #ffffff;
@@ -195,15 +239,15 @@
 <body>
     @include('components.navigationHeader')
     
-    <main class="py-16 lg:pt-20">
-        <section class="py-10 lg:py-8 relative overflow-hidden">
+    <main class="pt-16 lg:pt-20">
+        <section class="relative overflow-hidden">
             <div class="absolute inset-0 -z-10">
                 <img src="{{ asset('img/bgAboutUs.webp') }}" alt="" class="w-full h-full object-cover object-center">
             </div>
             <div class="absolute inset-0 bg-black/70 -z-10"></div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight text-center" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                    Affordable Home Program
+                    Affordable Home<br>Program
                 </h1>
             </div>
         </section>
@@ -229,7 +273,7 @@
                     <div class="feature-card reveal" data-reveal style="--d: 0ms;">
                         <div class="feature-media">
                             <div class="feature-media-inner aspect-video">
-                                <img src="{{ asset('img/ahp1.jpg') }}" alt="Nationwide Down Payment Provided" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                                <img src="{{ asset('img/ahp1.webp') }}" alt="Nationwide Down Payment Provided" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                             </div>
                         </div>
                         <div class="feature-icon-wrapper">
@@ -247,7 +291,7 @@
                     <div class="feature-card reveal" data-reveal style="--d: 120ms;">
                         <div class="feature-media">
                             <div class="feature-media-inner aspect-video">
-                                <img src="{{ asset('img/ahp2.jpg') }}" alt="Closing Costs Provided!" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                                <img src="{{ asset('img/ahp2.webp') }}" alt="Closing Costs Provided!" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                             </div>
                         </div>
                         <div class="feature-icon-wrapper">
@@ -265,7 +309,7 @@
                     <div class="feature-card reveal" data-reveal style="--d: 240ms;">
                         <div class="feature-media">
                             <div class="feature-media-inner aspect-video">
-                                <img src="{{ asset('img/ahp3.jpg') }}" alt="Credit Qualification" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                                <img src="{{ asset('img/ahp3.webp') }}" alt="Credit Qualification" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                             </div>
                         </div>
                         <div class="feature-icon-wrapper">
@@ -302,7 +346,7 @@
                                 </div>
                             </div>
                             <div class="action-cta">
-                                <a href="{{ route('singleFamilyResidential') }}" class="action-btn action-btn--caps">
+                                <a href="https://mioymaffordablehomes.info/properties/" class="action-btn action-btn--caps">
                                     View Properties
                                 </a>
                             </div>
@@ -320,7 +364,7 @@
                                 </div>
                             </div>
                             <div class="action-cta">
-                                <a href="tel:9145669050" class="action-btn">
+                                <a href="https://calendly.com/mioymleasing/schedule-a-call-about-the-property?month=2026-03" class="action-btn">
                                     Book a Call with us
                                 </a>
                             </div>
@@ -334,12 +378,12 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         @php
                             $teamMembers = [
-                                ['name' => 'KEITH VANNAH PONGOT', 'role' => 'OPERATION MANAGER', 'img' => 'keith.jpg'],
-                                ['name' => 'BEVERLY CABANAS', 'role' => 'LEASING AGENT', 'img' => 'beverly.jpg'],
-                                ['name' => 'ZEE BACSID', 'role' => 'LEASING AGENT', 'img' => 'zee.jpg'],
-                                ['name' => 'SUZETTA PATIÑO', 'role' => 'LEASING AGENT', 'img' => 'suzette.jpg'],
-                                ['name' => 'JACE SAN PEDRO', 'role' => 'LEASING AGENT', 'img' => 'jace.jpg'],
-                                ['name' => 'JOSIE DISCAYA', 'role' => 'LEASING AGENT', 'img' => 'josie.jpg'],
+                                ['name' => 'KEITH VANNAH PONGOT', 'role' => 'OPERATION MANAGER', 'img' => 'keith.webp'],
+                                ['name' => 'BEVERLY CABANAS', 'role' => 'LEASING AGENT', 'img' => 'beverly.webp'],
+                                ['name' => 'ZEE BACSID', 'role' => 'LEASING AGENT', 'img' => 'zee.webp'],
+                                ['name' => 'SUZETTA PATIÑO', 'role' => 'LEASING AGENT', 'img' => 'suzette.webp'],
+                                ['name' => 'JACE SAN PEDRO', 'role' => 'LEASING AGENT', 'img' => 'jace.webp'],
+                                ['name' => 'JOSIE DISCAYA', 'role' => 'LEASING AGENT', 'img' => 'josie.webp'],
                             ];
                         @endphp
 

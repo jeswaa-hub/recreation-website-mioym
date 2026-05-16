@@ -20,9 +20,6 @@
             <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                 Our Partners
             </h2>
-            <p class="text-gray-300 text-lg max-w-3xl mx-auto">
-                Trusted by leading organizations and institutions in the real estate industry
-            </p>
         </div>
         
         <!-- Infinite Smooth CSS Marquee Slideshow -->

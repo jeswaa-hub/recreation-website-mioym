@@ -6,6 +6,8 @@
     <title>Voucher Assistance Program | MIOYM Equities</title>
     <meta name="description" content="Learn more about our Voucher Assistance Program and how we help families secure stable housing.">
     <meta name="keywords" content="Voucher Assistance Program, MIOYM Equities, Real Estate, Housing Assistance">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
     <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">

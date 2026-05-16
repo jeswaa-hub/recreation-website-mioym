@@ -6,6 +6,8 @@
     <title>Our Executive Team | MIOYM Equities Institutional Real Estate</title>
     <meta name="description" content="Meet the expert executive team at MIOYM Equities. We are an institutional real estate investment firm driving 15% annual returns and rebuilding communities.">
     <meta name="keywords" content="Executive Team, Institutional Real Estate, Real Estate Experts, MIOYM Equities, Investment Professionals">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
     <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">

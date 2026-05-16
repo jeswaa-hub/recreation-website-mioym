@@ -6,7 +6,9 @@
     <title>About Us | Institutional Real Estate Investment Firm | MIOYM Equities</title>
     <meta name="description" content="Discover MIOYM Equities, a leading institutional real estate firm. We rebuild communities while targeting 15% annual returns for our investors.">
     <meta name="keywords" content="Institutional Real Estate, 15% Annual Returns, Real Estate Investment Firm, Distressed Assets, Property Investment, MIOYM Equities">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
+    <link rel="icon" type="image/webp" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,15 +90,15 @@
                 <div class="flex flex-col lg:flex-row items-center gap-12">
                     <!-- Left: Marc Cox Image -->
                     <div class="w-full lg:w-1/2 rounded-3xl overflow-hidden shadow-xl" data-aos="fade-up" data-aos-duration="800">
-                        <img src="{{ asset('img/MarcCox.webp') }}" alt="Marc Cox - CEO of MIOYM Equities Institutional Real Estate Investment Firm" class="w-full h-auto object-cover">
+                        <img src="{{ asset('img/team/marc.webp') }}" alt="Marc Cox - CEO of MIOYM Equities Institutional Real Estate Investment Firm" class="w-full h-auto object-cover">
                     </div>
                     
                     <!-- Right: Glassmorphism Container -->
-                    <div class="w-full lg:w-1/2 rounded-3xl p-8 lg:p-12" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="w-full lg:w-1/2 rounded-3xl p-8 lg:p-10" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                         <h3 class="italic font-extrabold text-3xl sm:text-4xl text-white mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                             Legacy and Impact with Marc
                         </h3>
-                        <p class="text-gray-300 text-justify text-xl leading-relaxed" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        <p class="text-gray-300 text-justify text-lg leading-relaxed" style="font-family: 'Inter', sans-serif;">
                             Marc Cox, the CEO of MIOYM Group, is fervently committed to his vision of leaving the Earth in a better state than when he found it. Central to his mission is our dedication to helping families realize their dream of homeownership, empowering investors to thrive, and uplifting the contractors we collaborate with. At MIOYM, we wholeheartedly share Marc's sentiments. For us, it's not merely a matter of buying low and selling high; it's about creating tangible, enduring improvements in the lives of the individuals we touch. Much like Marc, we believe in constructing homes and building enduring legacies.
                         </p>
                     </div>

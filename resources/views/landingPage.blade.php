@@ -7,6 +7,7 @@
     <meta name="keywords" content="distressed asset investment, fix and flip real estate, MIOYM Equities, real estate equity firm, 17.5% returns investment, first-time homeowner program, foreclosure prevention, affordable housing investment, property management, rental property investment, commercial real estate, multi-family properties, single family residential, real estate investment firm">
     <meta name="author" content="MIOYM">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style">

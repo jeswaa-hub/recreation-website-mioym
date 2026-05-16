@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mioym Realty Partners | Institutional Real Estate | MIOYM Equities</title>
     <meta name="description" content="Collaborate with Mioym Realty Partners. We build enduring legacies and strong community impacts through strategic real estate partnerships.">
+    <meta name="keywords" content="Mioym Realty Partners, Real Estate Partnerships, Institutional Real Estate, MIOYM Equities, Community Impact">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
     <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">

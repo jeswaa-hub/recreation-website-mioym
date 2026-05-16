@@ -6,6 +6,8 @@
     <title>Single Family Residential | Institutional Real Estate | MIOYM Equities</title>
     <meta name="description" content="Explore MIOYM Equities' Single Family Residential real estate portfolio. We revitalize neighborhoods and deliver strong returns for our investors.">
     <meta name="keywords" content="Single Family Residential, Real Estate, MIOYM Equities, Property Investment, Institutional Real Estate">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
     <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -173,59 +175,7 @@
                 </div>
             </div>
         <!-- Our Partners Section -->
-        <section class="mt-10 py-20 px-0 relative overflow-hidden" style="background: #000000;">
-            <div class="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
-                <!-- Section Header -->
-                <div class="text-center mb-12" data-aos="fade-up">
-                    <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                        Our Partners
-                    </h2>
-                </div>
-                
-                <!-- Automatic Carousel with 3 Images and Fade Effect -->
-                <div data-aos="fade-up" data-aos-delay="200" x-data="{
-                    currentIndex: 0,
-                    images: [
-                        '{{ asset('img/buildings.webp') }}',
-                        '{{ asset('img/image_3.webp') }}',
-                        '{{ asset('img/mioymbuilding.webp') }}',
-                        '{{ asset('img/residential.webp') }}',
-                        '{{ asset('img/sales_process.webp') }}',
-                        '{{ asset('img/multifamliy.webp') }}'
-                    ],
-                    get visibleImages() {
-                        let images = [];
-                        for (let i = 0; i < 3; i++) {
-                            images.push(this.images[(this.currentIndex + i) % this.images.length]);
-                        }
-                        return images;
-                    },
-                    init() {
-                        setInterval(() => {
-                            this.currentIndex = (this.currentIndex + 1) % this.images.length;
-                        }, 4000);
-                    }
-                }">
-                    <!-- Carousel Container with Fade Effect -->
-                    <div class="relative rounded-2xl overflow-hidden">
-                        <!-- Left Fade -->
-                        <div class="absolute left-0 top-0 bottom-0 w-20 lg:w-32 z-10 pointer-events-none" style="background: linear-gradient(to right, #000000, transparent);"></div>
-                        
-                        <!-- Right Fade -->
-                        <div class="absolute right-0 top-0 bottom-0 w-20 lg:w-32 z-10 pointer-events-none" style="background: linear-gradient(to left, #000000, transparent);"></div>
-                        
-                        <!-- Images Container -->
-                        <div class="flex gap-4">
-                            <template x-for="(img, idx) in visibleImages" :key="idx">
-                                <div class="flex-1 h-[100px] lg:h-[140px] rounded-xl overflow-hidden transition-all duration-500 flex items-center justify-center bg-white/5" :class="idx === 1 ? 'lg:scale-105' : ''">
-                                    <img :src="img" alt="Partner" class="w-full h-full object-contain object-center">
-                                </div>
-                            </template>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        @include('components.Ourpartner')
 
         <!-- Featured Properties Section -->
         <section class="py-24 px-0">

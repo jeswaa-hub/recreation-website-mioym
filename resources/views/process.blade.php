@@ -6,6 +6,8 @@
     <title>Our Process | Institutional Real Estate | MIOYM Equities</title>
     <meta name="description" content="Discover MIOYM Equities' proven real estate investment and development process. We ensure maximum value creation through strategic acquisition and renovation.">
     <meta name="keywords" content="Real Estate Process, Property Development, MIOYM Equities, Investment Strategy, Institutional Real Estate">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
     <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">

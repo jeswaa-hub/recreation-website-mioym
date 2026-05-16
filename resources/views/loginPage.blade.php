@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Secure Login to MIOYM Portal">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="{{ url()->current() }}">
     <title>Sign In | MIOYM</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles

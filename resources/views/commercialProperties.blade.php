@@ -6,7 +6,9 @@
     <title>Commercial Properties | Institutional Real Estate | MIOYM Equities</title>
     <meta name="description" content="Explore MIOYM Equities' Commercial Properties portfolio. We identify undervalued commercial assets with income and long-term growth potential.">
     <meta name="keywords" content="Commercial Properties, Real Estate, MIOYM Equities, Property Investment, Institutional Real Estate">
-    <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
+    <link rel="icon" type="image/webp" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

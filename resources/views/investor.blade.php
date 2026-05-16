@@ -6,6 +6,8 @@
     <title>Institutional Real Estate Investors | 15% Annual Returns | MIOYM</title>
     <meta name="description" content="Join MIOYM Equities as an institutional real estate investor. Explore our unique investment fund offering preferred 15% annual returns and zero management fees.">
     <meta name="keywords" content="Institutional Real Estate, 15% Annual Returns, Real Estate Investment Fund, Self-Directed IRA, MIOYM Equities, High Yield Real Estate">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
     <link rel="icon" type="image/png" href="{{ asset('img/logo.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">

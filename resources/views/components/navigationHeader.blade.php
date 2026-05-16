@@ -18,9 +18,9 @@
                     </a>
                     
                     <!-- The Firm Dropdown -->
-                    <div x-data="{ open: false, leaveTimeout: null }" 
+                    <div x-data="{ open: false, leaveTimeout: null, clicked: false }" 
                          @mouseenter="clearTimeout(leaveTimeout); open = true" 
-                         @mouseleave="leaveTimeout = setTimeout(() => open = false, 150)" 
+                         @mouseleave="if(!clicked) leaveTimeout = setTimeout(() => open = false, 150)" 
                          class="relative">
                         <span class="text-sm font-medium {{ request()->is('the-firm/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1 cursor-pointer"
                               style="font-family: 'Inter', sans-serif;">
@@ -28,6 +28,7 @@
                             <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
                         </span>
                         <div x-show="open" 
+                             @click="clicked = true; setTimeout(() => { clicked = false; open = false; }, 2000)"
                              x-transition
                              style="display: none;"
                              class="absolute top-full left-0 mt-2 w-48 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2">
@@ -38,9 +39,9 @@
                     </div>
                     
                     <!-- Solutions Dropdown -->
-                    <div x-data="{ open: false, leaveTimeout: null }" 
+                    <div x-data="{ open: false, leaveTimeout: null, clicked: false }" 
                          @mouseenter="clearTimeout(leaveTimeout); open = true" 
-                         @mouseleave="leaveTimeout = setTimeout(() => open = false, 150)" 
+                         @mouseleave="if(!clicked) leaveTimeout = setTimeout(() => open = false, 150)" 
                          class="relative">
                         <span class="text-sm font-medium {{ request()->is('solutions/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1 cursor-pointer"
                               style="font-family: 'Inter', sans-serif;">
@@ -48,6 +49,7 @@
                             <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
                         </span>
                         <div x-show="open" 
+                             @click="clicked = true; setTimeout(() => { clicked = false; open = false; }, 2000)"
                              x-transition
                              style="display: none;"
                              class="absolute top-full left-0 mt-2 w-56 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2">
@@ -60,9 +62,9 @@
                     </div>
                     
                     <!-- Asset Management Dropdown -->
-                    <div x-data="{ open: false, leaveTimeout: null }" 
+                    <div x-data="{ open: false, leaveTimeout: null, clicked: false }" 
                          @mouseenter="clearTimeout(leaveTimeout); open = true" 
-                         @mouseleave="leaveTimeout = setTimeout(() => open = false, 150)" 
+                         @mouseleave="if(!clicked) leaveTimeout = setTimeout(() => open = false, 150)" 
                          class="relative">
                         <span class="text-sm font-medium {{ request()->is('asset-management/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1 cursor-pointer"
                               style="font-family: 'Inter', sans-serif;">
@@ -70,6 +72,7 @@
                             <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
                         </span>
                         <div x-show="open" 
+                             @click="clicked = true; setTimeout(() => { clicked = false; open = false; }, 2000)"
                              x-transition
                              style="display: none;"
                              class="absolute top-full left-0 mt-2 w-56 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2">
@@ -81,9 +84,9 @@
                     </div>
                     
                     <!-- Lending Dropdown -->
-                    <div x-data="{ open: false, leaveTimeout: null }" 
+                    <div x-data="{ open: false, leaveTimeout: null, clicked: false }" 
                          @mouseenter="clearTimeout(leaveTimeout); open = true" 
-                         @mouseleave="leaveTimeout = setTimeout(() => open = false, 150)" 
+                         @mouseleave="if(!clicked) leaveTimeout = setTimeout(() => open = false, 150)" 
                          class="relative">
                         <span class="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-1 cursor-pointer"
                               style="font-family: 'Inter', sans-serif;">
@@ -91,6 +94,7 @@
                             <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
                         </span>
                         <div x-show="open" 
+                             @click="clicked = true; setTimeout(() => { clicked = false; open = false; }, 2000)"
                              x-transition
                              style="display: none;"
                              class="absolute top-full left-0 mt-2 w-52 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2">
@@ -100,9 +104,9 @@
                     </div>
                     
                     <!-- News Dropdown -->
-                    <div x-data="{ open: false, leaveTimeout: null }" 
+                    <div x-data="{ open: false, leaveTimeout: null, clicked: false }" 
                          @mouseenter="clearTimeout(leaveTimeout); open = true" 
-                         @mouseleave="leaveTimeout = setTimeout(() => open = false, 150)" 
+                         @mouseleave="if(!clicked) leaveTimeout = setTimeout(() => open = false, 150)" 
                          class="relative">
                         <span class="text-sm font-medium {{ request()->is('news/*') ? 'text-white border-b-2 border-white pb-1' : 'text-gray-300 hover:text-white' }} transition-colors duration-200 flex items-center gap-1 cursor-pointer"
                               style="font-family: 'Inter', sans-serif;">
@@ -110,6 +114,7 @@
                             <i class="fas fa-chevron-down text-xs transition-transform duration-200" :class="open ? 'rotate-180' : ''"></i>
                         </span>
                         <div x-show="open" 
+                             @click="clicked = true; setTimeout(() => { clicked = false; open = false; }, 2000)"
                              x-transition
                              style="display: none;"
                              class="absolute top-full left-0 mt-2 w-40 bg-[#2a2424] rounded-lg shadow-xl border border-white/10 py-2">
