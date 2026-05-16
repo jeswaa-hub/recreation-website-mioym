@@ -72,148 +72,81 @@
                 <img src="{{ asset('img/bgAboutUs.webp') }}" alt="" class="w-full h-full object-cover">
             </div>
             <div class="absolute inset-0 bg-black/70 -z-10"></div>
-            <div class="absolute inset-0 -z-10 opacity-40">
-                <img src="{{ asset('img/investorbg.webp') }}" alt="" class="w-full h-full object-cover">
-            </div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight reveal" data-reveal style="--d: 0ms; font-family: 'Plus Jakarta Sans', sans-serif;">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight text-center reveal" data-reveal style="--d: 0ms; font-family: 'Plus Jakarta Sans', sans-serif;">
                     National Foreclosure<br>Prevention
                 </h1>
+            </div>
+        </section>
 
-                <div class="mt-10 text-center reveal" data-reveal style="--d: 140ms;">
+        <section class="relative overflow-hidden">
+            <div class="absolute inset-0 -z-10">
+                <img src="{{ asset('img/bgNFPaboutus.webp') }}" alt="" class="w-full h-full object-cover object-center">
+            </div>
+            <div class="absolute inset-0 bg-black/65 -z-10"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
+                <div class="text-center reveal" data-reveal style="--d: 140ms;">
                     <h2 class="text-2xl sm:text-3xl font-bold uppercase tracking-widest" style="font-family: 'Plus Jakarta Sans', sans-serif;">About Us</h2>
                     <p class="mt-4 text-sm sm:text-base text-white/85 max-w-4xl mx-auto">
                         At the National Foreclosure Prevention Group, we believe that everyone deserves a second chance. Contact us today to learn more about how we can help you navigate through foreclosure and embark on a path towards financial recovery.
                     </p>
                 </div>
 
-                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="nf-card p-6 reveal" data-reveal style="--d: 0ms;">
-                        <div class="flex items-start gap-4">
-                            <span class="nf-pill">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 21s-6-4.35-6-10a6 6 0 0 1 12 0c0 5.65-6 10-6 10z"></path>
-                                    <path d="M9.5 11.5l1.5 1.5 3.5-3.5"></path>
-                                </svg>
-                            </span>
-                            <div>
-                                <h3 class="text-lg font-bold text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Our Vision</h3>
-                                <p class="mt-2 text-sm text-white/75">
-                                    At the National Foreclosure Prevention Group, we are dedicated to helping individuals restore their credit and regain control. Our mission is to provide homeowners with a seamless, empowering and supportive service through financial difficulties with dignity and resilience.
-                                </p>
-                            </div>
-                        </div>
+                <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
+                    <div class="rounded-2xl overflow-hidden bg-black/10 border border-white/10 reveal shadow-lg" data-reveal style="--d: 0ms;">
+                        <img src="{{ asset('img/left.webp') }}" alt="About Us - Left" class="w-full h-auto object-contain" loading="lazy">
                     </div>
-
-                    <div class="nf-card p-6 reveal" data-reveal style="--d: 120ms;">
-                        <div class="flex items-start gap-4">
-                            <span class="nf-pill">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2v3"></path>
-                                    <path d="M19.78 5.22l-2.12 2.12"></path>
-                                    <path d="M22 12h-3"></path>
-                                    <path d="M19.78 18.78l-2.12-2.12"></path>
-                                    <path d="M12 22v-3"></path>
-                                    <path d="M6.34 18.78l2.12-2.12"></path>
-                                    <path d="M2 12h3"></path>
-                                    <path d="M6.34 5.22l2.12 2.12"></path>
-                                </svg>
-                            </span>
-                            <div>
-                                <h3 class="text-lg font-bold text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Our Approach</h3>
-                                <p class="mt-2 text-sm text-white/75">
-                                    If you’re feeling overwhelmed and considering selling your home to avoid foreclosure, our team is here to support you every step of the way. We offer unique programs that allow homeowners to start anew and receive relocation funds instead of facing eviction.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="nf-card p-6 reveal" data-reveal style="--d: 240ms;">
-                        <div class="flex items-start gap-4">
-                            <span class="nf-pill">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z"></path>
-                                    <path d="M12 7v5l3 3"></path>
-                                </svg>
-                            </span>
-                            <div>
-                                <h3 class="text-lg font-bold text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Our Commitment</h3>
-                                <p class="mt-2 text-sm text-white/75">
-                                    Transparency, documentation, and legal compliance are paramount in our process. Every step is meticulously documented and verified by legal counsel to ensure integrity and peace of mind throughout the journey.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="nf-card p-6 reveal" data-reveal style="--d: 360ms;">
-                        <div class="flex items-start gap-4">
-                            <span class="nf-pill">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M3 12h18"></path>
-                                    <path d="M3 6h18"></path>
-                                    <path d="M3 18h18"></path>
-                                </svg>
-                            </span>
-                            <div>
-                                <h3 class="text-lg font-bold text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">How We Operate</h3>
-                                <p class="mt-2 text-sm text-white/75">
-                                    We generate revenue by negotiating with banks to facilitate short sales, allowing you to repurchase your home for an amount that’s aligned with current market value. This process helps you succeed and gives you a renewed sense of stability.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="rounded-2xl overflow-hidden bg-black/10 border border-white/10 reveal shadow-lg" data-reveal style="--d: 120ms;">
+                        <img src="{{ asset('img/right.webp') }}" alt="About Us - Right" class="w-full h-auto object-contain" loading="lazy">
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="mt-12 grid grid-cols-1 lg:grid-cols-[1fr_1.3fr_1fr] gap-6 lg:gap-8 items-stretch">
-                    <div class="space-y-6">
-                        <div class="nf-card-soft p-6 reveal" data-reveal style="--d: 0ms;">
-                            <h3 class="text-lg font-bold text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Engage with a Realtor</h3>
-                            <p class="mt-2 text-sm text-white/80">
+        <section class="bg-[#1a1a1a] relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 relative">
+                <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_0.5fr_1.3fr] gap-8 lg:gap-12 items-center relative">
+                    <!-- Left Column -->
+                    <div class="space-y-8 z-10 relative">
+                        <div class="reveal bg-[#2a2a2a] p-10 rounded-2xl shadow-xl border border-white/5" data-reveal style="--d: 0ms;">
+                            <h3 class="text-2xl font-bold text-white mb-4" style="font-family: 'Plus Jakarta Sans', sans-serif;">Engage with a Realtor</h3>
+                            <p class="text-base text-white/80 leading-relaxed">
                                 We will connect you with a trusted realtor who will initiate the process by putting a contract of sale on your property and sending it to your bank. This action automatically stops the auction date, giving you breathing room to explore your options.
                             </p>
                         </div>
-                        <div class="nf-card-soft p-6 reveal" data-reveal style="--d: 120ms;">
-                            <h3 class="text-lg font-bold text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Property Inspection and Short Sale</h3>
-                            <p class="mt-2 text-sm text-white/80">
+                        <div class="reveal bg-[#2a2a2a] p-10 rounded-2xl shadow-xl border border-white/5" data-reveal style="--d: 120ms;">
+                            <h3 class="text-2xl font-bold text-white mb-4" style="font-family: 'Plus Jakarta Sans', sans-serif;">Property Inspection and Short Sale</h3>
+                            <p class="text-base text-white/80 leading-relaxed">
                                 Our team conducts a thorough inspection of your home to assess its condition and determine a fair short sale price. We then work closely with your bank to offer them a short sale solution based on your financial circumstances.
                             </p>
                         </div>
                     </div>
 
-                    <div class="nf-card-soft p-4 reveal" data-reveal style="--d: 180ms;">
-                        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-black/20">
-                            <img src="{{ asset('img/image_4.webp') }}" alt="National Foreclosure Prevention" class="w-full h-full object-cover" data-fallback="{{ asset('img/house1.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                    <!-- Center Featured Image (Foreground) -->
+                    <div class="relative z-30 lg:scale-[1.90]">
+                        <div class="reveal animate-float" data-reveal style="--d: 180ms;">
+                            <div class="rounded-[1.5rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.8)] aspect-[2/3] bg-black/20 border border-white/5">
+                                <img src="{{ asset('img/nfpcenter.webp') }}" alt="National Foreclosure Prevention" class="w-full h-full object-cover" loading="lazy">
+                                <div class="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-black/10 pointer-events-none"></div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="space-y-6">
-                        <div class="nf-card-soft p-6 reveal" data-reveal style="--d: 240ms;">
-                            <h3 class="text-lg font-bold text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Transition to Rental</h3>
-                            <p class="mt-2 text-sm text-white/80">
-                                Upon obtaining the short sale approval from your bank, we schedule your move, allowing you to remain in the property as a renter. Our rental agreement will not exceed the amount you were paying prior to your mortgage.
+                    <!-- Right Column -->
+                    <div class="space-y-8 z-10 relative">
+                        <div class="reveal bg-[#2a2a2a] p-10 rounded-2xl shadow-xl border border-white/5" data-reveal style="--d: 240ms;">
+                            <h3 class="text-2xl font-bold text-white mb-4 text-right" style="font-family: 'Plus Jakarta Sans', sans-serif;">Transition to Rental</h3>
+                            <p class="text-base text-white/80 leading-relaxed text-right">
+                                Upon obtaining the short sale approval from your bank, we purchase your home, allowing you to remain in the property as a renter. Your rental payment will not exceed the amount you were paying prior to your mortgage.
                             </p>
                         </div>
-                        <div class="nf-card-soft p-6 reveal" data-reveal style="--d: 360ms;">
-                            <h3 class="text-lg font-bold text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Credit Repair and Repurchase</h3>
-                            <p class="mt-2 text-sm text-white/80">
-                                As you continue to reside in your home, we embark on repairing your credit, helping you avoid foreclosure. With improved credit and stable income, you’ll have the opportunity to repurchase your home at its current market value.
+                        <div class="reveal bg-[#2a2a2a] p-10 rounded-2xl shadow-xl border border-white/5" data-reveal style="--d: 360ms;">
+                            <h3 class="text-2xl font-bold text-white mb-4 text-right" style="font-family: 'Plus Jakarta Sans', sans-serif;">Credit Repair and Repurchase</h3>
+                            <p class="text-base text-white/80 leading-relaxed text-right">
+                                As you continue to reside in your home, we embark on repairing your credit, helping you avoid the detrimental effects of foreclosure. With improved credit and stable income, you’ll have the opportunity to repurchase your home at its current market value.
                             </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-14 text-center reveal" data-reveal style="--d: 0ms;">
-                    <h2 class="text-2xl sm:text-3xl font-bold uppercase tracking-widest text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Our Partners</h2>
-                    <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
-                        <div class="nf-card-soft p-4 flex items-center justify-center">
-                            <span class="text-white/90 font-semibold">Cardinal</span>
-                        </div>
-                        <div class="nf-card-soft p-4 flex items-center justify-center">
-                            <span class="text-white/90 font-semibold">Credco</span>
-                        </div>
-                        <div class="nf-card-soft p-4 flex items-center justify-center">
-                            <span class="text-white/90 font-semibold">Xome</span>
                         </div>
                     </div>
                 </div>

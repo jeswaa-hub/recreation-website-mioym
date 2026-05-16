@@ -189,7 +189,7 @@
                 </p>
 
                 <div class="mt-12 rounded-[28px] overflow-hidden bg-black/20">
-                    <img src="{{ asset('img/sppimgesection2.webp') }}" alt="Strategic Property Preservation Services" class="w-full h-auto object-contain" loading="lazy">
+                    <img src="{{ asset('img/sppimgsection2.webp') }}" alt="Strategic Property Preservation Services" class="w-full h-auto object-contain" loading="lazy">
                 </div>
             </div>
         </section>

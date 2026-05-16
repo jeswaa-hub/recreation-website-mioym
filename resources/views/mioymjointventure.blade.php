@@ -69,155 +69,120 @@
     @include('components.navigationHeader')
 
     <main class="pt-16 lg:pt-20">
+        <!-- Section 1: Hero -->
         <section class="relative overflow-hidden">
+            <div class="absolute inset-0 bg-black/65 -z-10"></div>
             <div class="absolute inset-0 -z-10">
-                <img src="{{ asset('img/imgAboutUs.png') }}" alt="" class="w-full h-full object-cover" data-fallback="{{ asset('img/bgAboutUs.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
-            </div>
-            <div class="absolute inset-0 bg-black/70 -z-10"></div>
-            <div class="absolute inset-0 -z-10 opacity-35">
-                <img src="{{ asset('img/investorbg.webp') }}" alt="" class="w-full h-full object-cover">
+                <img src="{{ asset('img/bgAboutUs.webp') }}" alt="" class="w-full h-full object-cover">
             </div>
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight reveal" data-reveal style="--d: 0ms; font-family: 'Plus Jakarta Sans', sans-serif;">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white tracking-tight reveal" data-reveal style="--d: 0ms; font-family: 'Plus Jakarta Sans', sans-serif;">
                     MIOYM Joint<br>Venture
                 </h1>
-
-                <p class="mt-6 text-sm sm:text-base text-white/85 max-w-4xl reveal" data-reveal style="--d: 140ms;">
-                    A real estate joint venture (JV) is a deal between multiple parties to work together and combine resources to develop a real estate project. Most large projects are financed and developed as a result of real estate joint ventures. A JV allows real estate operators and individuals with investors to finance and complete a large-scale real estate project without direct cash outlay by the operator.
-                </p>
-                <p class="mt-4 text-sm sm:text-base text-white/85 max-w-4xl reveal" data-reveal style="--d: 220ms;">
-                    The basic principle surrounding a real estate joint venture can be illustrated through the following example: Company X owns a plot of land in the city of Los Angeles. However, Company X does not have the necessary funds to build on the plot of land. Company Y, on the other hand, has the funds but does not have the ability to develop the land. In this case, both Company X and Company Y benefit from a JV arrangement.
-                </p>
-
-                <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <div class="jv-card p-5 reveal" data-reveal style="--d: 0ms;">
-                        <div class="flex items-center gap-3">
-                            <span class="jv-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="11" cy="11" r="7"></circle>
-                                    <path d="M21 21l-4.3-4.3"></path>
-                                </svg>
-                            </span>
-                            <p class="text-sm font-bold uppercase tracking-wider text-white">You Find the Deal</p>
-                        </div>
-                    </div>
-                    <div class="jv-card p-5 reveal" data-reveal style="--d: 120ms;">
-                        <div class="flex items-center gap-3">
-                            <span class="jv-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 1v22"></path>
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"></path>
-                                </svg>
-                            </span>
-                            <p class="text-sm font-bold uppercase tracking-wider text-white">We Fund the Deal</p>
-                        </div>
-                    </div>
-                    <div class="jv-card p-5 reveal" data-reveal style="--d: 240ms;">
-                        <div class="flex items-center gap-3">
-                            <span class="jv-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M3 17l6-6 4 4 7-7"></path>
-                                    <path d="M21 7v6h-6"></path>
-                                </svg>
-                            </span>
-                            <p class="text-sm font-bold uppercase tracking-wider text-white">We Split the Profit</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="jv-card p-2 reveal" data-reveal style="--d: 0ms;">
-                        <div class="rounded-2xl overflow-hidden aspect-[16/10] bg-black/20">
-                            <img src="{{ asset('img/house1.webp') }}" alt="Joint venture property" class="w-full h-full object-cover" data-fallback="{{ asset('img/house.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
-                        </div>
-                    </div>
-                    <div class="jv-card p-2 reveal" data-reveal style="--d: 120ms;">
-                        <div class="rounded-2xl overflow-hidden aspect-[16/10] bg-black/20">
-                            <img src="{{ asset('img/houseB.webp') }}" alt="Joint venture property" class="w-full h-full object-cover" data-fallback="{{ asset('img/houseC.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-10 jv-soft p-6 reveal" data-reveal style="--d: 0ms;">
-                    <h2 class="text-center text-lg sm:text-xl font-bold text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                        The Different Players in a Real Estate Joint Venture
-                    </h2>
-                    <p class="mt-4 text-sm sm:text-base text-white/85">
-                        A real estate joint venture typically includes a real estate operator who sources the investment and oversees the project, and a capital partner who provides funding. The operator manages day-to-day execution while the capital partner supplies the majority of the equity or financing.
-                    </p>
-                    <p class="mt-3 text-sm sm:text-base text-white/85">
-                        Most real estate joint ventures are structured through an LLC or similar entity. Ownership, responsibilities, and profit distributions are defined in the operating agreement to protect all parties and clarify expectations.
-                    </p>
-                </div>
-
-                <div class="mt-14">
-                    <h2 class="text-2xl sm:text-3xl font-bold text-white reveal" data-reveal style="--d: 0ms; font-family: 'Plus Jakarta Sans', sans-serif;">
-                        Key Aspects of a Real Estate JV Agreement
-                    </h2>
-                    <p class="mt-3 text-sm sm:text-base text-white/80 reveal" data-reveal style="--d: 120ms;">
-                        A real estate JV agreement involves the following factors:
-                    </p>
-
-                    <div class="mt-8 space-y-5">
-                        <div class="grid grid-cols-1 md:grid-cols-[90px_1fr] gap-4 items-start reveal" data-reveal style="--d: 0ms;">
-                            <div class="jv-num text-5xl md:text-6xl leading-none">01</div>
-                            <div class="jv-card p-6">
-                                <h3 class="text-lg font-bold text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Distribution of Profits</h3>
-                                <p class="mt-2 text-sm text-white/80">
-                                    Profits are distributed based on the operating agreement. Common structures include preferred returns, promote splits, and waterfalls that align incentives between the operator and capital partner.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-[90px_1fr] gap-4 items-start reveal" data-reveal style="--d: 120ms;">
-                            <div class="jv-num text-5xl md:text-6xl leading-none">02</div>
-                            <div class="jv-card p-6">
-                                <h3 class="text-lg font-bold text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Capital Contribution</h3>
-                                <p class="mt-2 text-sm text-white/80">
-                                    The agreement outlines how much capital each party contributes, when it is funded, and how additional capital calls are handled if the project needs more liquidity.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-[90px_1fr] gap-4 items-start reveal" data-reveal style="--d: 240ms;">
-                            <div class="jv-num text-5xl md:text-6xl leading-none">03</div>
-                            <div class="jv-card p-6">
-                                <h3 class="text-lg font-bold text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Management and Control</h3>
-                                <p class="mt-2 text-sm text-white/80">
-                                    Defines who makes decisions and what approvals are required for major actions (budget changes, refinancing, sale). Clear roles reduce conflicts and keep execution efficient.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-[90px_1fr] gap-4 items-start reveal" data-reveal style="--d: 360ms;">
-                            <div class="jv-num text-5xl md:text-6xl leading-none">04</div>
-                            <div class="jv-card p-6">
-                                <h3 class="text-lg font-bold text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Exit Mechanism</h3>
-                                <p class="mt-2 text-sm text-white/80">
-                                    Describes when and how the JV ends, including timelines, sale procedures, buyout options, and dispute resolution. A clear exit plan protects both parties.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-14 text-center reveal" data-reveal style="--d: 0ms;">
-                    <h2 class="text-2xl sm:text-3xl font-bold uppercase tracking-widest text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Our Partners</h2>
-                    <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
-                        <div class="jv-soft p-4 flex items-center justify-center">
-                            <span class="text-white/90 font-semibold">Cardinal</span>
-                        </div>
-                        <div class="jv-soft p-4 flex items-center justify-center">
-                            <span class="text-white/90 font-semibold">Credco</span>
-                        </div>
-                        <div class="jv-soft p-4 flex items-center justify-center">
-                            <span class="text-white/90 font-semibold">Xome</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
+
+        <!-- Global Gradient Background for Sections 2-5 -->
+        <div class="bg-gradient-to-b from-[#000000] via-[#333333] to-[#4a4a4a]">
+            <!-- Section 2: Description -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+                <div class="text-left">
+                    <p class="text-lg sm:text-xl lg:text-2xl text-white/85 max-w-5xl reveal" data-reveal style="--d: 140ms;">
+                        A real estate joint venture (JV) is a deal between multiple parties to work together and combine resources to develop a real estate project. Most large projects are financed and developed as a result of real estate joint ventures. A JV allows real estate operators and individuals with investors to finance and complete a large-scale real estate project without direct cash outlay by the operator.
+                    </p>
+                    <p class="mt-8 text-lg sm:text-xl lg:text-2xl text-white/85 max-w-5xl reveal" data-reveal style="--d: 220ms;">
+                        The basic principle surrounding a real estate joint venture can be illustrated through the following example: Company X owns a plot of land in the city of Los Angeles. However, Company X does not have the necessary funds to build on the plot of land. Company Y, on the other hand, has the funds but does not have the ability to develop the land. In this case, both Company X and Company Y benefit from a JV arrangement.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 3: Visual Concept -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="reveal" data-reveal style="--d: 0ms;">
+                    <img src="{{ asset('img/mjv.webp') }}" alt="Joint Venture Process" class="w-full h-auto rounded-3xl shadow-2xl">
+                </div>
+            </section>
+
+            <!-- Section 4: Players -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+                <div class="jv-soft p-10 sm:p-14 reveal text-center" data-reveal style="--d: 0ms;">
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-8" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        The Different Players in a Real Estate Joint Venture
+                    </h2>
+                    <div class="space-y-8 max-w-5xl mx-auto">
+                        <p class="text-lg sm:text-xl text-white/90 leading-relaxed">
+                            As mentioned above, most real estate joint ventures are comprised of two separate parties: the operating member and the capital member. The operating member is usually an expert on real estate projects and is responsible for the daily operations and management of the real estate project. A typical operating member is usually a highly experienced professional from the real estate industry with the ability to source, acquire, manage, and develop a real estate project. The capital member usually finances a large part of the project or even the entire project.
+                        </p>
+                        <p class="text-lg sm:text-xl text-white/90 leading-relaxed">
+                            In a Real Estate Joint Venture, each member is liable for profits and losses relating to the joint venture. However, this liability only extends as far as the particular project that the joint venture was created for. Aside from this, the joint venture is separate from the members’ other business interests.
+                        </p>
+                        <p class="text-lg sm:text-xl text-white/90 leading-relaxed">
+                            In most cases, the operating member and the capital member of the real estate joint venture set up the Real Estate project as an independent limited liability company (LLC). The parties sign the joint venture agreement, which details the conditions of the joint venture, such as its objective, the contribution of the capital member, how profits will be split, delegation of management responsibilities for the project, ownership rights of the project, etc.
+                        </p>
+                        <p class="text-lg sm:text-xl text-white/90 leading-relaxed">
+                            However, a real estate joint venture is not limited to an LLC. Corporations, partnerships, and several other business arrangements can all be used to set up a joint venture. The exact structure of the JV determines the relationship between the operator and the capital provider.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Key Aspects (Custom Design) -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div class="text-center mb-16 reveal" data-reveal style="--d: 0ms;">
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-4" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        Key Aspects of a Real Estate JV Agreement
+                    </h2>
+                    <p class="text-lg text-white/70">A real estate JV agreement involves the following factors:</p>
+                </div>
+                
+                <div class="max-w-6xl mx-auto space-y-12 lg:space-y-16">
+                    <!-- Aspect 01 -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 reveal max-w-5xl" data-reveal style="--d: 100ms;">
+                        <div class="jv-num text-7xl md:text-9xl text-white font-bold leading-none min-w-[140px] text-left">01</div>
+                        <div class="bg-[#8b8585] p-8 md:p-12 rounded-[1.1rem] shadow-2xl w-full min-h-[280px] flex flex-col justify-center">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4" style="font-family: 'Plus Jakarta Sans', sans-serif;">Distribution of Profits</h3>
+                            <p class="text-base sm:text-lg text-white leading-relaxed">
+                                An important distinction to make when drafting the terms for a joint venture is how the members will distribute profits generated from the project. Compensation may not necessarily be equally distributed. For example, more active members, or members that have invested more into the project may be compensated better than passive members.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Aspect 02 -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 reveal max-w-5xl md:ml-auto" data-reveal style="--d: 200ms;">
+                        <div class="jv-num text-7xl md:text-9xl text-white font-bold leading-none min-w-[140px] text-left">02</div>
+                        <div class="bg-[#8b8585] p-8 md:p-12 rounded-[1.1rem] shadow-2xl w-full min-h-[280px] flex flex-col justify-center">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4" style="font-family: 'Plus Jakarta Sans', sans-serif;">Capital Contribution</h3>
+                            <p class="text-base sm:text-lg text-white leading-relaxed">
+                                The JV agreement needs to specify the exact amount of capital contribution expected from each member. In addition, it must also specify when this capital is due. For example, a capital owner may agree to contribute 25% of the required capital but only if this contribution is made at the last stage of the development process (last money in).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Aspect 03 -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 reveal max-w-5xl" data-reveal style="--d: 300ms;">
+                        <div class="jv-num text-7xl md:text-9xl text-white font-bold leading-none min-w-[140px] text-left">03</div>
+                        <div class="bg-[#8b8585] p-8 md:p-12 rounded-[1.1rem] shadow-2xl w-full min-h-[280px] flex flex-col justify-center">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4" style="font-family: 'Plus Jakarta Sans', sans-serif;">Management and control</h3>
+                            <p class="text-base sm:text-lg text-white leading-relaxed">
+                                The JV agreement is expected to specify in detail the exact structure of the JV and the responsibilities of both parties regarding the management of the Real Estate JV project.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Aspect 04 -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 reveal max-w-5xl md:ml-auto" data-reveal style="--d: 400ms;">
+                        <div class="jv-num text-7xl md:text-9xl text-white font-bold leading-none min-w-[140px] text-left">04</div>
+                        <div class="bg-[#8b8585] p-8 md:p-12 rounded-[1.1rem] shadow-2xl w-full min-h-[280px] flex flex-col justify-center">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4" style="font-family: 'Plus Jakarta Sans', sans-serif;">Exit Mechanism</h3>
+                            <p class="text-base sm:text-lg text-white leading-relaxed">
+                                It is essential for a JV agreement to detail how and when the JV will end. Usually, it is in the best interest of both parties to make the dissolution of the JV as economical as possible (i.e., avoid legal fees, etc.). In addition, the JV agreement must also list out all the events that might allow one or both parties to trigger a premature dissolution of the JV.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <script>
