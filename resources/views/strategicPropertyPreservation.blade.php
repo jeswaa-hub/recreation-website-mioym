@@ -158,86 +158,49 @@
             color: #ffffff;
             box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
         }
+        .spp-section-gradient {
+            background: linear-gradient(180deg, #000000 0%, #161616 60%, #5a5a5a 100%);
+        }
+        .spp-section-gray {
+            background: #6b6b6b;
+        }
     </style>
 </head>
 <body>
     @include('components.navigationHeader')
 
     <main class="pt-16 lg:pt-20">
-        <section class="hero-surface">
+        <section class="relative overflow-hidden">
             <div class="absolute inset-0 -z-10">
-                <img src="{{ asset('img/bgAboutUs.webp') }}" alt="" class="w-full h-full object-cover">
+                <img src="{{ asset('img/bgAboutUs.webp') }}" alt="" class="w-full h-full object-cover object-center">
             </div>
             <div class="absolute inset-0 bg-black/70 -z-10"></div>
-
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
-                <div class="relative z-10">
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-                        Strategic Property<br>Preservation
-                    </h1>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight text-center" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                    Strategic Property<br>Preservation
+                </h1>
+            </div>
+        </section>
 
-                    <p class="mt-10 text-center text-sm sm:text-base text-white/85 max-w-4xl mx-auto">
-                        Discover unparalleled property management and asset preservation solutions with MIOYM. As a subsidiary of MIOYM, Strategic Property Preservation LLC is your trusted partner in regulatory-compliant residential and commercial property preservation services. Our nationwide network of field service professionals ensures timely, cost-effective, and investor/insurer guideline-compliant performance in every aspect of property care.
-                    </p>
+        <section class="bg-black">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+                <p class="text-center text-sm sm:text-base text-white/85 max-w-4xl mx-auto">
+                    Discover unparalleled property management and asset preservation solutions with MIOYM. As a subsidiary of MIOYM, Strategic Property Preservation LLC is your trusted partner in regulatory-compliant residential and commercial property preservation services. Our nationwide network of field service professionals ensures timely, cost-effective, and investor/insurer guideline-compliant performance in every aspect of property care.
+                </p>
+
+                <div class="mt-12 rounded-[28px] overflow-hidden bg-black/20">
+                    <img src="{{ asset('img/sppimgesection2.webp') }}" alt="Strategic Property Preservation Services" class="w-full h-auto object-contain" loading="lazy">
                 </div>
+            </div>
+        </section>
 
-                <div class="relative z-10 mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-start">
-                    <div class="spp-panel spp-curve-tr md:col-span-3">
-                        <h3 class="spp-title text-2xl leading-tight">
-                            Property<br>Preservation<br>Services
-                        </h3>
-                        <p class="spp-body mt-4">
-                            Secure your assets with our comprehensive property preservation services. From winterization and lawn maintenance to HUD Convey Maintenance and Orderly Occupancy Termination, we streamline the process, ensuring your property is protected and maintained to the highest standards.
-                        </p>
-                    </div>
-
-                    <div class="spp-panel spp-curve-tt text-center md:col-span-6 md:mt-10">
-                        <h3 class="spp-title text-2xl leading-tight">
-                            Inspection Services<br>Tailored to Your<br>Needs
-                        </h3>
-                        <p class="spp-body mt-4">
-                            Strategic Property Preservation offers a full range of regulatory-compliant residential and commercial inspection services. Our professional field service representatives deliver prompt and cost-effective solutions, supporting various needs, including occupancy verification, reverse mortgages, and real property valuation.
-                        </p>
-                    </div>
-
-                    <div class="spp-panel spp-curve-tr md:col-span-3">
-                        <h3 class="spp-title text-2xl leading-tight">
-                            Loss Mitigation<br>Expertise
-                        </h3>
-                        <p class="spp-body mt-4">
-                            Navigate loan modifications, short sales, and deed-in-lieu-of-foreclosure programs seamlessly with our loss mitigation inspections. Our trained specialists provide on-site document delivery, notary services, and cash-for-keys negotiation, ensuring optimal resolution.
-                        </p>
-                    </div>
-
-                    <div class="spp-panel spp-curve-tl md:col-span-3">
-                        <h3 class="spp-title text-2xl leading-tight">
-                            Insurance Loss and<br>FEMA Inspections
-                        </h3>
-                        <p class="spp-body mt-4">
-                            Rely on us for thorough loss draft and casualty loss inspections, confirming the extent and nature of the damage. Our FEMA inspections assess property damage from declared disasters, providing valuable insights into homeowners' repair intentions.
-                        </p>
-                    </div>
-
-                    <div class="spp-panel spp-curve-bb text-center md:col-span-6 md:-mt-6">
-                        <h3 class="spp-title text-2xl leading-tight">
-                            Property<br>Valuations
-                        </h3>
-                        <p class="spp-body mt-4">
-                            As a leader in default management solutions, MIOYM delivers accurate residential property valuations, including broker price opinions (BPOs), automated valuation models (AVMs), and professional appraisals. Our unique approach incorporates AVM technology for reliable decision-making in dynamic real estate markets.
-                        </p>
-                    </div>
-
-                    <div class="spp-panel spp-curve-tr md:col-span-3">
-                        <h3 class="spp-title text-2xl leading-tight">
-                            REO<br>Management
-                        </h3>
-                        <p class="spp-body mt-4">
-                            MIOYM's REO professionals and specialized teams collaborate to minimize losses and maximize returns throughout the asset disposition. We ensure a comprehensive and compliant approach from occupied property management to valuations and marketing.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="spp-bento-wrap relative z-10">
+        <section class="relative overflow-hidden">
+            <div class="absolute inset-0 -z-10">
+                <img src="{{ asset('img/stpbgsection3.webp') }}" alt="" class="w-full h-full object-cover object-center">
+            </div>
+            <div class="absolute inset-0 bg-black/55 -z-10"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+                <div class="spp-bento-wrap relative">
                     <div class="absolute -inset-x-10 top-10 h-[520px] rounded-[48px] bg-white/10 -z-10" style="transform: skewY(-6deg);"></div>
                     <div class="absolute -right-28 -top-10 h-[320px] w-[320px] rounded-full bg-white/10 blur-3xl -z-10"></div>
 
@@ -245,7 +208,7 @@
                         <div class="spp-bento-card md:col-span-5 md:row-span-2">
                             <div class="spp-bento-pad">
                                 <div class="spp-bento-media aspect-[16/9]">
-                                    <img src="{{ asset('img/processimg3.png') }}" alt="Document Delivery, Marketing, and Closing" class="w-full h-full object-cover" data-fallback="{{ asset('img/processimg2.png') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                                    <img src="{{ asset('img/sppimage2.webp') }}" alt="Document Delivery, Marketing, and Closing" class="w-full h-full object-cover" data-fallback="{{ asset('img/processimg2.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                                 </div>
                                 <h3 class="spp-bento-title text-xl mt-5">Document Delivery, Marketing, and Closing:</h3>
                                 <p class="spp-bento-text mt-3">
@@ -273,9 +236,9 @@
                         </div>
 
                         <div class="spp-bento-card md:col-span-7">
-                            <div class="grid grid-cols-1 sm:grid-cols-[240px_1fr] gap-6 p-5">
-                                <div class="spp-bento-media aspect-[16/10]">
-                                    <img src="{{ asset('img/imgteam1.webp') }}" alt="Asset Management Expertise" class="w-full h-full object-cover" data-fallback="{{ asset('img/bgAboutUs.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                            <div class="grid grid-cols-1 sm:grid-cols-[320px_1fr] lg:grid-cols-[180px_1fr] gap-6 p-5">
+                                <div class="spp-bento-media aspect-[4/3] lg:aspect-[3/2.67]">
+                                    <img src="{{ asset('img/sspimage3.webp') }}" alt="Asset Management Expertise" class="w-full h-full object-cover" data-fallback="{{ asset('img/bgAboutUs.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                                 </div>
                                 <div class="min-w-0">
                                     <h3 class="spp-bento-title text-xl">Asset Management Expertise</h3>
@@ -290,8 +253,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="relative z-10 mt-14 text-center">
+        <section class="spp-section-gray">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+                <div class="text-center">
                     <h2 class="text-2xl sm:text-3xl font-bold uppercase tracking-widest text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">Summary</h2>
                     <p class="mt-5 text-sm sm:text-base text-white/80 max-w-5xl mx-auto">
                         At MIOYM, we pride ourselves on being your all-encompassing solution for seamless asset management. From the meticulous care of your properties through comprehensive preservation services, inspections tailored to your specific needs, and adept loss mitigation strategies to accurate valuation solutions, we extend our expertise across the entire spectrum. Our REO management services ensure minimal losses and maximum returns, while our commitment to quality control, efficient document delivery, and strategic marketing culminates in streamlined and successful mortgage disposition. With a keen eye on industry trends and a dedicated approach to home rehabilitation, we empower you to excel in managing, preserving, and maximizing the value of your assets.

@@ -229,7 +229,7 @@
                     <div class="feature-card reveal" data-reveal style="--d: 0ms;">
                         <div class="feature-media">
                             <div class="feature-media-inner aspect-video">
-                                <img src="{{ asset('img/ahp1.jpg') }}" alt="Nationwide Down Payment Provided" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                                <img src="{{ asset('img/ahp1.webp') }}" alt="Nationwide Down Payment Provided" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                             </div>
                         </div>
                         <div class="feature-icon-wrapper">
@@ -247,7 +247,7 @@
                     <div class="feature-card reveal" data-reveal style="--d: 120ms;">
                         <div class="feature-media">
                             <div class="feature-media-inner aspect-video">
-                                <img src="{{ asset('img/ahp2.jpg') }}" alt="Closing Costs Provided!" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                                <img src="{{ asset('img/ahp2.webp') }}" alt="Closing Costs Provided!" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                             </div>
                         </div>
                         <div class="feature-icon-wrapper">
@@ -265,7 +265,7 @@
                     <div class="feature-card reveal" data-reveal style="--d: 240ms;">
                         <div class="feature-media">
                             <div class="feature-media-inner aspect-video">
-                                <img src="{{ asset('img/ahp3.jpg') }}" alt="Credit Qualification" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
+                                <img src="{{ asset('img/ahp3.webp') }}" alt="Credit Qualification" class="w-full h-full object-cover" data-fallback="{{ asset('img/residential.webp') }}" onerror="this.onerror=null; this.src=this.dataset.fallback;">
                             </div>
                         </div>
                         <div class="feature-icon-wrapper">
@@ -334,12 +334,12 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         @php
                             $teamMembers = [
-                                ['name' => 'KEITH VANNAH PONGOT', 'role' => 'OPERATION MANAGER', 'img' => 'keith.jpg'],
-                                ['name' => 'BEVERLY CABANAS', 'role' => 'LEASING AGENT', 'img' => 'beverly.jpg'],
-                                ['name' => 'ZEE BACSID', 'role' => 'LEASING AGENT', 'img' => 'zee.jpg'],
-                                ['name' => 'SUZETTA PATIÑO', 'role' => 'LEASING AGENT', 'img' => 'suzette.jpg'],
-                                ['name' => 'JACE SAN PEDRO', 'role' => 'LEASING AGENT', 'img' => 'jace.jpg'],
-                                ['name' => 'JOSIE DISCAYA', 'role' => 'LEASING AGENT', 'img' => 'josie.jpg'],
+                                ['name' => 'KEITH VANNAH PONGOT', 'role' => 'OPERATION MANAGER', 'img' => 'keith.webp'],
+                                ['name' => 'BEVERLY CABANAS', 'role' => 'LEASING AGENT', 'img' => 'beverly.webp'],
+                                ['name' => 'ZEE BACSID', 'role' => 'LEASING AGENT', 'img' => 'zee.webp'],
+                                ['name' => 'SUZETTA PATIÑO', 'role' => 'LEASING AGENT', 'img' => 'suzette.webp'],
+                                ['name' => 'JACE SAN PEDRO', 'role' => 'LEASING AGENT', 'img' => 'jace.webp'],
+                                ['name' => 'JOSIE DISCAYA', 'role' => 'LEASING AGENT', 'img' => 'josie.webp'],
                             ];
                         @endphp
 
