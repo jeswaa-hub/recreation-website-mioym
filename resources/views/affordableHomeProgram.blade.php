@@ -195,8 +195,8 @@
 <body>
     @include('components.navigationHeader')
     
-    <main class="pt-16 lg:pt-20">
-        <section class="relative overflow-hidden">
+    <main class="py-16 lg:pt-20">
+        <section class="py-10 lg:py-8 relative overflow-hidden">
             <div class="absolute inset-0 -z-10">
                 <img src="{{ asset('img/bgAboutUs.webp') }}" alt="" class="w-full h-full object-cover object-center">
             </div>
